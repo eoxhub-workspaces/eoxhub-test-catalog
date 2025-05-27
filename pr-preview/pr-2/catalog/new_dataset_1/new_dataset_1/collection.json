@@ -41,6 +41,7 @@
   "tags": [],
   "agency": [],
   "subcode": "test_1",
+  "eox:colorlegend": {},
   "endpointtype": "COG source_byoc",
   "title": "test_1",
   "extent": {

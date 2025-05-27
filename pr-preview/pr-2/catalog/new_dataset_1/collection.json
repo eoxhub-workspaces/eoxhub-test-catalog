@@ -67,6 +67,7 @@
   "tags": [],
   "agency": [],
   "subcode": "test_1",
+  "eox:colorlegend": {},
   "title": "test_1",
   "extent": {
     "spatial": {
