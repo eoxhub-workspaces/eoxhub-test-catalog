@@ -41,15 +41,6 @@
   "tags": [],
   "agency": [],
   "subcode": "test_1",
-  "eox:colorlegend": {
-    "title": "",
-    "range": [],
-    "domain": [],
-    "tickFormat": "",
-    "tickValues": [],
-    "scaleType": "continuous",
-    "markType": "rect"
-  },
   "endpointtype": "COG source_byoc",
   "title": "test_1",
   "extent": {
