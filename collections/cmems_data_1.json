@@ -1,7 +1,7 @@
 {
   "Name": "cmems_data_chl",
-  "Title": "Try Out Global Ocean Colour",
-  "EodashIdentifier": "GLOCCOL_TRY",
+  "Title": "Global Ocean Colour",
+  "EodashIdentifier": "CMEMS_OC_GLOB",
   "Subtitle": "",
   "Description": "Try out example.",
   "Themes": [],
@@ -31,7 +31,7 @@
       "EndPoint": "wmts.marine.copernicus.eu/teroWmts/OCEANCOLOUR_GLO_BGC_L4_NRT_009_102/cmems_obs-oc_glo_bgc-plankton_nrt_l4-olci-300m_P1M_202211",
       "Name": "marinedatastore",
       "Type": "WMTSCapabilities",
-      "LayerId": "OCEANCOLOUR_GLO_BGC_L4_NRT_009_102/cmems_obs-oc_glo_bgc-reflectance_nrt_l4-olci-300m_P1M_202211/RRS443_uncertainty",
+      "LayerId": "OCEANCOLOUR_GLO_BGC_L4_NRT_009_102/cmems_obs-oc_glo_bgc-reflectance_nrt_l4-olci-300m_P1M_202211/RRS400",
       "Variable": "",
       "Dimensions": {},
       "Query": {
