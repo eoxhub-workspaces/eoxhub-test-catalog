@@ -1,9 +1,9 @@
 {
-  "Name": "",
-  "Title": "",
-  "EodashIdentifier": "",
+  "Name": "cmems_data_chl",
+  "Title": "Try Out Global Ocean Colour",
+  "EodashIdentifier": "indi=CMEMS_CHL",
   "Subtitle": "",
-  "Description": "",
+  "Description": "Try out example.",
   "Themes": [],
   "Tags": [],
   "DataSource": {
@@ -26,7 +26,21 @@
   "Image": "",
   "Legend": "",
   "Subcollections": [],
-  "Resources": [],
+  "Resources": [
+    {
+      "EndPoint": "https://wmts.marine.copernicus.eu/teroWmts/OCEANCOLOUR_GLO_BGC_L4_NRT_009_102/cmems_obs-oc_glo_bgc-reflectance_nrt_l4-olci-300m_P1M_202211",
+      "Name": "marinedatastore",
+      "Type": "WMTSCapabilities",
+      "LayerId": "",
+      "Variable": "",
+      "Dimensions": {},
+      "Query": {
+        "Start": "2024-01-01T00:00:00Z",
+        "End": "2025-01-27T00:00:00Z"
+      },
+      "CollectionId": ""
+    }
+  ],
   "Services": [],
   "References": [],
   "Colorlegend": {
