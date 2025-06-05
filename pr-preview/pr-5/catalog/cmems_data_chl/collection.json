@@ -1,18 +1,36 @@
 {
   "type": "Collection",
-  "id": "",
+  "id": "cmems_data_chl",
   "stac_version": "1.1.0",
-  "description": "",
+  "description": "Test run for Chlorophyll",
   "links": [
     {
       "rel": "root",
-      "href": "./catalog.json",
+      "href": "../catalog.json",
       "type": "application/json",
       "title": "EOxHub test1 workspace Catalog"
     },
     {
+      "rel": "child",
+      "href": "./cmems_data_chl/collection.json",
+      "type": "application/json",
+      "title": "CMEMS Chlorophyll",
+      "endpointtype": "marinedatastore_WMTSCapabilities",
+      "code": "CMEMS_CHL_1",
+      "id": "cmems_data_chl",
+      "themes": [],
+      "tags": [],
+      "agency": [],
+      "subcode": "CMEMS_CHL_1",
+      "collection_group": "",
+      "sensor": [],
+      "satellite": [],
+      "insituSources": [],
+      "otherSources": []
+    },
+    {
       "rel": "service",
-      "href": ".//{{feature}}/collection.json",
+      "href": "./cmems_data_chl/{{feature}}/collection.json",
       "type": "application/json; profile=collection",
       "id": "locations",
       "method": "GET",
@@ -41,20 +59,19 @@
     },
     {
       "rel": "parent",
-      "href": "./catalog.json",
+      "href": "../catalog.json",
       "type": "application/json",
       "title": "EOxHub test1 workspace Catalog"
     }
   ],
   "sci:doi": "",
   "sci:citation": "",
-  "subtitle": "",
   "thumbnail": "https://raw.githubusercontent.com/eoxhub-workspaces/public-catalog/refs/heads/main/assets//",
   "themes": [],
   "locations": true,
   "tags": [],
   "agency": [],
-  "subcode": "",
+  "subcode": "CMEMS_CHL_1",
   "collection_group": "",
   "sensor": [],
   "satellite": [],
@@ -69,28 +86,42 @@
     "scaleType": "continuous",
     "markType": "rect"
   },
-  "title": "",
+  "title": "CMEMS Chlorophyll",
   "extent": {
     "spatial": {
       "bbox": [
         [
-          -180.0,
-          -90.0,
-          180.0,
-          90.0
+          -179.99722290039062,
+          -89.99722290039062,
+          179.9972381591797,
+          89.99722290039062
+        ],
+        [
+          -179.99722290039062,
+          -89.99722290039062,
+          179.9972381591797,
+          89.99722290039062
         ]
       ]
     },
     "temporal": {
       "interval": [
         [
-          "2025-06-05T08:27:02.402908Z",
-          null
+          "2024-01-01T00:00:00Z",
+          "2025-01-01T00:00:00Z"
         ]
       ]
     }
   },
   "license": "proprietary",
+  "summaries": {
+    "subcode": [
+      "CMEMS_CHL_1"
+    ],
+    "thumbnail": [
+      "https://raw.githubusercontent.com/eoxhub-workspaces/public-catalog/refs/heads/main/assets//"
+    ]
+  },
   "assets": {
     "legend": {
       "href": "https://raw.githubusercontent.com/eoxhub-workspaces/public-catalog/refs/heads/main/assets//",

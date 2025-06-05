@@ -1,0 +1,47 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/web-map-links/v1.1.0/schema.json"
+  ],
+  "id": "2024-11-01T00:00:00Z",
+  "geometry": null,
+  "properties": {
+    "datetime": "2024-11-01T00:00:00Z"
+  },
+  "links": [
+    {
+      "rel": "wmts",
+      "href": "https://wmts.marine.copernicus.eu/teroWmts/OCEANCOLOUR_GLO_BGC_L4_NRT_009_102/cmems_obs-oc_glo_bgc-reflectance_nrt_l4-olci-300m_P1M_202211",
+      "type": "image/png",
+      "title": "wmts capabilities",
+      "wmts:layer": "OCEANCOLOUR_GLO_BGC_L4_NRT_009_102/cmems_obs-oc_glo_bgc-reflectance_nrt_l4-olci-300m_P1M_202211/RRS400",
+      "role": [
+        "data"
+      ],
+      "wmts:dimensions": {
+        "time": "2024-11-01T00:00:00Z"
+      }
+    },
+    {
+      "rel": "root",
+      "href": "../../../../catalog.json",
+      "type": "application/json",
+      "title": "EOxHub test1 workspace Catalog"
+    },
+    {
+      "rel": "collection",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "CMEMS Chlorophyll"
+    },
+    {
+      "rel": "parent",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "CMEMS Chlorophyll"
+    }
+  ],
+  "assets": {},
+  "collection": "cmems_data_chl"
+}

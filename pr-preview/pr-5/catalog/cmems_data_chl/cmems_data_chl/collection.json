@@ -1,0 +1,168 @@
+{
+  "type": "Collection",
+  "id": "cmems_data_chl",
+  "stac_version": "1.1.0",
+  "description": "Test run for Chlorophyll",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../catalog.json",
+      "type": "application/json",
+      "title": "EOxHub test1 workspace Catalog"
+    },
+    {
+      "rel": "item",
+      "href": "./cmems_data_chl/2024/2024-01-01T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2024-01-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./cmems_data_chl/2024/2024-02-01T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2024-02-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./cmems_data_chl/2024/2024-03-01T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2024-03-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./cmems_data_chl/2024/2024-04-01T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2024-04-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./cmems_data_chl/2024/2024-05-01T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2024-05-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./cmems_data_chl/2024/2024-06-01T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2024-06-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./cmems_data_chl/2024/2024-07-01T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2024-07-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./cmems_data_chl/2024/2024-08-01T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2024-08-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./cmems_data_chl/2024/2024-09-01T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2024-09-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./cmems_data_chl/2024/2024-10-01T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2024-10-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./cmems_data_chl/2024/2024-11-01T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2024-11-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./cmems_data_chl/2024/2024-12-01T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2024-12-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./cmems_data_chl/2025/2025-01-01T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2025-01-01T00:00:00Z"
+    },
+    {
+      "rel": "wmts",
+      "href": "https://wmts.marine.copernicus.eu/teroWmts/OCEANCOLOUR_GLO_BGC_L4_NRT_009_102/cmems_obs-oc_glo_bgc-reflectance_nrt_l4-olci-300m_P1M_202211",
+      "type": "image/png",
+      "title": "wmts capabilities",
+      "wmts:layer": "OCEANCOLOUR_GLO_BGC_L4_NRT_009_102/cmems_obs-oc_glo_bgc-reflectance_nrt_l4-olci-300m_P1M_202211/RRS400",
+      "role": [
+        "data"
+      ]
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "CMEMS Chlorophyll"
+    }
+  ],
+  "sci:doi": "",
+  "sci:citation": "",
+  "thumbnail": "https://raw.githubusercontent.com/eoxhub-workspaces/public-catalog/refs/heads/main/assets//",
+  "themes": [],
+  "tags": [],
+  "agency": [],
+  "subcode": "CMEMS_CHL_1",
+  "collection_group": "",
+  "sensor": [],
+  "satellite": [],
+  "insituSources": [],
+  "otherSources": [],
+  "eox:colorlegend": {
+    "title": "",
+    "range": [],
+    "domain": [],
+    "tickFormat": "",
+    "tickValues": [],
+    "scaleType": "continuous",
+    "markType": "rect"
+  },
+  "endpointtype": "marinedatastore_WMTSCapabilities",
+  "title": "CMEMS Chlorophyll",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -179.99722290039062,
+          -89.99722290039062,
+          179.9972381591797,
+          89.99722290039062
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2024-01-01T00:00:00Z",
+          "2025-01-01T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "assets": {
+    "legend": {
+      "href": "https://raw.githubusercontent.com/eoxhub-workspaces/public-catalog/refs/heads/main/assets//",
+      "type": "image/png",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "thumbnail": {
+      "href": "https://raw.githubusercontent.com/eoxhub-workspaces/public-catalog/refs/heads/main/assets//",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  }
+}
