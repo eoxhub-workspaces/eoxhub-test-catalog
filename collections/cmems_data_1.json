@@ -27,7 +27,7 @@
   "Subcollections": [],
   "Resources": [
     {
-      "EndPoint": "wmts.marine.copernicus.eu/teroWmts/OCEANCOLOUR_GLO_BGC_L4_NRT_009_102/cmems_obs-oc_glo_bgc-plankton_nrt_l4-olci-300m_P1M_202211",
+      "EndPoint": "https://wmts.marine.copernicus.eu/teroWmts/OCEANCOLOUR_GLO_BGC_L4_NRT_009_102/cmems_obs-oc_glo_bgc-reflectance_nrt_l4-olci-300m_P1M_202211",
       "Name": "marinedatastore",
       "Type": "WMTSCapabilities",
       "LayerId": "OCEANCOLOUR_GLO_BGC_L4_NRT_009_102/cmems_obs-oc_glo_bgc-reflectance_nrt_l4-olci-300m_P1M_202211/RRS400",
