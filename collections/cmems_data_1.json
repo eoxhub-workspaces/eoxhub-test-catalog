@@ -1,7 +1,7 @@
 {
   "Name": "cmems_data_chl",
   "Title": "CMEMS Chlorophyll",
-  "EodashIdentifier": "CMEMS_CHL_1",
+  "EodashIdentifier": "CMEMS_CHL",
   "Description": "Test run for Chlorophyll",
   "Themes": [],
   "Tags": [],
