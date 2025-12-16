@@ -1,0 +1,39 @@
+{
+    "Name": "antarctica_ship_route",
+    "Title": "Ship Route",
+    "CollectionGroup": "Antarctica",
+    "Description": "Ship Route between Rothera Research Station and Middle of the Weddell Sea",
+    "Themes": [
+        "Shipping"
+    ],
+    "Tags": [
+        "processing"
+    ],
+    "Agency": [
+        "ESA"
+    ],
+    "Resources": [
+        {
+            "Name": "GeoJSON source",
+            "DataProjection": 4326,
+            "Style": "https://raw.githubusercontent.com/gtif-cerulean/assets/refs/heads/main/styles/antarctica_ship_route.json",
+            "Bbox": [
+                -68.125028,
+                -71.0,
+                -41.0,
+                -67.568783
+            ],
+            "TimeEntries": [
+                {
+                    "Time": "20251008",
+                    "Assets": [
+                        {
+                            "Identifier": "ship_route_antarctica",
+                            "File": "https://raw.githubusercontent.com/gtif-cerulean/assets/refs/heads/main/collections/antarctica_ship_route/antarctica_ship_route.geojson"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

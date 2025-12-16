@@ -7,6 +7,22 @@
       "Attribution": "{ Overlay: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors, Made with Natural Earth, Rendering &copy; <a href=\"https://eox.at\" target=\"_blank\">EOX</a> }",
       "visible": true,
       "protocol": "xyz"
+    },
+    {
+      "id": "Wind_Energy_Areas",
+      "name": "Wind Energy Areas",
+      "url": "https://workspace-ui-public.cif.gtif.eox.at/api/public/share/public-4wazei3y-02/wind_energy.geojson",
+      "Style": "https://raw.githubusercontent.com/gtif-cerulean/assets/main/styles/wind_energy_polygon.json",
+      "visible": true,
+      "protocol": "GeoJSON source"
+    },
+    {
+      "id": "Sample_gcom",
+      "name": "Sample GCOM overlay",
+      "url": "https://s3.ap-northeast-1.wasabisys.com/je-pds/cog/v1/JAXA.G-Portal_GCOM-C.SGLI_standard.L3-LST.daytime.v3_global_monthly/2024-05/1/E000.00-E090.00/E000.00-N00.00-E090.00-N90.00-LST.tiff",
+      "Style": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/refs/heads/main/collections/GCOM/style.json",
+      "visible": false,
+      "protocol": "COG source"
     }
   ]
 }

@@ -1,0 +1,45 @@
+{
+  "Name": "sea_ice_detections",
+  "Title": "Sea Ice Detections",
+  "EodashIdentifier": "SID",
+  "CollectionGroup": "Sea Ice",
+  "Description": "ASIP (Automated Sea Ice Products) is a new and comprehensive deep learning-based methodology to retrieve high-resolution sea ice maps with accompanying well-calibrated uncertainties from Sentinel-1 SAR and Advanced Microwave Scanning Radiometer 2 (AMSR2) passive microwave observations at a pan-Arctic scale for all seasons.",
+  "Themes": [
+    "Shipping"
+  ],
+  "Agency": [
+    "SMI"
+  ],
+  "Resources": [
+    {
+      "Name": "COG source",
+      "Style": "https://raw.githubusercontent.com/gtif-cerulean/assets/refs/heads/main/styles/sea_ice_detections.json",
+      "Bbox": [
+        -120,
+        14,
+        70,
+        85
+      ],
+      "TimeEntries": [
+        {
+          "Time": "20250101T0600",
+          "Assets": [
+            {
+              "Identifier": "202501010600",
+              "File": "https://eox-gtif-public.s3.eu-central-1.amazonaws.com/EOX/sea_ice_concentration/multisensorSeaIce_202501010600.tiff"
+            }
+          ]
+        },
+        {
+          "Time": "20250102T0600",
+          "Assets": [
+            {
+              "Identifier": "202501020600",
+              "File": "https://eox-gtif-public.s3.eu-central-1.amazonaws.com/EOX/sea_ice_concentration/multisensorSeaIce_202501020600.tiff"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

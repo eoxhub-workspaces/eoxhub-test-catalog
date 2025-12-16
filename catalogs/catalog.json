@@ -9,6 +9,9 @@
   "collections": [
     "ESDL_Hydrology_SM",
     "N1_NO2_monthly",
-    "IDEAS2_wildlife"
+    "IDEAS2_wildlife",
+    "airss",
+    "antarctica_ship_route",
+    "SID_sea_ice_detections"
   ]
 }
