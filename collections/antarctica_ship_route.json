@@ -15,7 +15,7 @@
     "Resources": [
         {
             "Name": "GeoJSON source",
-            "DataProjection": 4326,
+            "DataProjection": "EPSG:4326",
             "Style": "https://raw.githubusercontent.com/gtif-cerulean/assets/refs/heads/main/styles/antarctica_ship_route.json",
             "Bbox": [
                 -68.125028,
