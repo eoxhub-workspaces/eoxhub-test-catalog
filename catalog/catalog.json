@@ -21,6 +21,9 @@
         "agriculture",
         "water"
       ],
+      "providers": [
+        "TU Wien"
+      ],
       "subcode": "ESDL_Hydrology_SM",
       "satellite": [
         "Sentinel-1"
@@ -50,6 +53,9 @@
       "id": "N1_NO2_monthly",
       "themes": [
         "atmosphere"
+      ],
+      "providers": [
+        "NASA"
       ],
       "subcode": "N1_NO2_monthly",
       "satellite": [
@@ -82,6 +88,9 @@
       "themes": [
         "agriculture"
       ],
+      "providers": [
+        "Murmuration"
+      ],
       "subcode": "IND2_1",
       "satellite": [
         "MODIS",
@@ -102,6 +111,118 @@
       ],
       "otherSources": [
         "Open Data Soft"
+      ]
+    },
+    {
+      "rel": "child",
+      "href": "./airss_results/collection.json",
+      "type": "application/json",
+      "title": "AIRSS Go or No-Go",
+      "code": "airss_go_or_no_go",
+      "id": "airss_results",
+      "themes": [
+        "Shipping"
+      ],
+      "subcode": "airss_go_or_no_go",
+      "thumbnail": [
+        "https://raw.githubusercontent.com/eoxhub-workspaces/public-catalog/refs/heads/main/assets//Polartep_SeaIceCharts_demo/thumbnail.png"
+      ],
+      "agency": [
+        "Canadian Ice Service"
+      ],
+      "collection_group": "Capabilities"
+    },
+    {
+      "rel": "child",
+      "href": "./antarctica_ship_route/collection.json",
+      "type": "application/json",
+      "title": "Ship Route",
+      "id": "antarctica_ship_route",
+      "themes": [
+        "Shipping"
+      ],
+      "tags": [
+        "processing"
+      ],
+      "agency": [
+        "ESA"
+      ],
+      "collection_group": "Antarctica"
+    },
+    {
+      "rel": "child",
+      "href": "./precipitation/collection.json",
+      "type": "application/json",
+      "title": "Precipitation from GSMaP",
+      "subtitle": "Monthly precipitation product",
+      "code": "PRCG",
+      "id": "precipitation",
+      "themes": [
+        "agriculture"
+      ],
+      "providers": [
+        "JAXA"
+      ],
+      "subcode": "PRCG",
+      "satellite": [
+        "TRMM",
+        "Aqua",
+        "ADEOS-II",
+        "DMSP-F11",
+        "DMSP-F13",
+        "DMSP-F14",
+        "DMSP-F15",
+        "Megha-Tropiques",
+        "GCOM-W1",
+        "GPM Core Observatory",
+        "DWSS-1",
+        "NOAA-N15",
+        "NOAA-N16",
+        "NOAA-N17",
+        "NOAA-N18",
+        "NOAA-N19",
+        "MetOp-A",
+        "MetOp-B",
+        "NPP",
+        "JPSS-1"
+      ],
+      "sensor": [
+        "TMI",
+        "AMSR-E",
+        "AMSR",
+        "SSM/I",
+        "SSM/I",
+        "SSM/I",
+        "SSM/I",
+        "MADRAS",
+        "AMSR2",
+        "GMI",
+        "TBD",
+        "AMSU-A/AMSU-B",
+        "AMSU-A/AMSU-B",
+        "AMSU-A/AMSU-B",
+        "AMSU-A/MHS",
+        "AMSU-A/MHS",
+        "AMSU-A/MHS",
+        "AMSU-A/MHS",
+        "ATMS",
+        "ATMS"
+      ],
+      "thumbnail": [
+        "https://raw.githubusercontent.com/eoxhub-workspaces/public-catalog/refs/heads/main/assets//PRCG_precipitation/PRCG_precipitation.jpg"
+      ],
+      "tags": [
+        "Precipitation",
+        "Rainfall",
+        "Multi-sensors"
+      ],
+      "agency": [
+        "JAXA",
+        "NOAA",
+        "EUMETSAT",
+        "CNES",
+        "ISRO",
+        "DoD"
       ]
     },
     {

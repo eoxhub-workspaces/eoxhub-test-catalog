@@ -58,16 +58,17 @@
       "title": "Map of Item"
     },
     {
+      "rel": "xyz",
+      "href": "https://openveda.cloud/api/raster/cog/tiles/WebMercatorQuad/{z}/{x}/{y}?url=s3://veda-data-store/no2-monthly/OMI_trno2_0.10x0.10_201708_Col3_V4.nc.tif&resampling_method=nearest&bidx=1&colormap_name=reds&rescale=0,108e14",
+      "type": "image/png",
+      "title": "Nitrogen Dioxide (Monthly)",
+      "key": "e26eecc0-3e24-47e0-8adc-bcf8eaaf7f70"
+    },
+    {
       "rel": "collection",
       "href": "../../collection.json",
       "type": "application/json",
       "title": "Nitrogen Dioxide (Monthly)"
-    },
-    {
-      "rel": "xyz",
-      "href": "https://openveda.cloud/api/raster/cog/tiles/WebMercatorQuad/{z}/{x}/{y}?url=s3://veda-data-store/no2-monthly/OMI_trno2_0.10x0.10_201708_Col3_V4.nc.tif&resampling_method=nearest&bidx=1&colormap_name=reds&rescale=0,108e14",
-      "type": "image/png",
-      "title": "N1_NO2_monthly"
     },
     {
       "rel": "parent",
@@ -92,39 +93,6 @@
       "proj:shape": [
         1800,
         3600
-      ],
-      "raster:bands": [
-        {
-          "scale": 1.0,
-          "nodata": -1.2676506002282294e30,
-          "offset": 0.0,
-          "sampling": "area",
-          "data_type": "float32",
-          "histogram": {
-            "max": 14214922263068672,
-            "min": -1278181864636416.0,
-            "count": 11,
-            "buckets": [
-              236969,
-              182414,
-              9485,
-              1499,
-              423,
-              150,
-              56,
-              21,
-              3,
-              5
-            ]
-          },
-          "statistics": {
-            "mean": 400053310382997.3,
-            "stddev": 570744647476763.0,
-            "maximum": 14214922263068672,
-            "minimum": -1278181864636416.0,
-            "valid_percent": 82.21149444580078
-          }
-        }
       ],
       "proj:geometry": {
         "type": "Polygon",

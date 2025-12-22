@@ -71,6 +71,7 @@
     "Wildlife Biodiversity indicator": {
       "href": "https://eox-ideas.s3.eu-central-1.amazonaws.com/indicator2/AR3_wildlife.tif",
       "type": "image/tiff",
+      "title": "Wildlife Biodiversity indicator",
       "roles": [
         "data"
       ]

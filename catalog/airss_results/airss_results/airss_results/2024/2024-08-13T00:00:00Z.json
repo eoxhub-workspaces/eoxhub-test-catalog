@@ -1,0 +1,81 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [],
+  "id": "2024-08-13T00:00:00Z",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -50,
+          59
+        ],
+        [
+          -39,
+          59
+        ],
+        [
+          -39,
+          65
+        ],
+        [
+          -50,
+          65
+        ],
+        [
+          -50,
+          59
+        ]
+      ]
+    ]
+  },
+  "bbox": [
+    -50,
+    59,
+    -39,
+    65
+  ],
+  "properties": {
+    "datetime": "2024-08-13T00:00:00Z"
+  },
+  "links": [
+    {
+      "rel": "style",
+      "href": "https://raw.githubusercontent.com/gtif-cerulean/assets/refs/heads/main/collections/Polaris_algorithm_dmi_demo/airss.json",
+      "type": "text/vector-styles",
+      "asset:keys": [
+        "202408132000"
+      ]
+    },
+    {
+      "rel": "root",
+      "href": "../../../../catalog.json",
+      "type": "application/json",
+      "title": "EOxHub test1 workspace Catalog"
+    },
+    {
+      "rel": "collection",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "AIRSS Go or No-Go"
+    },
+    {
+      "rel": "parent",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "AIRSS Go or No-Go"
+    }
+  ],
+  "assets": {
+    "202408132000": {
+      "href": "https://eox-gtif-public.s3.eu-central-1.amazonaws.com/EOX/polaris/202408132000_SouthEast_RIC-airss_polaris.fgb",
+      "type": "application/vnd.flatgeobuf",
+      "title": "202408132000",
+      "roles": [
+        "data"
+      ]
+    }
+  },
+  "collection": "airss_results"
+}

@@ -22,6 +22,9 @@
       "themes": [
         "agriculture"
       ],
+      "providers": [
+        "Murmuration"
+      ],
       "tags": [
         "GBIF",
         "Open data"
@@ -78,6 +81,22 @@
       "attribution": "{ Overlay: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors, Made with Natural Earth, Rendering &copy; <a href=\"https://eox.at\" target=\"_blank\">EOX</a> }"
     },
     {
+      "rel": "style",
+      "href": "https://raw.githubusercontent.com/gtif-cerulean/assets/main/styles/wind_energy_polygon.json",
+      "type": "text/vector-styles",
+      "asset:keys": [
+        "Wind_Energy_Areas"
+      ]
+    },
+    {
+      "rel": "style",
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/refs/heads/main/collections/GCOM/style.json",
+      "type": "text/cog-styles",
+      "asset:keys": [
+        "Sample_gcom"
+      ]
+    },
+    {
       "rel": "parent",
       "href": "../catalog.json",
       "type": "application/json",
@@ -121,6 +140,7 @@
     "scaleType": "categorical",
     "title": "[index]"
   },
+  "merge_assets": false,
   "title": "Wildlife Biodiversity Indicator",
   "extent": {
     "spatial": {
@@ -157,8 +177,8 @@
       "agriculture"
     ],
     "satellite": [
-      "Sentinel-3",
-      "MODIS"
+      "MODIS",
+      "Sentinel-3"
     ],
     "thumbnail": [
       "https://raw.githubusercontent.com/eoxhub-workspaces/public-catalog/refs/heads/main/assets//IDEAS2_wildlife/IDEAS2_wildlife.png"
@@ -177,6 +197,24 @@
       "type": "image/png",
       "roles": [
         "thumbnail"
+      ]
+    },
+    "Wind_Energy_Areas": {
+      "href": "https://workspace-ui-public.cif.gtif.eox.at/api/public/share/public-4wazei3y-02/wind_energy.geojson",
+      "type": "application/geo+json",
+      "title": "Wind Energy Areas",
+      "roles": [
+        "overlay",
+        "visible"
+      ]
+    },
+    "Sample_gcom": {
+      "href": "https://s3.ap-northeast-1.wasabisys.com/je-pds/cog/v1/JAXA.G-Portal_GCOM-C.SGLI_standard.L3-LST.daytime.v3_global_monthly/2024-05/1/E000.00-E090.00/E000.00-N00.00-E090.00-N90.00-LST.tiff",
+      "type": "image/tiff",
+      "title": "Sample GCOM overlay",
+      "roles": [
+        "overlay",
+        "invisible"
       ]
     }
   }

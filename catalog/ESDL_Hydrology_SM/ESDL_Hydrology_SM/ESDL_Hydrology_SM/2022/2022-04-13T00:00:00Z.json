@@ -129,6 +129,10 @@
       "title": "Surface Soil Moisture"
     }
   ],
-  "assets": {},
+  "assets": {
+    "dummy_asset": {
+      "href": ""
+    }
+  },
   "collection": "ESDL_Hydrology_SM"
 }

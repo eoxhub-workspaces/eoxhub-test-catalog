@@ -1,0 +1,386 @@
+{
+  "type": "Collection",
+  "id": "precipitation",
+  "stac_version": "1.1.0",
+  "description": "Monthly precipitation product",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "EOxHub test1 workspace Catalog"
+    },
+    {
+      "rel": "child",
+      "href": "./precipitation/collection.json",
+      "type": "application/json",
+      "title": "Precipitation from GSMaP",
+      "endpointtype": "WMS_Time",
+      "subtitle": "Monthly precipitation product",
+      "code": "PRCG",
+      "id": "precipitation",
+      "themes": [
+        "agriculture"
+      ],
+      "providers": [
+        "JAXA"
+      ],
+      "tags": [
+        "Precipitation",
+        "Rainfall",
+        "Multi-sensors"
+      ],
+      "agency": [
+        "JAXA",
+        "NOAA",
+        "EUMETSAT",
+        "CNES",
+        "ISRO",
+        "DoD"
+      ],
+      "subcode": "PRCG",
+      "sensor": [
+        "TMI",
+        "AMSR-E",
+        "AMSR",
+        "SSM/I",
+        "SSM/I",
+        "SSM/I",
+        "SSM/I",
+        "MADRAS",
+        "AMSR2",
+        "GMI",
+        "TBD",
+        "AMSU-A/AMSU-B",
+        "AMSU-A/AMSU-B",
+        "AMSU-A/AMSU-B",
+        "AMSU-A/MHS",
+        "AMSU-A/MHS",
+        "AMSU-A/MHS",
+        "AMSU-A/MHS",
+        "ATMS",
+        "ATMS"
+      ],
+      "satellite": [
+        "TRMM",
+        "Aqua",
+        "ADEOS-II",
+        "DMSP-F11",
+        "DMSP-F13",
+        "DMSP-F14",
+        "DMSP-F15",
+        "Megha-Tropiques",
+        "GCOM-W1",
+        "GPM Core Observatory",
+        "DWSS-1",
+        "NOAA-N15",
+        "NOAA-N16",
+        "NOAA-N17",
+        "NOAA-N18",
+        "NOAA-N19",
+        "MetOp-A",
+        "MetOp-B",
+        "NPP",
+        "JPSS-1"
+      ]
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/s2cloudless-2024_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "EOxCloudless 2024",
+      "roles": [
+        "baselayer",
+        "visible"
+      ],
+      "id": "cloudless-2024",
+      "attribution": "{ EOxCloudless 2024: <a xmlns:dct=\"http://purl.org/dc/terms/\" href=\"https://s2maps.eu\" target=\"_blank\" property=\"dct:title\">Sentinel-2 cloudless - s2maps.eu</a> by <a xmlns:cc=\"http://creativecommons.org/ns#\" href=\"https://eox.at\" target=\"_blank\" property=\"cc:attributionName\" rel=\"cc:attributionURL\">EOX IT Services GmbH</a> (Contains modified Copernicus Sentinel data 2024) }"
+    },
+    {
+      "rel": "wms",
+      "href": "https://sxcat-demo.eox.at/sxcat_maps/wms",
+      "type": "image/png",
+      "title": "Terrain Light Stereographic North",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "sx-cat_ortho680500",
+      "wms:layers": "sx-cat_ortho680500",
+      "attribution": "{ Terrain light: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors and <a href=\"https://maps.eox.at/#data\" target=\"_blank\">others</a>, Rendering &copy; <a href=\"http://eox.at\" target=\"_blank\">EOX</a> }",
+      "eodash:proj4_def": {
+        "name": "ORTHO:680500",
+        "def": "+proj=ortho +lat_0=90 +lon_0=0 +x_0=0 +y_0=0 +ellps=WGS84 +units=m +no_defs",
+        "extent": [
+          -6422528,
+          -6422528,
+          6422528,
+          6422528
+        ]
+      }
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/osm_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "OSM Background",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "OSM",
+      "attribution": "{ OSM: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors and <a href=\"https://maps.eox.at/#data\" target=\"_blank\">others</a>, Rendering &copy; <a href=\"http://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/overlay_base_bright_3857/default/g/{z}/{y}/{x}.png",
+      "type": "image/png",
+      "title": "Overlay labels",
+      "roles": [
+        "overlay",
+        "visible"
+      ],
+      "id": "overlay_bright",
+      "attribution": "{ Overlay: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors, Made with Natural Earth, Rendering &copy; <a href=\"https://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "style",
+      "href": "https://raw.githubusercontent.com/gtif-cerulean/assets/main/styles/wind_energy_polygon.json",
+      "type": "text/vector-styles",
+      "asset:keys": [
+        "Wind_Energy_Areas"
+      ]
+    },
+    {
+      "rel": "style",
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/refs/heads/main/collections/GCOM/style.json",
+      "type": "text/cog-styles",
+      "asset:keys": [
+        "Sample_gcom"
+      ]
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "EOxHub test1 workspace Catalog"
+    }
+  ],
+  "subtitle": "Monthly precipitation product",
+  "thumbnail": "https://raw.githubusercontent.com/eoxhub-workspaces/public-catalog/refs/heads/main/assets//PRCG_precipitation/PRCG_precipitation.jpg",
+  "themes": [
+    "agriculture"
+  ],
+  "tags": [
+    "Precipitation",
+    "Rainfall",
+    "Multi-sensors"
+  ],
+  "agency": [
+    "JAXA",
+    "NOAA",
+    "EUMETSAT",
+    "CNES",
+    "ISRO",
+    "DoD"
+  ],
+  "subcode": "PRCG",
+  "sensor": [
+    "TMI",
+    "AMSR-E",
+    "AMSR",
+    "SSM/I",
+    "SSM/I",
+    "SSM/I",
+    "SSM/I",
+    "MADRAS",
+    "AMSR2",
+    "GMI",
+    "TBD",
+    "AMSU-A/AMSU-B",
+    "AMSU-A/AMSU-B",
+    "AMSU-A/AMSU-B",
+    "AMSU-A/MHS",
+    "AMSU-A/MHS",
+    "AMSU-A/MHS",
+    "AMSU-A/MHS",
+    "ATMS",
+    "ATMS"
+  ],
+  "satellite": [
+    "TRMM",
+    "Aqua",
+    "ADEOS-II",
+    "DMSP-F11",
+    "DMSP-F13",
+    "DMSP-F14",
+    "DMSP-F15",
+    "Megha-Tropiques",
+    "GCOM-W1",
+    "GPM Core Observatory",
+    "DWSS-1",
+    "NOAA-N15",
+    "NOAA-N16",
+    "NOAA-N17",
+    "NOAA-N18",
+    "NOAA-N19",
+    "MetOp-A",
+    "MetOp-B",
+    "NPP",
+    "JPSS-1"
+  ],
+  "eox:colorlegend": {
+    "domain": [
+      0,
+      300
+    ],
+    "range": [
+      "#ffffff",
+      "#4040da",
+      "#1ccb9a",
+      "#bdff0c",
+      "#ffe01c",
+      "#ff5100",
+      "#b10600"
+    ],
+    "scaleType": "continuous",
+    "tickFormat": ".0f",
+    "title": "Precipitation"
+  },
+  "merge_assets": false,
+  "title": "Precipitation from GSMaP",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -90.0,
+          180.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2022-01-01T00:00:00Z",
+          "2025-06-30T23:59:59Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "providers": [
+    {
+      "name": "JAXA",
+      "roles": [
+        "licensor, producer, processor"
+      ],
+      "url": "https://global.jaxa.jp/"
+    }
+  ],
+  "summaries": {
+    "subcode": [
+      "PRCG"
+    ],
+    "themes": [
+      "agriculture"
+    ],
+    "satellite": [
+      "ADEOS-II",
+      "DMSP-F11",
+      "GCOM-W1",
+      "MetOp-A",
+      "JPSS-1",
+      "NOAA-N19",
+      "Megha-Tropiques",
+      "DMSP-F14",
+      "TRMM",
+      "DWSS-1",
+      "DMSP-F13",
+      "NOAA-N15",
+      "Aqua",
+      "MetOp-B",
+      "GPM Core Observatory",
+      "NPP",
+      "DMSP-F15",
+      "NOAA-N16",
+      "NOAA-N18",
+      "NOAA-N17"
+    ],
+    "sensor": [
+      "GMI",
+      "AMSR2",
+      "TBD",
+      "MADRAS",
+      "ATMS",
+      "SSM/I",
+      "AMSU-A/MHS",
+      "AMSU-A/AMSU-B",
+      "AMSR-E",
+      "TMI",
+      "AMSR"
+    ],
+    "thumbnail": [
+      "https://raw.githubusercontent.com/eoxhub-workspaces/public-catalog/refs/heads/main/assets//PRCG_precipitation/PRCG_precipitation.jpg"
+    ]
+  },
+  "assets": {
+    "legend": {
+      "href": "https://raw.githubusercontent.com/eoxhub-workspaces/public-catalog/refs/heads/main/assets//PRCG_precipitation/PRCG_legend.png",
+      "type": "image/png",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "thumbnail": {
+      "href": "https://raw.githubusercontent.com/eoxhub-workspaces/public-catalog/refs/heads/main/assets//PRCG_precipitation/PRCG_precipitation.jpg",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    },
+    "reference_1": {
+      "href": "https://www.jpmap-jaxa.jp/jpmap/en/user_guide/",
+      "type": "text/html",
+      "title": "Jaxa Public-health Monitor and Analysis Platform",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "reference_2": {
+      "href": "https://sharaku.eorc.jaxa.jp/GSMaP/",
+      "type": "text/html",
+      "title": "Jaxa Global Satellite Mapping of Precipitation",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "reference_3": {
+      "href": "https://www.eorc.jaxa.jp/GPM/doc/algorithm/GSMaPforGPM_20140902_E.pdf",
+      "type": "text/html",
+      "title": "GSMaP Documentation",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "Wind_Energy_Areas": {
+      "href": "https://workspace-ui-public.cif.gtif.eox.at/api/public/share/public-4wazei3y-02/wind_energy.geojson",
+      "type": "application/geo+json",
+      "title": "Wind Energy Areas",
+      "roles": [
+        "overlay",
+        "visible"
+      ]
+    },
+    "Sample_gcom": {
+      "href": "https://s3.ap-northeast-1.wasabisys.com/je-pds/cog/v1/JAXA.G-Portal_GCOM-C.SGLI_standard.L3-LST.daytime.v3_global_monthly/2024-05/1/E000.00-E090.00/E000.00-N00.00-E090.00-N90.00-LST.tiff",
+      "type": "image/tiff",
+      "title": "Sample GCOM overlay",
+      "roles": [
+        "overlay",
+        "invisible"
+      ]
+    }
+  }
+}
