@@ -1,0 +1,282 @@
+{
+  "type": "Collection",
+  "id": "N2_CO2_mean",
+  "stac_version": "1.1.0",
+  "description": "## Atmospheric Carbon Dioxide (from OCO-2)\n\nCarbon dioxide (CO2) is a greenhouse gas primarily emitted from the combustion of fossil fuels such as petroleum, coal, and natural gas. Scientists widely agree that the build-up of excess carbon dioxide and other greenhouse gases within Earth’s atmosphere has contributed to the rapid change in global climate.\n\nUnlike satellite-derived NO2 measurements, which are captured continuously on a daily basis, the coverage of CO2 measurements from OCO-2 and GOSAT is not as dense. Because of this, measurements from OCO-2 and GOSAT collected over weeks to months must be combined to yield high-resolution global maps of CO2. In addition, in order to account for long-range transport of CO2 by the wind, the data must further be assimilated into atmospheric transport models like those used to predict the weather.\n\nThe NASA dashboard uses NASA’s Global Earth Observing System Constituent Data Assimilation System (GEOS CoDAS) developed by GMAO to ingest the OCO-2 data and produce gap-filled maps.\n\nSource: [NASA Covid Dashboard](https://www.earthdata.nasa.gov/covid19/indicators/co2)\n\nRead more:\n- [Orbiting Carbon Observatory 2 (OCO-2)](https://ocov2.jpl.nasa.gov/)\n- [Orbiting Carbon Observatory 3 (OCO-3)](https://ocov3.jpl.nasa.gov/)\n- [Ozone Monitoring Instrument (OMI)](https://aura.gsfc.nasa.gov/omi.html)\n",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "EOxHub test1 workspace Catalog"
+    },
+    {
+      "rel": "child",
+      "href": "./N2_CO2_mean/collection.json",
+      "type": "application/json",
+      "title": "Carbon Dioxide from OMI (daily)",
+      "endpointtype": "VEDA_cog",
+      "subtitle": "Mean daily Carbon Dioxide [ppm]",
+      "code": "N2_CO2_mean",
+      "id": "N2_CO2_mean",
+      "themes": [
+        "atmosphere"
+      ],
+      "providers": [
+        "NASA"
+      ],
+      "tags": [
+        "Air quality",
+        "CO2",
+        "Open data",
+        "GHG",
+        "Greenhouse gases"
+      ],
+      "agency": [
+        "NASA"
+      ],
+      "subcode": "N2_CO2_mean",
+      "sensor": [
+        "OCO-2"
+      ],
+      "satellite": [
+        "OCO-2"
+      ]
+    },
+    {
+      "rel": "service",
+      "href": "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/main/assets/N2_CO2_mean/process_results.json",
+      "type": "application/json",
+      "id": "veda_statistics",
+      "method": "GET"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/s2cloudless-2024_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "EOxCloudless 2024",
+      "roles": [
+        "baselayer",
+        "visible"
+      ],
+      "id": "cloudless-2024",
+      "attribution": "{ EOxCloudless 2024: <a xmlns:dct=\"http://purl.org/dc/terms/\" href=\"https://s2maps.eu\" target=\"_blank\" property=\"dct:title\">Sentinel-2 cloudless - s2maps.eu</a> by <a xmlns:cc=\"http://creativecommons.org/ns#\" href=\"https://eox.at\" target=\"_blank\" property=\"cc:attributionName\" rel=\"cc:attributionURL\">EOX IT Services GmbH</a> (Contains modified Copernicus Sentinel data 2024) }"
+    },
+    {
+      "rel": "wms",
+      "href": "https://sxcat-demo.eox.at/sxcat_maps/wms",
+      "type": "image/png",
+      "title": "Terrain Light Stereographic North",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "sx-cat_ortho680500",
+      "wms:layers": "sx-cat_ortho680500",
+      "attribution": "{ Terrain light: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors and <a href=\"https://maps.eox.at/#data\" target=\"_blank\">others</a>, Rendering &copy; <a href=\"http://eox.at\" target=\"_blank\">EOX</a> }",
+      "eodash:proj4_def": {
+        "name": "ORTHO:680500",
+        "def": "+proj=ortho +lat_0=90 +lon_0=0 +x_0=0 +y_0=0 +ellps=WGS84 +units=m +no_defs",
+        "extent": [
+          -6422528,
+          -6422528,
+          6422528,
+          6422528
+        ]
+      }
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/osm_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "OSM Background",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "OSM",
+      "attribution": "{ OSM: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors and <a href=\"https://maps.eox.at/#data\" target=\"_blank\">others</a>, Rendering &copy; <a href=\"http://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/overlay_base_bright_3857/default/g/{z}/{y}/{x}.png",
+      "type": "image/png",
+      "title": "Overlay labels",
+      "roles": [
+        "overlay",
+        "visible"
+      ],
+      "id": "overlay_bright",
+      "attribution": "{ Overlay: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors, Made with Natural Earth, Rendering &copy; <a href=\"https://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "style",
+      "href": "https://raw.githubusercontent.com/gtif-cerulean/assets/main/styles/wind_energy_polygon.json",
+      "type": "text/vector-styles",
+      "asset:keys": [
+        "Wind_Energy_Areas"
+      ]
+    },
+    {
+      "rel": "style",
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/refs/heads/main/collections/GCOM/style.json",
+      "type": "text/cog-styles",
+      "asset:keys": [
+        "Sample_gcom"
+      ]
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "EOxHub test1 workspace Catalog"
+    }
+  ],
+  "sci:publications": [
+    {
+      "citation": "Le Quéré, C., Jackson, R.B., Jones, M.W. et al. Temporary reduction in daily global CO2 emissions during the COVID-19 forced confinement. Nat. Clim. Chang. 10, 647–653 (2020).\n",
+      "doi": "10.1038/s41558-020-0797-x"
+    }
+  ],
+  "subtitle": "Mean daily Carbon Dioxide [ppm]",
+  "thumbnail": "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/refs/heads/main/assets//N2_CO2_mean/N2_CO2_mean.jpg",
+  "themes": [
+    "atmosphere"
+  ],
+  "tags": [
+    "Air quality",
+    "CO2",
+    "Open data",
+    "GHG",
+    "Greenhouse gases"
+  ],
+  "agency": [
+    "NASA"
+  ],
+  "subcode": "N2_CO2_mean",
+  "sensor": [
+    "OCO-2"
+  ],
+  "satellite": [
+    "OCO-2"
+  ],
+  "eox:colorlegend": {
+    "domain": [
+      408,
+      419
+    ],
+    "range": [
+      "#313695",
+      "#4066ad",
+      "#5e93c4",
+      "#85bbd8",
+      "#afdbea",
+      "#d8eff6",
+      "#f3fad5",
+      "#fff3ad",
+      "#fed889",
+      "#fdb265",
+      "#f7814c",
+      "#e75136",
+      "#cb2527",
+      "#a50026"
+    ],
+    "scaleType": "continuous",
+    "tickFormat": ".0f",
+    "title": "CO2 mean concentration [ppm]"
+  },
+  "eodash:jsonform": "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/refs/heads/main/assets/N2_CO2_mean/form.json",
+  "eodash:vegadefinition": "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/refs/heads/main/assets/N2_CO2_mean/vega.json",
+  "merge_assets": false,
+  "title": "Carbon Dioxide from OMI (daily)",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.3125,
+          -90.25,
+          179.6875,
+          90.25
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2015-01-01T00:00:00Z",
+          "2022-02-13T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "providers": [
+    {
+      "name": "NASA",
+      "roles": [
+        "licensor, producer, processor"
+      ],
+      "url": "https://ocov2.jpl.nasa.gov/science/oco-2-data-center/"
+    }
+  ],
+  "summaries": {
+    "subcode": [
+      "N2_CO2_mean"
+    ],
+    "themes": [
+      "atmosphere"
+    ],
+    "satellite": [
+      "OCO-2"
+    ],
+    "sensor": [
+      "OCO-2"
+    ],
+    "thumbnail": [
+      "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/refs/heads/main/assets//N2_CO2_mean/N2_CO2_mean.jpg"
+    ]
+  },
+  "assets": {
+    "thumbnail": {
+      "href": "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/refs/heads/main/assets//N2_CO2_mean/N2_CO2_mean.jpg",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    },
+    "reference_1": {
+      "href": "https://science.nasa.gov/climate-change/scientific-consensus/",
+      "type": "text/html",
+      "title": "Scientific Consensus on global climate change",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "reference_2": {
+      "href": "https://ocov2.jpl.nasa.gov/",
+      "type": "text/html",
+      "title": "Orbiting Carbon Observatory-2",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "Wind_Energy_Areas": {
+      "href": "https://workspace-ui-public.cif.gtif.eox.at/api/public/share/public-4wazei3y-02/wind_energy.geojson",
+      "type": "application/geo+json",
+      "title": "Wind Energy Areas",
+      "roles": [
+        "overlay",
+        "invisible"
+      ]
+    },
+    "Sample_gcom": {
+      "href": "https://s3.ap-northeast-1.wasabisys.com/je-pds/cog/v1/JAXA.G-Portal_GCOM-C.SGLI_standard.L3-LST.daytime.v3_global_monthly/2024-05/1/E000.00-E090.00/E000.00-N00.00-E090.00-N90.00-LST.tiff",
+      "type": "image/tiff",
+      "title": "Sample GCOM overlay",
+      "roles": [
+        "overlay",
+        "invisible"
+      ]
+    }
+  }
+}
