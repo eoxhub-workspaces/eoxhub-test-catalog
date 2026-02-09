@@ -1,0 +1,28 @@
+{
+    "type": "object",
+    "properties": {
+        "bbox": {
+            "type": "array",
+            "title": "All input fields are only for showcase purposes, the process always returns same static response. \n Select area (bbox) on map",
+            "options": {
+                "autoStartSelection": false,
+                "drawtools": {
+                    "for": "eox-map#main",
+                    "projection": "EPSG:4326"
+                }
+            },
+            "format": "bounding-box"
+        },
+        "example_parameter_1": {
+            "type": "number",
+            "title": "Numerical parameter from 0 to 3, preset at 3",
+            "minimum": 0,
+            "maximum": 10,
+            "default": 3,
+            "format": "range"
+        }
+    },
+    "required": [
+        "bbox"
+    ]
+}

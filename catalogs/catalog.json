@@ -12,6 +12,7 @@
     "airss",
     "antarctica_ship_route",
     "PRCG_precipitation",
-    "client_side_rendering"
+    "client_side_rendering",
+    "N2_CO2_mean"
   ]
 }
