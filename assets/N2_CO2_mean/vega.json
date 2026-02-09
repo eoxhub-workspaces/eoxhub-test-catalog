@@ -5,19 +5,19 @@
   },
   "transform": [
     {
-      "calculate": "10e6*datum.b1.mean",
+      "calculate": "1000000*datum.b1.mean",
       "as": "mean"
     },
     {
-      "calculate": "10e6*datum.b1.min",
+      "calculate": "1000000*datum.b1.min",
       "as": "min"
     },
     {
-      "calculate": "10e6*datum.b1.max",
+      "calculate": "1000000*datum.b1.max",
       "as": "max"
     },
     {
-      "calculate": "10e6*datum.b1.std",
+      "calculate": "1000000*datum.b1.std",
       "as": "stDev"
     },
     {
@@ -115,28 +115,28 @@
         "tooltip": [
           { "field": "date", "type": "temporal", "title": "Date" },
           {
-            "field": "mean [ppm]",
+            "field": "mean",
             "type": "quantitative",
             "format": ".1f",
-            "title": "mean"
+            "title": "mean [ppm]"
           },
           {
-            "field": "min [ppm]",
+            "field": "min",
             "type": "quantitative",
             "format": ".1f",
-            "title": "minimum"
+            "title": "minimum [ppm]"
           },
           {
-            "field": "max [ppm]",
+            "field": "max",
             "type": "quantitative",
             "format": ".1f",
-            "title": "maximum"
+            "title": "maximum [ppm]"
           },
           {
-            "field": "stDev [ppm]",
+            "field": "stDev",
             "type": "quantitative",
             "format": ".1f",
-            "title": "std dev"
+            "title": "std dev [ppm]"
           }
         ]
       },
