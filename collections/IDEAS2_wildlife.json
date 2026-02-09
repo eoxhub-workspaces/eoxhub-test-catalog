@@ -30,7 +30,7 @@
   "Resources": [
     {
       "Name": "COG source",
-      "Style": "collections/IDEAS2_wildlife/flatstyle.json",
+      "Style": "IDEAS2_wildlife/flatstyle.json",
       "Bbox": [-24, 33, 42, 71],
       "TimeEntries": [
         {
