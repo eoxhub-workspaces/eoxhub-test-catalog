@@ -1,28 +1,58 @@
 {
-    "type": "object",
-    "properties": {
-        "bbox": {
-            "type": "array",
-            "title": "All input fields are only for showcase purposes, the process always returns same static response. \n Select area (bbox) on map",
-            "options": {
-                "autoStartSelection": false,
-                "drawtools": {
-                    "for": "eox-map#main",
-                    "projection": "EPSG:4326"
-                }
-            },
-            "format": "bounding-box"
-        },
-        "example_parameter_1": {
-            "type": "number",
-            "title": "Numerical parameter from 0 to 3, preset at 3",
-            "minimum": 0,
-            "maximum": 10,
-            "default": 3,
-            "format": "range"
+  "type": "object",
+  "title": "Input fields are only for showcase, the process always returns same static response - not based on the area drawn.",
+  "properties": {
+    "bbox": {
+      "type": "array",
+      "title": "Select area (bbox) on map",
+      "options": {
+        "autoStartSelection": false,
+        "drawtools": {
+          "for": "eox-map#main",
+          "projection": "EPSG:4326"
         }
+      },
+      "format": "bounding-box"
     },
-    "required": [
-        "bbox"
-    ]
+    "example_parameter_1": {
+      "type": "number",
+      "title": "Numerical parameter",
+      "minimum": 0,
+      "maximum": 10,
+      "default": 3,
+      "format": "range"
+    },
+    "date_start": {
+      "type": "string",
+      "title": "Date start",
+      "format": "date"
+    },
+    "vstat": {
+      "title": "Statistical value",
+      "type": "string",
+      "enum": ["average", "best", "worst"],
+      "default": "average"
+    },
+    "vminmax": {
+      "title": "Dynamic range",
+      "description": "Range slider",
+      "type": "object",
+      "properties": {
+        "vmin": {
+          "type": "number",
+          "minimum": 0,
+          "format": "range",
+          "default": 2
+        },
+        "vmax": {
+          "type": "number",
+          "maximum": 50,
+          "format": "range",
+          "default": 20
+        }
+      },
+      "format": "minmax"
+    }
+  },
+  "required": ["bbox"]
 }
