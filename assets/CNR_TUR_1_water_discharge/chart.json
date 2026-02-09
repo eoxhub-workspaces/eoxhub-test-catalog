@@ -1,0 +1,68 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A chart visualizing data fetched from a geoDB endpoint with separate lines for each indicator",
+  "data": {
+    "name": "geodb_example",
+    "values": []
+  },
+  "encoding": {
+    "x": {"field": "time", "type": "temporal", "axis": {"format": "%Y-%m-%d"}}
+  },
+  "layer": [
+    {
+      "encoding": {
+        "y": {
+          "field": "measurement_value",
+          "type": "quantitative",
+          "title": "Water discharge"
+        }
+      },
+      "layer": [
+        {"mark": {"type": "line", "strokeWidth": 1, "color": "#000000", "opacity": 0.1}},
+        {
+          "transform": [{"filter": {"param": "hover", "empty": false}}],
+          "mark": {"type": "point", "size": 100}
+        },
+        {
+          "transform": [{"filter": "datum.input_data == '/'"}],
+          "mark": {"type": "point", "size": 1, "color": "#000000", "opacity": 0.1}
+        },
+        {
+          "transform": [{"filter": "datum.input_data != '/'"}],
+          "mark": {"type": "point", "size": 70}
+        }
+      ]
+    },
+    {
+      "mark": "rule",
+      "encoding": {
+        "opacity": {
+          "condition": {"value": 0.3, "param": "hover", "empty": false},
+          "value": 0
+        },
+        "tooltip": [
+          {"field": "time", "type": "temporal", "title": "Date", "format": "%Y-%m-%d"},
+          {
+            "field": "measurement_value",
+            "type": "quantitative",
+            "title": "Water discharge"
+          }
+        ]
+      },
+      "params": [
+        {
+          "name": "hover",
+          "select": {
+            "type": "point",
+            "fields": ["time"],
+            "nearest": true,
+            "on": "pointerover",
+            "clear": "pointerout"
+          }
+        },
+        {"name": "grid", "select": "interval", "bind": "scales"}
+      ]
+    }
+  ],
+  "background": "transparent"
+}

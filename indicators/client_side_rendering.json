@@ -1,0 +1,6 @@
+{
+    "Name": "client_side_rendering",
+    "Title": "Client Side Rendering Example",
+    "EodashIdentifier": "client_side_rendering",
+    "Collections": ["CNR_TUR_1_water_discharge", "IDEAS2_wildlife"]
+}

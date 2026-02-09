@@ -13,7 +13,7 @@
       "name": "Wind Energy Areas",
       "url": "https://workspace-ui-public.cif.gtif.eox.at/api/public/share/public-4wazei3y-02/wind_energy.geojson",
       "Style": "https://raw.githubusercontent.com/gtif-cerulean/assets/main/styles/wind_energy_polygon.json",
-      "visible": true,
+      "visible": false,
       "protocol": "GeoJSON source"
     },
     {
