@@ -12,6 +12,41 @@
     },
     {
       "rel": "child",
+      "href": "./IDEAS2_wildlife/collection.json",
+      "type": "application/json",
+      "title": "Wildlife Biodiversity Indicator",
+      "endpointtype": "COG source",
+      "subtitle": "Identify areas of high biodiversity",
+      "shortdescription": "This indicator shows patterns of wildlife biodiversity by combining observations of plants and animals with information on habitat health and human pressure. Using crowdsourced species data from the Global Biodiversity Information Facility (GBIF), together with endangered-species information and satellite-based habitat indicators, it helps people see where biodiversity is rich, where it is under threat, and why conservation matters. By exploring the map and filters, citizens can better understand how land use, vegetation health, and infrastructure affect wildlife.",
+      "code": "IND2_1",
+      "id": "IDEAS2_wildlife",
+      "themes": [
+        "agriculture"
+      ],
+      "providers": [
+        "Murmuration"
+      ],
+      "tags": [
+        "GBIF",
+        "Open data"
+      ],
+      "agency": [
+        "ESA"
+      ],
+      "subcode": "IND2_1",
+      "satellite": [
+        "MODIS",
+        "Sentinel-3"
+      ],
+      "insituSources": [
+        "GBIF"
+      ],
+      "otherSources": [
+        "Open Data Soft"
+      ]
+    },
+    {
+      "rel": "child",
       "href": "./water_discharge/collection.json",
       "type": "application/json",
       "title": "Water turbidity",
@@ -49,41 +84,6 @@
       ],
       "satellite": [
         "Sentinel-2"
-      ]
-    },
-    {
-      "rel": "child",
-      "href": "./IDEAS2_wildlife/collection.json",
-      "type": "application/json",
-      "title": "Wildlife Biodiversity Indicator",
-      "endpointtype": "COG source",
-      "subtitle": "Identify areas of high biodiversity",
-      "shortdescription": "This indicator shows patterns of wildlife biodiversity by combining observations of plants and animals with information on habitat health and human pressure. Using crowdsourced species data from the Global Biodiversity Information Facility (GBIF), together with endangered-species information and satellite-based habitat indicators, it helps people see where biodiversity is rich, where it is under threat, and why conservation matters. By exploring the map and filters, citizens can better understand how land use, vegetation health, and infrastructure affect wildlife.",
-      "code": "IND2_1",
-      "id": "IDEAS2_wildlife",
-      "themes": [
-        "agriculture"
-      ],
-      "providers": [
-        "Murmuration"
-      ],
-      "tags": [
-        "GBIF",
-        "Open data"
-      ],
-      "agency": [
-        "ESA"
-      ],
-      "subcode": "IND2_1",
-      "satellite": [
-        "MODIS",
-        "Sentinel-3"
-      ],
-      "insituSources": [
-        "GBIF"
-      ],
-      "otherSources": [
-        "Open Data Soft"
       ]
     },
     {
@@ -200,24 +200,24 @@
   "license": "other",
   "summaries": {
     "subcode": [
-      "CNR_TUR_1",
-      "IND2_1"
+      "IND2_1",
+      "CNR_TUR_1"
     ],
     "themes": [
-      "water",
-      "agriculture"
+      "agriculture",
+      "water"
     ],
     "satellite": [
-      "MODIS",
+      "Sentinel-3",
       "Sentinel-2",
-      "Sentinel-3"
+      "MODIS"
     ],
     "sensor": [
       "MSI"
     ],
     "thumbnail": [
-      "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/refs/heads/main/assets//IDEAS2_wildlife/IDEAS2_wildlife.png",
-      "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/refs/heads/main/assets//CNR_TUR_1_water_discharge/CNR_TUR_1_water_discharge_photo.jpg"
+      "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/refs/heads/main/assets//CNR_TUR_1_water_discharge/CNR_TUR_1_water_discharge_photo.jpg",
+      "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/refs/heads/main/assets//IDEAS2_wildlife/IDEAS2_wildlife.png"
     ]
   },
   "assets": {
