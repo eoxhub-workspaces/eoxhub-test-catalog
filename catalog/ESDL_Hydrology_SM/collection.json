@@ -212,8 +212,8 @@
       "ESDL_Hydrology_SM"
     ],
     "themes": [
-      "agriculture",
-      "water"
+      "water",
+      "agriculture"
     ],
     "satellite": [
       "Sentinel-1"
@@ -254,7 +254,7 @@
       "title": "Wind Energy Areas",
       "roles": [
         "overlay",
-        "visible"
+        "invisible"
       ]
     },
     "Sample_gcom": {

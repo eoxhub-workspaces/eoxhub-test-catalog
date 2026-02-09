@@ -256,7 +256,7 @@
       "title": "Wind Energy Areas",
       "roles": [
         "overlay",
-        "visible"
+        "invisible"
       ]
     },
     "Sample_gcom": {

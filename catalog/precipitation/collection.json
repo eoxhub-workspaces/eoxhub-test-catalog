@@ -2,7 +2,7 @@
   "type": "Collection",
   "id": "precipitation",
   "stac_version": "1.1.0",
-  "description": "Monthly precipitation product",
+  "description": "## Global Precipitation\n\n\nJAXA with Japanese MAFF provide agrometeorological information including Precipitation, Drought Index, Soil Moisture, Solar Radiation, Surface Temperature, Vegetation Index and anomaly,\netc. Rainfall, Agriculture, Land, GPM Core Observatory, SHIZUKU (GCOM-W), MODIS, Multiple Satellites (GSMaP) bi-Monthly on JASMIN for Asia and on JASMAI for selected world areas.\n\n\n### Additional information\n\n- Access Jaxa’s Public-health Monitor and Analysis Platform: [https://www.jpmap-jaxa.jp/jpmap/en/user_guide/](https://www.jpmap-jaxa.jp/jpmap/en/user_guide/)\n- Access JAXA's GSMaP (Global Satellite Mapping of Precipitation): [https://sharaku.eorc.jaxa.jp/GSMaP/](https://sharaku.eorc.jaxa.jp/GSMaP/)\n- GSMaP Documentation: [https://www.eorc.jaxa.jp/GPM/doc/algorithm/GSMaPforGPM_20140902_E.pdf](https://www.eorc.jaxa.jp/GPM/doc/algorithm/GSMaPforGPM_20140902_E.pdf)\n",
   "links": [
     {
       "rel": "root",
@@ -287,39 +287,39 @@
       "agriculture"
     ],
     "satellite": [
-      "DMSP-F13",
-      "TRMM",
-      "DMSP-F14",
-      "GCOM-W1",
-      "DWSS-1",
-      "NOAA-N15",
-      "NPP",
-      "NOAA-N18",
-      "ADEOS-II",
-      "Aqua",
-      "GPM Core Observatory",
       "MetOp-B",
+      "Aqua",
+      "NOAA-N18",
+      "NPP",
+      "GCOM-W1",
       "JPSS-1",
-      "DMSP-F15",
-      "DMSP-F11",
-      "Megha-Tropiques",
       "NOAA-N19",
+      "DMSP-F13",
+      "GPM Core Observatory",
+      "DWSS-1",
+      "MetOp-A",
+      "DMSP-F11",
       "NOAA-N16",
       "NOAA-N17",
-      "MetOp-A"
+      "ADEOS-II",
+      "DMSP-F14",
+      "TRMM",
+      "DMSP-F15",
+      "Megha-Tropiques",
+      "NOAA-N15"
     ],
     "sensor": [
-      "AMSR2",
-      "AMSU-A/MHS",
-      "AMSR-E",
-      "TBD",
-      "ATMS",
-      "GMI",
-      "TMI",
       "SSM/I",
-      "MADRAS",
+      "AMSR2",
+      "AMSR-E",
+      "GMI",
+      "TBD",
+      "AMSU-A/MHS",
       "AMSU-A/AMSU-B",
-      "AMSR"
+      "ATMS",
+      "AMSR",
+      "MADRAS",
+      "TMI"
     ],
     "thumbnail": [
       "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/refs/heads/main/assets//PRCG_precipitation/PRCG_precipitation.jpg"
@@ -370,7 +370,7 @@
       "title": "Wind Energy Areas",
       "roles": [
         "overlay",
-        "visible"
+        "invisible"
       ]
     },
     "Sample_gcom": {

@@ -2,7 +2,7 @@
   "type": "Collection",
   "id": "precipitation",
   "stac_version": "1.1.0",
-  "description": "Monthly precipitation product",
+  "description": "## Global Precipitation\n\n\nJAXA with Japanese MAFF provide agrometeorological information including Precipitation, Drought Index, Soil Moisture, Solar Radiation, Surface Temperature, Vegetation Index and anomaly,\netc. Rainfall, Agriculture, Land, GPM Core Observatory, SHIZUKU (GCOM-W), MODIS, Multiple Satellites (GSMaP) bi-Monthly on JASMIN for Asia and on JASMAI for selected world areas.\n\n\n### Additional information\n\n- Access Jaxa’s Public-health Monitor and Analysis Platform: [https://www.jpmap-jaxa.jp/jpmap/en/user_guide/](https://www.jpmap-jaxa.jp/jpmap/en/user_guide/)\n- Access JAXA's GSMaP (Global Satellite Mapping of Precipitation): [https://sharaku.eorc.jaxa.jp/GSMaP/](https://sharaku.eorc.jaxa.jp/GSMaP/)\n- GSMaP Documentation: [https://www.eorc.jaxa.jp/GPM/doc/algorithm/GSMaPforGPM_20140902_E.pdf](https://www.eorc.jaxa.jp/GPM/doc/algorithm/GSMaPforGPM_20140902_E.pdf)\n",
   "links": [
     {
       "rel": "root",
@@ -322,7 +322,7 @@
       "role": [
         "data"
       ],
-      "key": "1599fcec-403d-41d6-a9c9-0b4f3da75d78"
+      "key": "15833e5f-740d-49e8-ae18-679e9f7e746e"
     },
     {
       "rel": "parent",
