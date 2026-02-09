@@ -125,7 +125,7 @@
     }
   ],
   "subtitle": "Mean NO2 column density based on OMI data [10^15 mol/cm²]",
-  "thumbnail": "https://raw.githubusercontent.com/eoxhub-workspaces/public-catalog/refs/heads/main/assets//N1_NO2_monthly/thumbnail.png",
+  "thumbnail": "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/refs/heads/main/assets//N1_NO2_monthly/thumbnail.png",
   "themes": [
     "atmosphere"
   ],
@@ -216,19 +216,19 @@
       "OMI"
     ],
     "thumbnail": [
-      "https://raw.githubusercontent.com/eoxhub-workspaces/public-catalog/refs/heads/main/assets//N1_NO2_monthly/thumbnail.png"
+      "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/refs/heads/main/assets//N1_NO2_monthly/thumbnail.png"
     ]
   },
   "assets": {
     "legend": {
-      "href": "https://raw.githubusercontent.com/eoxhub-workspaces/public-catalog/refs/heads/main/assets//N1_NO2_monthly/cm_legend.png",
+      "href": "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/refs/heads/main/assets//N1_NO2_monthly/cm_legend.png",
       "type": "image/png",
       "roles": [
         "metadata"
       ]
     },
     "thumbnail": {
-      "href": "https://raw.githubusercontent.com/eoxhub-workspaces/public-catalog/refs/heads/main/assets//N1_NO2_monthly/thumbnail.png",
+      "href": "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/refs/heads/main/assets//N1_NO2_monthly/thumbnail.png",
       "type": "image/png",
       "roles": [
         "thumbnail"

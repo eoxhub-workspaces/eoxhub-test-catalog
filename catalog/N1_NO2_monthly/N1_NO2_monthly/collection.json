@@ -1131,7 +1131,7 @@
       "href": "https://openveda.cloud/api/raster/cog/tiles/WebMercatorQuad/{z}/{x}/{y}?resampling_method=nearest&bidx=1&colormap_name=reds&rescale=0,108e14",
       "type": "image/png",
       "title": "Nitrogen Dioxide (Monthly)",
-      "key": "922c6b87-8fec-4718-99d3-61b523abe99d"
+      "key": "a311ced5-8fb1-4707-b489-1a6acecfeefc"
     },
     {
       "rel": "parent",
@@ -1141,7 +1141,7 @@
     }
   ],
   "subtitle": "Mean NO2 column density based on OMI data [10^15 mol/cm²]",
-  "thumbnail": "https://raw.githubusercontent.com/eoxhub-workspaces/public-catalog/refs/heads/main/assets//N1_NO2_monthly/thumbnail.png",
+  "thumbnail": "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/refs/heads/main/assets//N1_NO2_monthly/thumbnail.png",
   "themes": [
     "atmosphere"
   ],
@@ -1220,14 +1220,14 @@
   ],
   "assets": {
     "legend": {
-      "href": "https://raw.githubusercontent.com/eoxhub-workspaces/public-catalog/refs/heads/main/assets//N1_NO2_monthly/cm_legend.png",
+      "href": "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/refs/heads/main/assets//N1_NO2_monthly/cm_legend.png",
       "type": "image/png",
       "roles": [
         "metadata"
       ]
     },
     "thumbnail": {
-      "href": "https://raw.githubusercontent.com/eoxhub-workspaces/public-catalog/refs/heads/main/assets//N1_NO2_monthly/thumbnail.png",
+      "href": "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/refs/heads/main/assets//N1_NO2_monthly/thumbnail.png",
       "type": "image/png",
       "roles": [
         "thumbnail"

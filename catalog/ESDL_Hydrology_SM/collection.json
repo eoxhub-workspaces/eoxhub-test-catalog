@@ -130,7 +130,7 @@
       "doi": "https://doi.org/10.1016/j.rse.2023.113651"
     }
   ],
-  "thumbnail": "https://raw.githubusercontent.com/eoxhub-workspaces/public-catalog/refs/heads/main/assets//ESDL_Hydrology_SM/image.png",
+  "thumbnail": "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/refs/heads/main/assets//ESDL_Hydrology_SM/image.png",
   "themes": [
     "agriculture",
     "water"
@@ -222,19 +222,19 @@
       "C-SAR"
     ],
     "thumbnail": [
-      "https://raw.githubusercontent.com/eoxhub-workspaces/public-catalog/refs/heads/main/assets//ESDL_Hydrology_SM/image.png"
+      "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/refs/heads/main/assets//ESDL_Hydrology_SM/image.png"
     ]
   },
   "assets": {
     "legend": {
-      "href": "https://raw.githubusercontent.com/eoxhub-workspaces/public-catalog/refs/heads/main/assets//ESDL_Hydrology_SM/cm_legend.png",
+      "href": "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/refs/heads/main/assets//ESDL_Hydrology_SM/cm_legend.png",
       "type": "image/png",
       "roles": [
         "metadata"
       ]
     },
     "thumbnail": {
-      "href": "https://raw.githubusercontent.com/eoxhub-workspaces/public-catalog/refs/heads/main/assets//ESDL_Hydrology_SM/image.png",
+      "href": "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/refs/heads/main/assets//ESDL_Hydrology_SM/image.png",
       "type": "image/png",
       "roles": [
         "thumbnail"

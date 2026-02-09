@@ -32,7 +32,7 @@
         "C-SAR"
       ],
       "thumbnail": [
-        "https://raw.githubusercontent.com/eoxhub-workspaces/public-catalog/refs/heads/main/assets//ESDL_Hydrology_SM/image.png"
+        "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/refs/heads/main/assets//ESDL_Hydrology_SM/image.png"
       ],
       "tags": [
         "Open data",
@@ -65,7 +65,7 @@
         "OMI"
       ],
       "thumbnail": [
-        "https://raw.githubusercontent.com/eoxhub-workspaces/public-catalog/refs/heads/main/assets//N1_NO2_monthly/thumbnail.png"
+        "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/refs/heads/main/assets//N1_NO2_monthly/thumbnail.png"
       ],
       "tags": [
         "Air quality",
@@ -83,6 +83,7 @@
       "type": "application/json",
       "title": "Wildlife Biodiversity Indicator",
       "subtitle": "Identify areas of high biodiversity",
+      "shortdescription": "This indicator shows patterns of wildlife biodiversity by combining observations of plants and animals with information on habitat health and human pressure. Using crowdsourced species data from the Global Biodiversity Information Facility (GBIF), together with endangered-species information and satellite-based habitat indicators, it helps people see where biodiversity is rich, where it is under threat, and why conservation matters. By exploring the map and filters, citizens can better understand how land use, vegetation health, and infrastructure affect wildlife.",
       "code": "IND2_1",
       "id": "IDEAS2_wildlife",
       "themes": [
@@ -97,7 +98,7 @@
         "Sentinel-3"
       ],
       "thumbnail": [
-        "https://raw.githubusercontent.com/eoxhub-workspaces/public-catalog/refs/heads/main/assets//IDEAS2_wildlife/IDEAS2_wildlife.png"
+        "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/refs/heads/main/assets//IDEAS2_wildlife/IDEAS2_wildlife.png"
       ],
       "tags": [
         "GBIF",
@@ -125,7 +126,7 @@
       ],
       "subcode": "airss_go_or_no_go",
       "thumbnail": [
-        "https://raw.githubusercontent.com/eoxhub-workspaces/public-catalog/refs/heads/main/assets//Polartep_SeaIceCharts_demo/thumbnail.png"
+        "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/refs/heads/main/assets//Polartep_SeaIceCharts_demo/thumbnail.png"
       ],
       "agency": [
         "Canadian Ice Service"
@@ -209,7 +210,7 @@
         "ATMS"
       ],
       "thumbnail": [
-        "https://raw.githubusercontent.com/eoxhub-workspaces/public-catalog/refs/heads/main/assets//PRCG_precipitation/PRCG_precipitation.jpg"
+        "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/refs/heads/main/assets//PRCG_precipitation/PRCG_precipitation.jpg"
       ],
       "tags": [
         "Precipitation",

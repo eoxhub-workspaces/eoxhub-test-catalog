@@ -17,6 +17,7 @@
       "title": "Wildlife Biodiversity Indicator",
       "endpointtype": "COG source",
       "subtitle": "Identify areas of high biodiversity",
+      "shortdescription": "This indicator shows patterns of wildlife biodiversity by combining observations of plants and animals with information on habitat health and human pressure. Using crowdsourced species data from the Global Biodiversity Information Facility (GBIF), together with endangered-species information and satellite-based habitat indicators, it helps people see where biodiversity is rich, where it is under threat, and why conservation matters. By exploring the map and filters, citizens can better understand how land use, vegetation health, and infrastructure affect wildlife.",
       "code": "IND2_1",
       "id": "IDEAS2_wildlife",
       "themes": [
@@ -104,7 +105,8 @@
     }
   ],
   "subtitle": "Identify areas of high biodiversity",
-  "thumbnail": "https://raw.githubusercontent.com/eoxhub-workspaces/public-catalog/refs/heads/main/assets//IDEAS2_wildlife/IDEAS2_wildlife.png",
+  "shortdescription": "This indicator shows patterns of wildlife biodiversity by combining observations of plants and animals with information on habitat health and human pressure. Using crowdsourced species data from the Global Biodiversity Information Facility (GBIF), together with endangered-species information and satellite-based habitat indicators, it helps people see where biodiversity is rich, where it is under threat, and why conservation matters. By exploring the map and filters, citizens can better understand how land use, vegetation health, and infrastructure affect wildlife.",
+  "thumbnail": "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/refs/heads/main/assets//IDEAS2_wildlife/IDEAS2_wildlife.png",
   "themes": [
     "agriculture"
   ],
@@ -177,23 +179,32 @@
       "agriculture"
     ],
     "satellite": [
-      "MODIS",
-      "Sentinel-3"
+      "Sentinel-3",
+      "MODIS"
     ],
     "thumbnail": [
-      "https://raw.githubusercontent.com/eoxhub-workspaces/public-catalog/refs/heads/main/assets//IDEAS2_wildlife/IDEAS2_wildlife.png"
+      "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/refs/heads/main/assets//IDEAS2_wildlife/IDEAS2_wildlife.png"
     ]
   },
   "assets": {
     "legend": {
-      "href": "https://raw.githubusercontent.com/eoxhub-workspaces/public-catalog/refs/heads/main/assets//IDEAS2_wildlife/cm_legend.png",
+      "href": "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/refs/heads/main/assets//IDEAS2_wildlife/cm_legend.png",
       "type": "image/png",
       "roles": [
         "metadata"
       ]
     },
+    "IDEAS": {
+      "href": "https://race.esa.int/story/?id=IDEAS",
+      "type": "text/markdown",
+      "title": "Story on Urban Indicators: Biodiversity, Heat Islands and more",
+      "roles": [
+        "metadata",
+        "story"
+      ]
+    },
     "thumbnail": {
-      "href": "https://raw.githubusercontent.com/eoxhub-workspaces/public-catalog/refs/heads/main/assets//IDEAS2_wildlife/IDEAS2_wildlife.png",
+      "href": "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/refs/heads/main/assets//IDEAS2_wildlife/IDEAS2_wildlife.png",
       "type": "image/png",
       "roles": [
         "thumbnail"
