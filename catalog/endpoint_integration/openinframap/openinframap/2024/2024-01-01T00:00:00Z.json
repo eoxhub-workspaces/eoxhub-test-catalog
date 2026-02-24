@@ -2,7 +2,6 @@
   "type": "Feature",
   "stac_version": "1.1.0",
   "stac_extensions": [
-    "https://stac-extensions.github.io/authentication/v1.1.0/schema.json",
     "https://stac-extensions.github.io/attribution/v0.1.0/schema.json"
   ],
   "id": "2024-01-01T00:00:00Z",
@@ -45,13 +44,10 @@
   "links": [
     {
       "rel": "mapbox-style-document",
-      "href": "https://raw.githubusercontent.com/gtif-ukif/gtif-ukif-assets/c1587b05f61f54c9ccb7712995dab8b59ca03d22/collections/PowerOpenInfrastructure/mapboxstyledoc.json",
+      "href": "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/main/collections/PowerOpenInfrastructure/styledoc.json",
       "type": "application/json",
       "title": "Open Infrastructure Map",
-      "auth:refs": [
-        "mapboxauth"
-      ],
-      "key": "0691c9d6-f79f-405b-89a4-23837f3bd7ed"
+      "key": "e2f2a1aa-0b81-46d8-be06-090605e54177"
     },
     {
       "rel": "root",
@@ -78,12 +74,5 @@
     }
   },
   "collection": "openinframap",
-  "auth:schemes": {
-    "mapboxauth": {
-      "type": "apiKey",
-      "name": "access_token",
-      "in": "query"
-    }
-  },
   "attribution": "{ Open Infrastructure Map: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors; Map Design and Analysis <a href=\"https://openinframap.org/copyright\" target=\"_blank\">OpenInfraMap</a> }"
 }

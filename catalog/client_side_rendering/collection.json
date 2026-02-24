@@ -208,8 +208,8 @@
       "water"
     ],
     "satellite": [
-      "Sentinel-3",
       "Sentinel-2",
+      "Sentinel-3",
       "MODIS"
     ],
     "sensor": [

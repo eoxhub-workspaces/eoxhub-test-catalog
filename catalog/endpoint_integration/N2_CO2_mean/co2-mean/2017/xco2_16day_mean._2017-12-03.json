@@ -60,7 +60,7 @@
       "href": "https://openveda.cloud/api/raster/cog/tiles/WebMercatorQuad/{z}/{x}/{y}?url=s3://veda-data-store/co2-mean/xco2_16day_mean._2017-12-03.tif&resampling_method=nearest&bidx=1&colormap_name=rdylbu_r&rescale=0.000408,0.000419",
       "type": "image/png",
       "title": "Carbon Dioxide from OMI (daily)",
-      "key": "e8affa10-3bc8-4255-911f-97fbee877745"
+      "key": "0b02f4d9-d7eb-4ee2-a0c6-4b3e8ed6abd6"
     },
     {
       "rel": "collection",
