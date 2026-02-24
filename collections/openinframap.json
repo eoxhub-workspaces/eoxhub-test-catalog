@@ -1,0 +1,23 @@
+{
+  "Name": "openinframap",
+  "Title": "Open Infrastructure Map",
+  "Description": "",
+  "Themes": [
+    "energy"
+  ],
+  "Tags": [
+    "energy"
+  ],
+  "Resources": [
+    {
+      "Name": "MapboxStyle source",
+      "Attribution": "{ Open Infrastructure Map: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors; Map Design and Analysis <a href=\"https://openinframap.org/copyright\" target=\"_blank\">OpenInfraMap</a> }",
+      "TimeEntries": [
+        {
+            "Time": "20240101",
+            "Url": "https://raw.githubusercontent.com/gtif-ukif/gtif-ukif-assets/c1587b05f61f54c9ccb7712995dab8b59ca03d22/collections/PowerOpenInfrastructure/mapboxstyledoc.json"
+        }
+      ]
+    }
+  ]
+}

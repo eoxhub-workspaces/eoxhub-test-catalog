@@ -1,0 +1,6 @@
+{
+    "Name": "endpoint_integration",
+    "Title": "Multiple Endpoints Example",
+    "EodashIdentifier": "endpoint_integration",
+    "Collections": ["N2_CO2_mean", "PRCG_precipitation", "countries_vectortiles", "openinframap"]
+}

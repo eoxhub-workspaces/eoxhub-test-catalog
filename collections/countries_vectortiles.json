@@ -1,0 +1,25 @@
+{
+  "Name": "countries_vectortiles",
+  "Title": "Countries Vector Tiles",
+  "Description": "",
+  "Themes": [
+    "population"
+  ],
+  "Tags": [
+    "countries",
+    "vector tiles"
+  ],
+  "Resources": [
+    {
+      "Name": "VectorTile source",
+      "Style": "countries_vectortiles/style.json",
+      "TimeEntries": [
+        {
+            "Time": "20240101",
+            "Url": "https://ahocevar.com/geoserver/gwc/service/tms/1.0.0/ne:ne_10m_admin_0_countries@EPSG%3A900913@pbf/{z}/{x}/{-y}.pbf"
+        }
+      ]
+    }
+  ]
+}
+

@@ -5,7 +5,7 @@
   "endpoint": "https://organization.github.io/repository/repository/",
   "default_base_layers": "layers/baselayers",
   "default_overlay_layers": "layers/overlays",
-  "assets_endpoint": "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/refs/heads/main/assets/",
+  "assets_endpoint": "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/refs/heads/main/assets",
   "collections": [
     "ESDL_Hydrology_SM",
     "N1_NO2_monthly",
@@ -13,6 +13,7 @@
     "antarctica_ship_route",
     "PRCG_precipitation",
     "client_side_rendering",
-    "N2_CO2_mean"
+    "N2_CO2_mean",
+    "endpoint_integration"
   ]
 }
