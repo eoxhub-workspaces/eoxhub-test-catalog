@@ -202,16 +202,16 @@
         "water"
       ],
       "satellite": [
-        "Sentinel-2",
+        "MODIS",
         "Sentinel-3",
-        "MODIS"
+        "Sentinel-2"
       ],
       "sensor": [
         "MSI"
       ],
       "thumbnail": [
-        "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/refs/heads/main/assets/CNR_TUR_1_water_discharge/CNR_TUR_1_water_discharge_photo.jpg",
-        "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/refs/heads/main/assets/IDEAS2_wildlife/IDEAS2_wildlife.png"
+        "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/refs/heads/main/assets/IDEAS2_wildlife/IDEAS2_wildlife.png",
+        "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/refs/heads/main/assets/CNR_TUR_1_water_discharge/CNR_TUR_1_water_discharge_photo.jpg"
       ]
     },
     {
@@ -258,47 +258,47 @@
       "id": "endpoint_integration",
       "subcode": "endpoint_integration",
       "themes": [
-        "agriculture",
         "energy",
-        "atmosphere",
-        "population"
+        "agriculture",
+        "population",
+        "atmosphere"
       ],
       "satellite": [
-        "GPM Core Observatory",
-        "DMSP-F11",
-        "DWSS-1",
-        "NOAA-N17",
-        "TRMM",
-        "Megha-Tropiques",
-        "OCO-2",
-        "ADEOS-II",
-        "DMSP-F13",
-        "MetOp-B",
-        "Aqua",
-        "NOAA-N19",
-        "NOAA-N16",
-        "GCOM-W1",
-        "NOAA-N15",
         "NPP",
-        "DMSP-F14",
-        "JPSS-1",
+        "DWSS-1",
         "DMSP-F15",
+        "DMSP-F11",
+        "NOAA-N17",
+        "NOAA-N18",
+        "Megha-Tropiques",
         "MetOp-A",
-        "NOAA-N18"
+        "JPSS-1",
+        "DMSP-F13",
+        "OCO-2",
+        "Aqua",
+        "MetOp-B",
+        "NOAA-N19",
+        "ADEOS-II",
+        "NOAA-N15",
+        "DMSP-F14",
+        "GCOM-W1",
+        "NOAA-N16",
+        "TRMM",
+        "GPM Core Observatory"
       ],
       "sensor": [
-        "SSM/I",
+        "AMSR2",
         "MADRAS",
-        "AMSU-A/MHS",
         "AMSR",
         "GMI",
-        "ATMS",
+        "TMI",
+        "SSM/I",
+        "OCO-2",
+        "TBD",
+        "AMSU-A/MHS",
         "AMSR-E",
         "AMSU-A/AMSU-B",
-        "TMI",
-        "AMSR2",
-        "OCO-2",
-        "TBD"
+        "ATMS"
       ],
       "thumbnail": [
         "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/refs/heads/main/assets/PRCG_precipitation/PRCG_precipitation.jpg",

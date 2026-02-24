@@ -45,14 +45,14 @@
       "href": "https://ahocevar.com/geoserver/gwc/service/tms/1.0.0/ne:ne_10m_admin_0_countries@EPSG%3A900913@pbf/{z}/{x}/{-y}.pbf",
       "type": "application/vnd.mapbox-vector-tile",
       "title": "Countries Vector Tiles",
-      "key": "cfdc1f29-f9af-42f1-b2f3-49378b3a1ad4"
+      "key": "aff48e56-b670-49b6-bd9e-0e0829fee30e"
     },
     {
       "rel": "style",
       "href": "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/refs/heads/main/assets/countries_vectortiles/style.json",
       "type": "text/vector-styles",
       "links:keys": [
-        "cfdc1f29-f9af-42f1-b2f3-49378b3a1ad4"
+        "aff48e56-b670-49b6-bd9e-0e0829fee30e"
       ]
     },
     {
