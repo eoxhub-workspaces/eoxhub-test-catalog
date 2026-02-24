@@ -1,0 +1,57 @@
+{
+  "type": "Collection",
+  "id": "countries_vectortiles",
+  "stac_version": "1.1.0",
+  "description": "",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../catalog.json",
+      "type": "application/json",
+      "title": "EOxHub test1 workspace Catalog"
+    },
+    {
+      "rel": "item",
+      "href": "./countries_vectortiles/2024/2024-01-01T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2024-01-01T00:00:00Z",
+      "id": "2024-01-01T00:00:00Z"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Multiple Endpoints Example"
+    }
+  ],
+  "themes": [
+    "population"
+  ],
+  "tags": [
+    "countries",
+    "vector tiles"
+  ],
+  "endpointtype": "VectorTile source",
+  "title": "Countries Vector Tiles",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180,
+          -85,
+          180,
+          85
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2024-01-01T00:00:00Z",
+          "2024-01-01T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other"
+}

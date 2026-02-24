@@ -167,7 +167,7 @@
     }
   ],
   "subtitle": "Monthly precipitation product",
-  "thumbnail": "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/refs/heads/main/assets//PRCG_precipitation/PRCG_precipitation.jpg",
+  "thumbnail": "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/refs/heads/main/assets/PRCG_precipitation/PRCG_precipitation.jpg",
   "themes": [
     "agriculture"
   ],
@@ -247,7 +247,7 @@
     "tickFormat": ".0f",
     "title": "Precipitation"
   },
-  "merge_assets": false,
+  "eodash:merge_assets": false,
   "title": "Precipitation from GSMaP",
   "extent": {
     "spatial": {
@@ -287,54 +287,54 @@
       "agriculture"
     ],
     "satellite": [
-      "DMSP-F13",
-      "TRMM",
-      "DWSS-1",
-      "NPP",
-      "DMSP-F14",
-      "MetOp-B",
-      "MetOp-A",
-      "NOAA-N18",
+      "GCOM-W1",
+      "JPSS-1",
+      "Megha-Tropiques",
       "Aqua",
+      "NOAA-N18",
+      "GPM Core Observatory",
+      "NOAA-N15",
+      "DMSP-F14",
+      "NOAA-N19",
+      "DMSP-F15",
+      "DMSP-F13",
+      "NPP",
+      "ADEOS-II",
+      "MetOp-B",
+      "DWSS-1",
+      "MetOp-A",
       "NOAA-N17",
       "DMSP-F11",
-      "NOAA-N19",
-      "NOAA-N16",
-      "Megha-Tropiques",
-      "ADEOS-II",
-      "GPM Core Observatory",
-      "GCOM-W1",
-      "DMSP-F15",
-      "NOAA-N15",
-      "JPSS-1"
+      "TRMM",
+      "NOAA-N16"
     ],
     "sensor": [
-      "TMI",
-      "ATMS",
-      "AMSR-E",
-      "AMSR",
       "SSM/I",
-      "TBD",
-      "GMI",
       "AMSU-A/MHS",
+      "GMI",
+      "AMSU-A/AMSU-B",
       "MADRAS",
       "AMSR2",
-      "AMSU-A/AMSU-B"
+      "TBD",
+      "AMSR-E",
+      "ATMS",
+      "TMI",
+      "AMSR"
     ],
     "thumbnail": [
-      "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/refs/heads/main/assets//PRCG_precipitation/PRCG_precipitation.jpg"
+      "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/refs/heads/main/assets/PRCG_precipitation/PRCG_precipitation.jpg"
     ]
   },
   "assets": {
     "legend": {
-      "href": "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/refs/heads/main/assets//PRCG_precipitation/PRCG_legend.png",
+      "href": "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/refs/heads/main/assets/PRCG_precipitation/PRCG_legend.png",
       "type": "image/png",
       "roles": [
         "metadata"
       ]
     },
     "thumbnail": {
-      "href": "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/refs/heads/main/assets//PRCG_precipitation/PRCG_precipitation.jpg",
+      "href": "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/refs/heads/main/assets/PRCG_precipitation/PRCG_precipitation.jpg",
       "type": "image/png",
       "roles": [
         "thumbnail"

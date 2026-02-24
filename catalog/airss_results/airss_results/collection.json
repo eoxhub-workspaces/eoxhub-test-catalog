@@ -35,7 +35,7 @@
       "title": "AIRSS Go or No-Go"
     }
   ],
-  "thumbnail": "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/refs/heads/main/assets//Polartep_SeaIceCharts_demo/thumbnail.png",
+  "thumbnail": "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/refs/heads/main/assets/Polartep_SeaIceCharts_demo/thumbnail.png",
   "themes": [
     "Shipping"
   ],
@@ -94,7 +94,7 @@
   "license": "other",
   "assets": {
     "thumbnail": {
-      "href": "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/refs/heads/main/assets//Polartep_SeaIceCharts_demo/thumbnail.png",
+      "href": "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/refs/heads/main/assets/Polartep_SeaIceCharts_demo/thumbnail.png",
       "type": "image/png",
       "roles": [
         "thumbnail"

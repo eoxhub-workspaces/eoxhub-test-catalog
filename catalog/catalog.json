@@ -32,7 +32,7 @@
         "C-SAR"
       ],
       "thumbnail": [
-        "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/refs/heads/main/assets//ESDL_Hydrology_SM/image.png"
+        "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/refs/heads/main/assets/ESDL_Hydrology_SM/image.png"
       ],
       "tags": [
         "Open data",
@@ -65,7 +65,7 @@
         "OMI"
       ],
       "thumbnail": [
-        "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/refs/heads/main/assets//N1_NO2_monthly/thumbnail.png"
+        "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/refs/heads/main/assets/N1_NO2_monthly/thumbnail.png"
       ],
       "tags": [
         "Air quality",
@@ -89,7 +89,7 @@
       ],
       "subcode": "airss_go_or_no_go",
       "thumbnail": [
-        "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/refs/heads/main/assets//Polartep_SeaIceCharts_demo/thumbnail.png"
+        "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/refs/heads/main/assets/Polartep_SeaIceCharts_demo/thumbnail.png"
       ],
       "agency": [
         "Canadian Ice Service"
@@ -173,7 +173,7 @@
         "ATMS"
       ],
       "thumbnail": [
-        "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/refs/heads/main/assets//PRCG_precipitation/PRCG_precipitation.jpg"
+        "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/refs/heads/main/assets/PRCG_precipitation/PRCG_precipitation.jpg"
       ],
       "tags": [
         "Precipitation",
@@ -210,8 +210,8 @@
         "MSI"
       ],
       "thumbnail": [
-        "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/refs/heads/main/assets//CNR_TUR_1_water_discharge/CNR_TUR_1_water_discharge_photo.jpg",
-        "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/refs/heads/main/assets//IDEAS2_wildlife/IDEAS2_wildlife.png"
+        "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/refs/heads/main/assets/CNR_TUR_1_water_discharge/CNR_TUR_1_water_discharge_photo.jpg",
+        "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/refs/heads/main/assets/IDEAS2_wildlife/IDEAS2_wildlife.png"
       ]
     },
     {
@@ -236,7 +236,7 @@
         "OCO-2"
       ],
       "thumbnail": [
-        "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/refs/heads/main/assets//N2_CO2_mean/N2_CO2_mean.jpg"
+        "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/refs/heads/main/assets/N2_CO2_mean/N2_CO2_mean.jpg"
       ],
       "tags": [
         "Air quality",
@@ -247,6 +247,62 @@
       ],
       "agency": [
         "NASA"
+      ]
+    },
+    {
+      "rel": "child",
+      "href": "./endpoint_integration/collection.json",
+      "type": "application/json",
+      "title": "Multiple Endpoints Example",
+      "code": "endpoint_integration",
+      "id": "endpoint_integration",
+      "subcode": "endpoint_integration",
+      "themes": [
+        "energy",
+        "atmosphere",
+        "agriculture",
+        "population"
+      ],
+      "satellite": [
+        "GCOM-W1",
+        "JPSS-1",
+        "Megha-Tropiques",
+        "Aqua",
+        "NOAA-N18",
+        "GPM Core Observatory",
+        "NOAA-N15",
+        "DMSP-F14",
+        "NOAA-N19",
+        "OCO-2",
+        "DMSP-F15",
+        "DMSP-F13",
+        "NPP",
+        "ADEOS-II",
+        "MetOp-B",
+        "DWSS-1",
+        "MetOp-A",
+        "NOAA-N17",
+        "DMSP-F11",
+        "TRMM",
+        "NOAA-N16"
+      ],
+      "sensor": [
+        "SSM/I",
+        "AMSU-A/MHS",
+        "GMI",
+        "AMSU-A/AMSU-B",
+        "MADRAS",
+        "AMSR2",
+        "TBD",
+        "AMSR-E",
+        "ATMS",
+        "TMI",
+        "OCO-2",
+        "AMSR"
+      ],
+      "thumbnail": [
+        "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/refs/heads/main/assets/PRCG_precipitation/PRCG_precipitation.jpg",
+        "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/refs/heads/main/assets/N2_CO2_mean/N2_CO2_mean.jpg"
       ]
     },
     {

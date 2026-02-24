@@ -27471,7 +27471,7 @@
       "href": "https://openveda.cloud/api/raster/cog/tiles/WebMercatorQuad/{z}/{x}/{y}?resampling_method=nearest&bidx=1&colormap_name=rdylbu_r&rescale=0.000408,0.000419",
       "type": "image/png",
       "title": "Carbon Dioxide from OMI (daily)",
-      "key": "1a27f0d5-ea99-4ebf-93c6-3862fcd20536"
+      "key": "2f031e8e-7a32-4e48-9be7-dd2d1b0d48c7"
     },
     {
       "rel": "parent",
@@ -27487,7 +27487,7 @@
     }
   ],
   "subtitle": "Mean daily Carbon Dioxide [ppm]",
-  "thumbnail": "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/refs/heads/main/assets//N2_CO2_mean/N2_CO2_mean.jpg",
+  "thumbnail": "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/refs/heads/main/assets/N2_CO2_mean/N2_CO2_mean.jpg",
   "themes": [
     "atmosphere"
   ],
@@ -27567,7 +27567,7 @@
   ],
   "assets": {
     "thumbnail": {
-      "href": "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/refs/heads/main/assets//N2_CO2_mean/N2_CO2_mean.jpg",
+      "href": "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/refs/heads/main/assets/N2_CO2_mean/N2_CO2_mean.jpg",
       "type": "image/png",
       "roles": [
         "thumbnail"

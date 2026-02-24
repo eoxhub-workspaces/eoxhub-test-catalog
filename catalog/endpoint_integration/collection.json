@@ -1,0 +1,352 @@
+{
+  "type": "Collection",
+  "id": "endpoint_integration",
+  "stac_version": "1.1.0",
+  "description": "",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "EOxHub test1 workspace Catalog"
+    },
+    {
+      "rel": "child",
+      "href": "./N2_CO2_mean/collection.json",
+      "type": "application/json",
+      "title": "Carbon Dioxide from OMI (daily)",
+      "endpointtype": "VEDA_cog",
+      "subtitle": "Mean daily Carbon Dioxide [ppm]",
+      "code": "N2_CO2_mean",
+      "id": "N2_CO2_mean",
+      "themes": [
+        "atmosphere"
+      ],
+      "providers": [
+        "NASA"
+      ],
+      "tags": [
+        "Air quality",
+        "CO2",
+        "Open data",
+        "GHG",
+        "Greenhouse gases"
+      ],
+      "agency": [
+        "NASA"
+      ],
+      "subcode": "N2_CO2_mean",
+      "sensor": [
+        "OCO-2"
+      ],
+      "satellite": [
+        "OCO-2"
+      ]
+    },
+    {
+      "rel": "child",
+      "href": "./precipitation/collection.json",
+      "type": "application/json",
+      "title": "Precipitation from GSMaP",
+      "endpointtype": "WMS_Time",
+      "subtitle": "Monthly precipitation product",
+      "code": "PRCG",
+      "id": "precipitation",
+      "themes": [
+        "agriculture"
+      ],
+      "providers": [
+        "JAXA"
+      ],
+      "tags": [
+        "Precipitation",
+        "Rainfall",
+        "Multi-sensors"
+      ],
+      "agency": [
+        "JAXA",
+        "NOAA",
+        "EUMETSAT",
+        "CNES",
+        "ISRO",
+        "DoD"
+      ],
+      "subcode": "PRCG",
+      "sensor": [
+        "TMI",
+        "AMSR-E",
+        "AMSR",
+        "SSM/I",
+        "SSM/I",
+        "SSM/I",
+        "SSM/I",
+        "MADRAS",
+        "AMSR2",
+        "GMI",
+        "TBD",
+        "AMSU-A/AMSU-B",
+        "AMSU-A/AMSU-B",
+        "AMSU-A/AMSU-B",
+        "AMSU-A/MHS",
+        "AMSU-A/MHS",
+        "AMSU-A/MHS",
+        "AMSU-A/MHS",
+        "ATMS",
+        "ATMS"
+      ],
+      "satellite": [
+        "TRMM",
+        "Aqua",
+        "ADEOS-II",
+        "DMSP-F11",
+        "DMSP-F13",
+        "DMSP-F14",
+        "DMSP-F15",
+        "Megha-Tropiques",
+        "GCOM-W1",
+        "GPM Core Observatory",
+        "DWSS-1",
+        "NOAA-N15",
+        "NOAA-N16",
+        "NOAA-N17",
+        "NOAA-N18",
+        "NOAA-N19",
+        "MetOp-A",
+        "MetOp-B",
+        "NPP",
+        "JPSS-1"
+      ]
+    },
+    {
+      "rel": "child",
+      "href": "./countries_vectortiles/collection.json",
+      "type": "application/json",
+      "title": "Countries Vector Tiles",
+      "endpointtype": "VectorTile source",
+      "id": "countries_vectortiles",
+      "themes": [
+        "population"
+      ],
+      "tags": [
+        "countries",
+        "vector tiles"
+      ]
+    },
+    {
+      "rel": "child",
+      "href": "./openinframap/collection.json",
+      "type": "application/json",
+      "title": "Open Infrastructure Map",
+      "endpointtype": "MapboxStyle source",
+      "id": "openinframap",
+      "themes": [
+        "energy"
+      ],
+      "tags": [
+        "energy"
+      ]
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/s2cloudless-2024_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "EOxCloudless 2024",
+      "roles": [
+        "baselayer",
+        "visible"
+      ],
+      "id": "cloudless-2024",
+      "attribution": "{ EOxCloudless 2024: <a xmlns:dct=\"http://purl.org/dc/terms/\" href=\"https://s2maps.eu\" target=\"_blank\" property=\"dct:title\">Sentinel-2 cloudless - s2maps.eu</a> by <a xmlns:cc=\"http://creativecommons.org/ns#\" href=\"https://eox.at\" target=\"_blank\" property=\"cc:attributionName\" rel=\"cc:attributionURL\">EOX IT Services GmbH</a> (Contains modified Copernicus Sentinel data 2024) }"
+    },
+    {
+      "rel": "wms",
+      "href": "https://sxcat-demo.eox.at/sxcat_maps/wms",
+      "type": "image/png",
+      "title": "Terrain Light Stereographic North",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "sx-cat_ortho680500",
+      "wms:layers": "sx-cat_ortho680500",
+      "attribution": "{ Terrain light: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors and <a href=\"https://maps.eox.at/#data\" target=\"_blank\">others</a>, Rendering &copy; <a href=\"http://eox.at\" target=\"_blank\">EOX</a> }",
+      "eodash:proj4_def": {
+        "name": "ORTHO:680500",
+        "def": "+proj=ortho +lat_0=90 +lon_0=0 +x_0=0 +y_0=0 +ellps=WGS84 +units=m +no_defs",
+        "extent": [
+          -6422528,
+          -6422528,
+          6422528,
+          6422528
+        ]
+      }
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/osm_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "OSM Background",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "OSM",
+      "attribution": "{ OSM: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors and <a href=\"https://maps.eox.at/#data\" target=\"_blank\">others</a>, Rendering &copy; <a href=\"http://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/overlay_base_bright_3857/default/g/{z}/{y}/{x}.png",
+      "type": "image/png",
+      "title": "Overlay labels",
+      "roles": [
+        "overlay",
+        "visible"
+      ],
+      "id": "overlay_bright",
+      "attribution": "{ Overlay: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors, Made with Natural Earth, Rendering &copy; <a href=\"https://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "style",
+      "href": "https://raw.githubusercontent.com/gtif-cerulean/assets/main/styles/wind_energy_polygon.json",
+      "type": "text/vector-styles",
+      "asset:keys": [
+        "Wind_Energy_Areas"
+      ]
+    },
+    {
+      "rel": "style",
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/refs/heads/main/collections/GCOM/style.json",
+      "type": "text/cog-styles",
+      "asset:keys": [
+        "Sample_gcom"
+      ]
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "EOxHub test1 workspace Catalog"
+    }
+  ],
+  "subcode": "endpoint_integration",
+  "eodash:merge_assets": false,
+  "title": "Multiple Endpoints Example",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.3125,
+          -90.25,
+          180.0,
+          90.25
+        ],
+        [
+          -180.3125,
+          -90.25,
+          179.6875,
+          90.25
+        ],
+        [
+          -180.0,
+          -90.0,
+          180.0,
+          90.0
+        ],
+        [
+          -180,
+          -85,
+          180,
+          85
+        ],
+        [
+          -180,
+          -85,
+          180,
+          85
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2015-01-01T00:00:00Z",
+          "2025-06-30T23:59:59Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "summaries": {
+    "subcode": [
+      "N2_CO2_mean",
+      "PRCG"
+    ],
+    "themes": [
+      "energy",
+      "atmosphere",
+      "agriculture",
+      "population"
+    ],
+    "satellite": [
+      "GCOM-W1",
+      "JPSS-1",
+      "Megha-Tropiques",
+      "Aqua",
+      "NOAA-N18",
+      "GPM Core Observatory",
+      "NOAA-N15",
+      "DMSP-F14",
+      "NOAA-N19",
+      "OCO-2",
+      "DMSP-F15",
+      "DMSP-F13",
+      "NPP",
+      "ADEOS-II",
+      "MetOp-B",
+      "DWSS-1",
+      "MetOp-A",
+      "NOAA-N17",
+      "DMSP-F11",
+      "TRMM",
+      "NOAA-N16"
+    ],
+    "sensor": [
+      "SSM/I",
+      "AMSU-A/MHS",
+      "GMI",
+      "AMSU-A/AMSU-B",
+      "MADRAS",
+      "AMSR2",
+      "TBD",
+      "AMSR-E",
+      "ATMS",
+      "TMI",
+      "OCO-2",
+      "AMSR"
+    ],
+    "thumbnail": [
+      "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/refs/heads/main/assets/PRCG_precipitation/PRCG_precipitation.jpg",
+      "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/refs/heads/main/assets/N2_CO2_mean/N2_CO2_mean.jpg"
+    ]
+  },
+  "assets": {
+    "Wind_Energy_Areas": {
+      "href": "https://workspace-ui-public.cif.gtif.eox.at/api/public/share/public-4wazei3y-02/wind_energy.geojson",
+      "type": "application/geo+json",
+      "title": "Wind Energy Areas",
+      "roles": [
+        "overlay",
+        "invisible"
+      ]
+    },
+    "Sample_gcom": {
+      "href": "https://s3.ap-northeast-1.wasabisys.com/je-pds/cog/v1/JAXA.G-Portal_GCOM-C.SGLI_standard.L3-LST.daytime.v3_global_monthly/2024-05/1/E000.00-E090.00/E000.00-N00.00-E090.00-N90.00-LST.tiff",
+      "type": "image/tiff",
+      "title": "Sample GCOM overlay",
+      "roles": [
+        "overlay",
+        "invisible"
+      ]
+    }
+  }
+}

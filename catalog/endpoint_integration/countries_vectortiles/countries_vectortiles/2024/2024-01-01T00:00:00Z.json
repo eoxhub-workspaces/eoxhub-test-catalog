@@ -1,0 +1,83 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [],
+  "id": "2024-01-01T00:00:00Z",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -180,
+          -85
+        ],
+        [
+          180,
+          -85
+        ],
+        [
+          180,
+          85
+        ],
+        [
+          -180,
+          85
+        ],
+        [
+          -180,
+          -85
+        ]
+      ]
+    ]
+  },
+  "bbox": [
+    -180,
+    -85,
+    180,
+    85
+  ],
+  "properties": {
+    "datetime": "2024-01-01T00:00:00Z"
+  },
+  "links": [
+    {
+      "rel": "vector-tile",
+      "href": "https://ahocevar.com/geoserver/gwc/service/tms/1.0.0/ne:ne_10m_admin_0_countries@EPSG%3A900913@pbf/{z}/{x}/{-y}.pbf",
+      "type": "application/vnd.mapbox-vector-tile",
+      "title": "Countries Vector Tiles",
+      "key": "94bbb074-f59f-4991-8b59-ad857eb034ea"
+    },
+    {
+      "rel": "style",
+      "href": "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/refs/heads/main/assets/countries_vectortiles/style.json",
+      "type": "text/vector-styles",
+      "links:keys": [
+        "94bbb074-f59f-4991-8b59-ad857eb034ea"
+      ]
+    },
+    {
+      "rel": "root",
+      "href": "../../../../catalog.json",
+      "type": "application/json",
+      "title": "EOxHub test1 workspace Catalog"
+    },
+    {
+      "rel": "collection",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "Countries Vector Tiles"
+    },
+    {
+      "rel": "parent",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "Countries Vector Tiles"
+    }
+  ],
+  "assets": {
+    "dummy_asset": {
+      "href": ""
+    }
+  },
+  "collection": "countries_vectortiles"
+}

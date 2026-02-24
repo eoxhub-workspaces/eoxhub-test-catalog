@@ -42,7 +42,7 @@
   "links": [
     {
       "rel": "style",
-      "href": "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/refs/heads/main/assets//IDEAS2_wildlife/flatstyle.json",
+      "href": "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/refs/heads/main/assets/IDEAS2_wildlife/flatstyle.json",
       "type": "text/cog-styles",
       "asset:keys": [
         "Wildlife Biodiversity indicator"

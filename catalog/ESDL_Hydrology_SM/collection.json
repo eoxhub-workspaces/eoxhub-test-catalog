@@ -130,7 +130,7 @@
       "doi": "https://doi.org/10.1016/j.rse.2023.113651"
     }
   ],
-  "thumbnail": "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/refs/heads/main/assets//ESDL_Hydrology_SM/image.png",
+  "thumbnail": "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/refs/heads/main/assets/ESDL_Hydrology_SM/image.png",
   "themes": [
     "agriculture",
     "water"
@@ -175,7 +175,7 @@
     "tickFormat": ".0f",
     "title": "[% relative saturation]"
   },
-  "merge_assets": false,
+  "eodash:merge_assets": false,
   "title": "Surface Soil Moisture",
   "extent": {
     "spatial": {
@@ -222,26 +222,26 @@
       "C-SAR"
     ],
     "thumbnail": [
-      "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/refs/heads/main/assets//ESDL_Hydrology_SM/image.png"
+      "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/refs/heads/main/assets/ESDL_Hydrology_SM/image.png"
     ]
   },
   "assets": {
     "legend": {
-      "href": "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/refs/heads/main/assets//ESDL_Hydrology_SM/cm_legend.png",
+      "href": "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/refs/heads/main/assets/ESDL_Hydrology_SM/cm_legend.png",
       "type": "image/png",
       "roles": [
         "metadata"
       ]
     },
     "thumbnail": {
-      "href": "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/refs/heads/main/assets//ESDL_Hydrology_SM/image.png",
+      "href": "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/refs/heads/main/assets/ESDL_Hydrology_SM/image.png",
       "type": "image/png",
       "roles": [
         "thumbnail"
       ]
     },
     "reference_1": {
-      "href": "https://stac.eurac.edu:8080/collections/SM_RT",
+      "href": "https://stac.eurac.edu/browser/#/collections/SM_RT",
       "type": "text/html",
       "title": "RT1 Surface Soil Moisture",
       "roles": [

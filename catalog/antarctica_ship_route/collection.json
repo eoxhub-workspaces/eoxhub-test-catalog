@@ -120,7 +120,7 @@
     "ESA"
   ],
   "collection_group": "Antarctica",
-  "merge_assets": false,
+  "eodash:merge_assets": false,
   "title": "Ship Route",
   "extent": {
     "spatial": {

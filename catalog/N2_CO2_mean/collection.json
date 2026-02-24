@@ -139,7 +139,7 @@
     }
   ],
   "subtitle": "Mean daily Carbon Dioxide [ppm]",
-  "thumbnail": "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/refs/heads/main/assets//N2_CO2_mean/N2_CO2_mean.jpg",
+  "thumbnail": "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/refs/heads/main/assets/N2_CO2_mean/N2_CO2_mean.jpg",
   "themes": [
     "atmosphere"
   ],
@@ -187,7 +187,7 @@
   },
   "eodash:jsonform": "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/refs/heads/main/assets/N2_CO2_mean/form.json",
   "eodash:vegadefinition": "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/refs/heads/main/assets/N2_CO2_mean/vega.json",
-  "merge_assets": false,
+  "eodash:merge_assets": false,
   "title": "Carbon Dioxide from OMI (daily)",
   "extent": {
     "spatial": {
@@ -233,12 +233,12 @@
       "OCO-2"
     ],
     "thumbnail": [
-      "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/refs/heads/main/assets//N2_CO2_mean/N2_CO2_mean.jpg"
+      "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/refs/heads/main/assets/N2_CO2_mean/N2_CO2_mean.jpg"
     ]
   },
   "assets": {
     "thumbnail": {
-      "href": "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/refs/heads/main/assets//N2_CO2_mean/N2_CO2_mean.jpg",
+      "href": "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/refs/heads/main/assets/N2_CO2_mean/N2_CO2_mean.jpg",
       "type": "image/png",
       "roles": [
         "thumbnail"
