@@ -6,6 +6,10 @@
   "default_base_layers": "layers/baselayers",
   "default_overlay_layers": "layers/overlays",
   "assets_endpoint": "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/refs/heads/main/assets",
+  "stories_endpoint": {
+    "raw_url": "https://raw.githubusercontent.com/ESA-eodashboards/RACE-narratives/main",
+    "rendered_url": "https://race.esa.int/story/?id={id}"
+  },
   "collections": [
     "ESDL_Hydrology_SM",
     "N1_NO2_monthly",
