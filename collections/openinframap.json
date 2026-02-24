@@ -15,7 +15,7 @@
       "TimeEntries": [
         {
             "Time": "20240101",
-            "Url": "https://raw.githubusercontent.com/gtif-ukif/gtif-ukif-assets/c1587b05f61f54c9ccb7712995dab8b59ca03d22/collections/PowerOpenInfrastructure/mapboxstyledoc.json"
+            "Url": "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/main/collections/PowerOpenInfrastructure/styledoc.json"
         }
       ]
     }
