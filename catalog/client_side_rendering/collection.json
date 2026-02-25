@@ -204,12 +204,12 @@
       "CNR_TUR_1"
     ],
     "themes": [
-      "agriculture",
-      "water"
+      "water",
+      "agriculture"
     ],
     "satellite": [
-      "MODIS",
       "Sentinel-3",
+      "MODIS",
       "Sentinel-2"
     ],
     "sensor": [
