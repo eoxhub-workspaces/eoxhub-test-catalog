@@ -12,7 +12,8 @@
           "projection": "EPSG:4326"
         }
       },
-      "format": "bounding-box"
+      "format": "bounding-box",
+      "default": [0, 0, 10, 10]
     },
     "example_parameter_1": {
       "type": "number",
