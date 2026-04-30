@@ -228,6 +228,7 @@
       "title": "EOxHub test1 workspace Catalog"
     }
   ],
+  "thumbnail": "https://raw.githubusercontent.com/eodash/eodash-docs/refs/heads/main/public/assets/endpoint_integration.gif",
   "subcode": "endpoint_integration",
   "eodash:merge_assets": false,
   "title": "Multiple Endpoints Example",
@@ -278,51 +279,51 @@
   "license": "other",
   "summaries": {
     "subcode": [
-      "N2_CO2_mean",
-      "PRCG"
+      "PRCG",
+      "N2_CO2_mean"
     ],
     "themes": [
-      "population",
-      "agriculture",
       "energy",
-      "atmosphere"
+      "atmosphere",
+      "agriculture",
+      "population"
     ],
     "satellite": [
-      "NPP",
-      "NOAA-N19",
-      "DMSP-F15",
-      "NOAA-N17",
-      "GPM Core Observatory",
+      "NOAA-N16",
+      "DMSP-F11",
       "DMSP-F14",
-      "OCO-2",
-      "Aqua",
       "Megha-Tropiques",
+      "ADEOS-II",
+      "NOAA-N15",
+      "GCOM-W1",
+      "NOAA-N19",
+      "NPP",
+      "NOAA-N18",
+      "TRMM",
+      "OCO-2",
+      "DMSP-F15",
+      "DWSS-1",
+      "MetOp-B",
+      "DMSP-F13",
+      "Aqua",
       "JPSS-1",
       "MetOp-A",
-      "DMSP-F13",
-      "NOAA-N18",
-      "NOAA-N15",
-      "DWSS-1",
-      "ADEOS-II",
-      "MetOp-B",
-      "NOAA-N16",
-      "GCOM-W1",
-      "DMSP-F11",
-      "TRMM"
+      "NOAA-N17",
+      "GPM Core Observatory"
     ],
     "sensor": [
-      "OCO-2",
       "TMI",
-      "ATMS",
-      "AMSR2",
-      "AMSR-E",
-      "MADRAS",
-      "AMSU-A/AMSU-B",
-      "GMI",
-      "AMSU-A/MHS",
-      "SSM/I",
       "AMSR",
-      "TBD"
+      "GMI",
+      "AMSR-E",
+      "TBD",
+      "ATMS",
+      "AMSU-A/MHS",
+      "AMSU-A/AMSU-B",
+      "MADRAS",
+      "AMSR2",
+      "OCO-2",
+      "SSM/I"
     ],
     "thumbnail": [
       "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/refs/heads/main/assets/PRCG_precipitation/PRCG_precipitation.jpg",
@@ -330,6 +331,13 @@
     ]
   },
   "assets": {
+    "thumbnail": {
+      "href": "https://raw.githubusercontent.com/eodash/eodash-docs/refs/heads/main/public/assets/endpoint_integration.gif",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    },
     "Wind_Energy_Areas": {
       "href": "https://workspace-ui-public.cif.gtif.eox.at/api/public/share/public-4wazei3y-02/wind_energy.geojson",
       "type": "application/geo+json",

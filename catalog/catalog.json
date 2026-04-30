@@ -89,7 +89,7 @@
       ],
       "subcode": "airss_go_or_no_go",
       "thumbnail": [
-        "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/refs/heads/main/assets/Polartep_SeaIceCharts_demo/thumbnail.png"
+        "https://raw.githubusercontent.com/gtif-cerulean/assets/refs/heads/main/collections/Polartep_SeaIceCharts_demo/thumbnail.png"
       ],
       "agency": [
         "Canadian Ice Service"
@@ -198,20 +198,20 @@
       "id": "client_side_rendering",
       "subcode": "client_side_rendering",
       "themes": [
-        "agriculture",
-        "water"
+        "water",
+        "agriculture"
       ],
       "satellite": [
+        "Sentinel-2",
         "Sentinel-3",
-        "MODIS",
-        "Sentinel-2"
+        "MODIS"
       ],
       "sensor": [
         "MSI"
       ],
       "thumbnail": [
-        "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/refs/heads/main/assets/IDEAS2_wildlife/IDEAS2_wildlife.png",
-        "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/refs/heads/main/assets/CNR_TUR_1_water_discharge/CNR_TUR_1_water_discharge_photo.jpg"
+        "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/refs/heads/main/assets/CNR_TUR_1_water_discharge/CNR_TUR_1_water_discharge_photo.jpg",
+        "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/refs/heads/main/assets/IDEAS2_wildlife/IDEAS2_wildlife.png"
       ]
     },
     {
@@ -258,47 +258,47 @@
       "id": "endpoint_integration",
       "subcode": "endpoint_integration",
       "themes": [
-        "population",
-        "agriculture",
         "energy",
-        "atmosphere"
+        "atmosphere",
+        "agriculture",
+        "population"
       ],
       "satellite": [
-        "NPP",
-        "NOAA-N19",
-        "DMSP-F15",
-        "NOAA-N17",
-        "GPM Core Observatory",
+        "NOAA-N16",
+        "DMSP-F11",
         "DMSP-F14",
-        "OCO-2",
-        "Aqua",
         "Megha-Tropiques",
+        "ADEOS-II",
+        "NOAA-N15",
+        "GCOM-W1",
+        "NOAA-N19",
+        "NPP",
+        "NOAA-N18",
+        "TRMM",
+        "OCO-2",
+        "DMSP-F15",
+        "DWSS-1",
+        "MetOp-B",
+        "DMSP-F13",
+        "Aqua",
         "JPSS-1",
         "MetOp-A",
-        "DMSP-F13",
-        "NOAA-N18",
-        "NOAA-N15",
-        "DWSS-1",
-        "ADEOS-II",
-        "MetOp-B",
-        "NOAA-N16",
-        "GCOM-W1",
-        "DMSP-F11",
-        "TRMM"
+        "NOAA-N17",
+        "GPM Core Observatory"
       ],
       "sensor": [
-        "OCO-2",
         "TMI",
-        "ATMS",
-        "AMSR2",
-        "AMSR-E",
-        "MADRAS",
-        "AMSU-A/AMSU-B",
-        "GMI",
-        "AMSU-A/MHS",
-        "SSM/I",
         "AMSR",
-        "TBD"
+        "GMI",
+        "AMSR-E",
+        "TBD",
+        "ATMS",
+        "AMSU-A/MHS",
+        "AMSU-A/AMSU-B",
+        "MADRAS",
+        "AMSR2",
+        "OCO-2",
+        "SSM/I"
       ],
       "thumbnail": [
         "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/refs/heads/main/assets/PRCG_precipitation/PRCG_precipitation.jpg",

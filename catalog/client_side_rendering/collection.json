@@ -168,6 +168,7 @@
       "title": "EOxHub test1 workspace Catalog"
     }
   ],
+  "thumbnail": "https://raw.githubusercontent.com/eodash/eodash-docs/refs/heads/main/public/assets/dynamic_rendering.gif",
   "subcode": "client_side_rendering",
   "eodash:merge_assets": false,
   "title": "Client Side Rendering Example",
@@ -204,23 +205,30 @@
       "CNR_TUR_1"
     ],
     "themes": [
-      "agriculture",
-      "water"
+      "water",
+      "agriculture"
     ],
     "satellite": [
+      "Sentinel-2",
       "Sentinel-3",
-      "MODIS",
-      "Sentinel-2"
+      "MODIS"
     ],
     "sensor": [
       "MSI"
     ],
     "thumbnail": [
-      "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/refs/heads/main/assets/IDEAS2_wildlife/IDEAS2_wildlife.png",
-      "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/refs/heads/main/assets/CNR_TUR_1_water_discharge/CNR_TUR_1_water_discharge_photo.jpg"
+      "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/refs/heads/main/assets/CNR_TUR_1_water_discharge/CNR_TUR_1_water_discharge_photo.jpg",
+      "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/refs/heads/main/assets/IDEAS2_wildlife/IDEAS2_wildlife.png"
     ]
   },
   "assets": {
+    "thumbnail": {
+      "href": "https://raw.githubusercontent.com/eodash/eodash-docs/refs/heads/main/public/assets/dynamic_rendering.gif",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    },
     "Wind_Energy_Areas": {
       "href": "https://workspace-ui-public.cif.gtif.eox.at/api/public/share/public-4wazei3y-02/wind_energy.geojson",
       "type": "application/geo+json",
