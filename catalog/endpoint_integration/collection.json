@@ -279,55 +279,55 @@
   "license": "other",
   "summaries": {
     "subcode": [
-      "PRCG",
-      "N2_CO2_mean"
+      "N2_CO2_mean",
+      "PRCG"
     ],
     "themes": [
-      "energy",
-      "atmosphere",
+      "population",
       "agriculture",
-      "population"
+      "energy",
+      "atmosphere"
     ],
     "satellite": [
-      "NOAA-N16",
-      "DMSP-F11",
       "DMSP-F14",
-      "Megha-Tropiques",
-      "ADEOS-II",
-      "NOAA-N15",
-      "GCOM-W1",
-      "NOAA-N19",
-      "NPP",
-      "NOAA-N18",
-      "TRMM",
-      "OCO-2",
-      "DMSP-F15",
       "DWSS-1",
       "MetOp-B",
+      "NOAA-N18",
+      "NOAA-N15",
+      "NPP",
+      "TRMM",
+      "DMSP-F11",
+      "NOAA-N19",
+      "Megha-Tropiques",
       "DMSP-F13",
-      "Aqua",
-      "JPSS-1",
+      "GCOM-W1",
       "MetOp-A",
+      "GPM Core Observatory",
+      "JPSS-1",
+      "NOAA-N16",
+      "OCO-2",
+      "Aqua",
       "NOAA-N17",
-      "GPM Core Observatory"
+      "DMSP-F15",
+      "ADEOS-II"
     ],
     "sensor": [
-      "TMI",
-      "AMSR",
-      "GMI",
-      "AMSR-E",
-      "TBD",
-      "ATMS",
-      "AMSU-A/MHS",
-      "AMSU-A/AMSU-B",
       "MADRAS",
-      "AMSR2",
+      "AMSU-A/AMSU-B",
+      "TMI",
+      "AMSU-A/MHS",
+      "AMSR",
       "OCO-2",
+      "GMI",
+      "TBD",
+      "AMSR-E",
+      "AMSR2",
+      "ATMS",
       "SSM/I"
     ],
     "thumbnail": [
-      "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/refs/heads/main/assets/PRCG_precipitation/PRCG_precipitation.jpg",
-      "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/refs/heads/main/assets/N2_CO2_mean/N2_CO2_mean.jpg"
+      "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/refs/heads/main/assets/N2_CO2_mean/N2_CO2_mean.jpg",
+      "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/refs/heads/main/assets/PRCG_precipitation/PRCG_precipitation.jpg"
     ]
   },
   "assets": {
