@@ -202,16 +202,15 @@
         "water"
       ],
       "satellite": [
-        "MODIS",
+        "Sentinel-2",
         "Sentinel-3",
-        "Sentinel-2"
+        "MODIS"
       ],
       "sensor": [
         "MSI"
       ],
       "thumbnail": [
-        "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/refs/heads/main/assets/IDEAS2_wildlife/IDEAS2_wildlife.png",
-        "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/refs/heads/main/assets/CNR_TUR_1_water_discharge/CNR_TUR_1_water_discharge_photo.jpg"
+        "https://raw.githubusercontent.com/eodash/eodash-docs/refs/heads/main/public/assets/dynamic_rendering.gif"
       ]
     },
     {
@@ -259,50 +258,49 @@
       "subcode": "endpoint_integration",
       "themes": [
         "population",
+        "atmosphere",
         "agriculture",
-        "energy",
-        "atmosphere"
+        "energy"
       ],
       "satellite": [
-        "DMSP-F14",
-        "DWSS-1",
-        "MetOp-B",
-        "NOAA-N18",
-        "NOAA-N15",
         "NPP",
-        "TRMM",
+        "Megha-Tropiques",
         "DMSP-F11",
         "NOAA-N19",
-        "Megha-Tropiques",
-        "DMSP-F13",
-        "GCOM-W1",
+        "MetOp-B",
         "MetOp-A",
+        "ADEOS-II",
         "GPM Core Observatory",
-        "JPSS-1",
         "NOAA-N16",
-        "OCO-2",
+        "GCOM-W1",
+        "NOAA-N15",
+        "DWSS-1",
+        "DMSP-F13",
+        "JPSS-1",
+        "DMSP-F14",
+        "TRMM",
+        "DMSP-F15",
         "Aqua",
         "NOAA-N17",
-        "DMSP-F15",
-        "ADEOS-II"
+        "NOAA-N18",
+        "OCO-2"
       ],
       "sensor": [
-        "MADRAS",
-        "AMSU-A/AMSU-B",
-        "TMI",
         "AMSU-A/MHS",
-        "AMSR",
-        "OCO-2",
-        "GMI",
-        "TBD",
-        "AMSR-E",
+        "SSM/I",
+        "MADRAS",
         "AMSR2",
+        "AMSR",
+        "TBD",
+        "AMSU-A/AMSU-B",
+        "GMI",
         "ATMS",
-        "SSM/I"
+        "TMI",
+        "OCO-2",
+        "AMSR-E"
       ],
       "thumbnail": [
-        "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/refs/heads/main/assets/N2_CO2_mean/N2_CO2_mean.jpg",
-        "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/refs/heads/main/assets/PRCG_precipitation/PRCG_precipitation.jpg"
+        "https://raw.githubusercontent.com/eodash/eodash-docs/refs/heads/main/public/assets/endpoint_integration.gif"
       ]
     },
     {

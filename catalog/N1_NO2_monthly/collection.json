@@ -25,6 +25,9 @@
       "providers": [
         "NASA"
       ],
+      "thumbnail": [
+        "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/refs/heads/main/assets/N1_NO2_monthly/thumbnail.png"
+      ],
       "tags": [
         "Air quality",
         "NO2",

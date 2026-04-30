@@ -25,6 +25,9 @@
       "providers": [
         "JAXA"
       ],
+      "thumbnail": [
+        "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/refs/heads/main/assets/PRCG_precipitation/PRCG_precipitation.jpg"
+      ],
       "tags": [
         "Precipitation",
         "Rainfall",
@@ -287,39 +290,39 @@
       "agriculture"
     ],
     "satellite": [
-      "DMSP-F14",
-      "DWSS-1",
-      "MetOp-B",
-      "NOAA-N18",
-      "NOAA-N15",
       "NPP",
-      "TRMM",
+      "Megha-Tropiques",
       "DMSP-F11",
       "NOAA-N19",
-      "Megha-Tropiques",
-      "DMSP-F13",
-      "GCOM-W1",
+      "MetOp-B",
       "MetOp-A",
+      "ADEOS-II",
       "GPM Core Observatory",
-      "JPSS-1",
       "NOAA-N16",
+      "GCOM-W1",
+      "NOAA-N15",
+      "DWSS-1",
+      "DMSP-F13",
+      "JPSS-1",
+      "DMSP-F14",
+      "TRMM",
+      "DMSP-F15",
       "Aqua",
       "NOAA-N17",
-      "DMSP-F15",
-      "ADEOS-II"
+      "NOAA-N18"
     ],
     "sensor": [
-      "MADRAS",
-      "AMSU-A/AMSU-B",
-      "TMI",
       "AMSU-A/MHS",
-      "AMSR",
-      "GMI",
-      "TBD",
-      "ATMS",
-      "AMSR-E",
+      "SSM/I",
+      "MADRAS",
       "AMSR2",
-      "SSM/I"
+      "AMSR",
+      "TBD",
+      "AMSU-A/AMSU-B",
+      "GMI",
+      "ATMS",
+      "TMI",
+      "AMSR-E"
     ],
     "thumbnail": [
       "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/refs/heads/main/assets/PRCG_precipitation/PRCG_precipitation.jpg"

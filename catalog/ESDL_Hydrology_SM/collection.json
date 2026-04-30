@@ -25,6 +25,9 @@
       "providers": [
         "TU Wien"
       ],
+      "thumbnail": [
+        "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/refs/heads/main/assets/ESDL_Hydrology_SM/image.png"
+      ],
       "yAxis": "% Relative Saturation",
       "tags": [
         "Open data",
