@@ -14,7 +14,7 @@
       "rel": "child",
       "href": "./N1_NO2_monthly/collection.json",
       "type": "application/json",
-      "title": "Nitrogen Dioxide (Monthly) - new name",
+      "title": "Nitrogen Dioxide (Monthly) - new name again",
       "endpointtype": "VEDA_cog",
       "subtitle": "Mean NO2 column density based on OMI data [10^15 mol/cm²]",
       "id": "N1_NO2_monthly",
@@ -116,7 +116,7 @@
     "tickFormat": ".0f",
     "title": "NO2 [µmol/m²]"
   },
-  "title": "Nitrogen Dioxide (Monthly) - new name",
+  "title": "Nitrogen Dioxide (Monthly) - new name again",
   "extent": {
     "spatial": {
       "bbox": [
