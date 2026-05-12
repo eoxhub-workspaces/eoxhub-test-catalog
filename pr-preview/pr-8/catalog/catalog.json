@@ -15,9 +15,7 @@
       "href": "./sm-test/collection.json",
       "type": "application/json",
       "title": "sm-test",
-      "code": "sm-test",
-      "id": "sm-test",
-      "subcode": "sm-test"
+      "id": "sm-test"
     },
     {
       "rel": "self",
