@@ -61,20 +61,20 @@
       "rel": "xyz",
       "href": "https://openveda.cloud/api/raster/cog/tiles/WebMercatorQuad/{z}/{x}/{y}?url=s3://veda-data-store/no2-monthly/OMI_trno2_0.10x0.10_201607_Col3_V4.nc.tif&resampling_method=nearest&bidx=1&colormap_name=reds&rescale=0,108e14",
       "type": "image/png",
-      "title": "Nitrogen Dioxide (Monthly) - test12",
-      "key": "3fc3a8cc-f4e0-460e-a4fa-147bd12ff260"
+      "title": "Nitrogen Dioxide (Monthly) - test13",
+      "key": "8a7c1dd6-7663-4028-a02b-5d8341bb3b85"
     },
     {
       "rel": "collection",
       "href": "../../collection.json",
       "type": "application/json",
-      "title": "Nitrogen Dioxide (Monthly) - test12"
+      "title": "Nitrogen Dioxide (Monthly) - test13"
     },
     {
       "rel": "parent",
       "href": "../../collection.json",
       "type": "application/json",
-      "title": "Nitrogen Dioxide (Monthly) - test12"
+      "title": "Nitrogen Dioxide (Monthly) - test13"
     }
   ],
   "assets": {
