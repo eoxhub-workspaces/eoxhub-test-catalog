@@ -1,8 +1,7 @@
 {
   "Name": "N1_NO2_monthly",
-  "Title": "Nitrogen Dioxide (Monthly)",
-  "EodashIdentifier": "N1_NO2_monthly",
-  "Subtitle": "Mean NO2 column density based on OMI data [10^15 mol/cm\u00b2]",
+  "Title": "Nitrogen Dioxide (Monthly) - new name",
+  "Subtitle": "Mean NO2 column density based on OMI data [10^15 mol/cm²]",
   "Description": "N1_NO2_monthly/N1_NO2_monthly.md",
   "Themes": [
     "atmosphere"
@@ -40,9 +39,10 @@
   ],
   "Services": [
     {
-      "Endpoint": "https://openveda.cloud/api/raster/cog/statistics",
-      "Name": "VEDA Statistics",
-      "Rescale": "1e-14"
+      "Name": "Statistical API",
+      "Type": "byoc",
+      "CollectionId": "",
+      "Script": ""
     }
   ],
   "Resources": [
@@ -62,7 +62,9 @@
   "Provider": [
     {
       "Name": "NASA",
-      "Roles": "licensor, producer, processor",
+      "Roles": [
+        "licensor, producer, processor"
+      ],
       "Url": "https://www.earthdata.nasa.gov/learn/articles/find-no2-data"
     }
   ],
@@ -89,6 +91,6 @@
     ],
     "scaleType": "continuous",
     "tickFormat": ".0f",
-    "title": "NO2 [\u00b5mol/m\u00b2]"
+    "title": "NO2 [µmol/m²]"
   }
 }
