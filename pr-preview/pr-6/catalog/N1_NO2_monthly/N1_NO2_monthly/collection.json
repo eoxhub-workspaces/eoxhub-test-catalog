@@ -1130,8 +1130,8 @@
       "rel": "xyz",
       "href": "https://openveda.cloud/api/raster/cog/tiles/WebMercatorQuad/{z}/{x}/{y}?resampling_method=nearest&bidx=1&colormap_name=reds&rescale=0,108e14",
       "type": "image/png",
-      "title": "Nitrogen Dioxide (Monthly) - test4",
-      "key": "12eb1734-9eeb-4a1a-aee6-2668062d38eb"
+      "title": "Nitrogen Dioxide (Monthly) - test6",
+      "key": "7eee3a80-fcae-488b-b35b-aa268f329029"
     },
     {
       "rel": "example",
@@ -1145,7 +1145,7 @@
       "rel": "parent",
       "href": "../collection.json",
       "type": "application/json",
-      "title": "Nitrogen Dioxide (Monthly) - test4"
+      "title": "Nitrogen Dioxide (Monthly) - test6"
     }
   ],
   "subtitle": "Mean NO2 column density based on OMI data [10^15 mol/cm²]",
@@ -1194,7 +1194,7 @@
     "title": "NO2 [µmol/m²]"
   },
   "endpointtype": "VEDA_cog",
-  "title": "Nitrogen Dioxide (Monthly) - test4",
+  "title": "Nitrogen Dioxide (Monthly) - test6",
   "extent": {
     "spatial": {
       "bbox": [
