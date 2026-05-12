@@ -1,7 +1,12 @@
 {
   "Name": "sm-test",
   "Title": "sm-test",
-  "EodashIdentifier": "sm-test",
-  "Description": "",
-  "Resources": []
+  "Description": "lalala and __lalala__",
+  "Resources": [
+    {
+      "Style": "",
+      "TimeEntries": [],
+      "Name": "COG source"
+    }
+  ]
 }
