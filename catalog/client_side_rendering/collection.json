@@ -215,9 +215,9 @@
       "water"
     ],
     "satellite": [
-      "Sentinel-2",
       "Sentinel-3",
-      "MODIS"
+      "MODIS",
+      "Sentinel-2"
     ],
     "sensor": [
       "MSI"

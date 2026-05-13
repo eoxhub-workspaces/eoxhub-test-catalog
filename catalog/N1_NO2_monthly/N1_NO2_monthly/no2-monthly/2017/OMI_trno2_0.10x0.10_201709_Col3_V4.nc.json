@@ -62,7 +62,7 @@
       "href": "https://openveda.cloud/api/raster/cog/tiles/WebMercatorQuad/{z}/{x}/{y}?url=s3://veda-data-store/no2-monthly/OMI_trno2_0.10x0.10_201709_Col3_V4.nc.tif&resampling_method=nearest&bidx=1&colormap_name=reds&rescale=0,108e14",
       "type": "image/png",
       "title": "Nitrogen Dioxide (Monthly)",
-      "key": "47fa1bc3-71c1-4402-b6cd-aaaf3cf7c63f"
+      "key": "d49ac9ff-64a0-40e9-80e4-b42eef9153ba"
     },
     {
       "rel": "collection",
