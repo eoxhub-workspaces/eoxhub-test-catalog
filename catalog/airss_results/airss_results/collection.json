@@ -11,16 +11,6 @@
       "title": "EOxHub test1 workspace Catalog"
     },
     {
-      "rel": "item",
-      "href": "./airss_results/2024/2024-08-13T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2024-08-13T00:00:00Z",
-      "assets": [
-        "https://eox-gtif-public.s3.eu-central-1.amazonaws.com/EOX/polaris/202408132000_SouthEast_RIC-airss_polaris.fgb"
-      ],
-      "id": "2024-08-13T00:00:00Z"
-    },
-    {
       "rel": "style",
       "href": "https://raw.githubusercontent.com/gtif-cerulean/assets/refs/heads/main/collections/Polaris_algorithm_dmi_demo/airss.json",
       "type": "text/vector-styles",
@@ -75,10 +65,10 @@
     "spatial": {
       "bbox": [
         [
-          -50,
-          59,
-          -39,
-          65
+          -50.0,
+          59.0,
+          -39.0,
+          65.0
         ]
       ]
     },
@@ -93,6 +83,14 @@
   },
   "license": "other",
   "assets": {
+    "geoparquet": {
+      "href": "./items.parquet",
+      "type": "application/vnd.apache.parquet",
+      "title": "GeoParquet Items",
+      "roles": [
+        "collection-mirror"
+      ]
+    },
     "thumbnail": {
       "href": "https://raw.githubusercontent.com/gtif-cerulean/assets/refs/heads/main/collections/Polartep_SeaIceCharts_demo/thumbnail.png",
       "type": "image/png",

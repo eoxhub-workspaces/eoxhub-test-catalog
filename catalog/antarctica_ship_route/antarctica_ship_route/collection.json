@@ -11,16 +11,6 @@
       "title": "EOxHub test1 workspace Catalog"
     },
     {
-      "rel": "item",
-      "href": "./antarctica_ship_route/2025/2025-10-08T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2025-10-08T00:00:00Z",
-      "assets": [
-        "https://raw.githubusercontent.com/gtif-cerulean/assets/refs/heads/main/collections/antarctica_ship_route/antarctica_ship_route.geojson"
-      ],
-      "id": "2025-10-08T00:00:00Z"
-    },
-    {
       "rel": "style",
       "href": "https://raw.githubusercontent.com/gtif-cerulean/assets/refs/heads/main/styles/antarctica_ship_route.json",
       "type": "text/vector-styles",
@@ -68,5 +58,15 @@
       ]
     }
   },
-  "license": "other"
+  "license": "other",
+  "assets": {
+    "geoparquet": {
+      "href": "./items.parquet",
+      "type": "application/vnd.apache.parquet",
+      "title": "GeoParquet Items",
+      "roles": [
+        "collection-mirror"
+      ]
+    }
+  }
 }
