@@ -1,71 +1,60 @@
-# .github/workflows/preview.yml
-# This is a basic workflow takes care of building and deploying
-# catalog when creating merge request
-
-name: Deploy PR previews
+name: PR Preview
 
 on:
   pull_request_target:
-    branches:
-      - main
-    types:
-      - opened
-      - reopened
-      - synchronize
-# do not allow running multiple of pipelines for this PR in parallel
-concurrency: preview-${{ github.ref }}
+    types: [opened, synchronize, reopened]
+
 jobs:
-  deploy-preview:
-    runs-on: ubuntu-22.04
+  comment:
+    runs-on: ubuntu-latest
     permissions:
-      contents: write
-      pages: write
       pull-requests: write
-      packages: read
     steps:
-      - name: Checkout
-        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
+      - name: Comment on PR
+        uses: actions/github-script@v7
         with:
-          submodules: 'true'
-          ref: ${{ github.event.pull_request.head.ref }}
-          repository: ${{ github.event.pull_request.head.repo.full_name }}
-      - name: Get commit message from PR head branch
-        id: get_pr_commit_message
-        run: |
-          PR_COMMIT_SHA=${{ github.event.pull_request.head.sha }}
-          PR_REPO_OWNER=${{ github.event.pull_request.head.repo.owner.login }}
-          PR_REPO_NAME=${{ github.event.pull_request.head.repo.name }}
-          # Fetch the commit message from the PR's head branch
-          COMMIT_MESSAGE=$(curl -s -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
-            "https://api.github.com/repos/${PR_REPO_OWNER}/${PR_REPO_NAME}/commits/${PR_COMMIT_SHA}" \
-            | jq -r .commit.message)
-          # Setting skip flag.
-           if [[ "$COMMIT_MESSAGE" == *"create session using empty commit"* ]]; then
-            echo "should_skip=true" >> "$GITHUB_OUTPUT"
-          else
-            echo "should_skip=false" >> "$GITHUB_OUTPUT"
-          fi
-      - name: changed-files
-        id: changed-files
-        uses: tj-actions/changed-files@48d8f15b2aaa3d255ca5af3eba4870f807ce6b3c # v45
-        # To compare changes between the current commit and the last pushed remote commit set `since_last_remote_commit: true`. e.g
-        # with:
-        #   since_last_remote_commit: true 
-      - name: List all changed files
-        env:
-          ALL_CHANGED_FILES: ${{ steps.changed-files.outputs.all_changed_files }}
-        run: python .github/update_catalog.py
-      - if: steps.get_pr_commit_message.outputs.should_skip != 'true'
-        name: Build
-        env:
-          SH_INSTANCE_ID: ${{ secrets.SH_INSTANCE_ID }}
-          SH_CLIENT_ID: ${{ secrets.SH_CLIENT_ID }}
-          SH_CLIENT_SECRET: ${{ secrets.SH_CLIENT_SECRET }}
-        run: |
-          docker run -v "$PWD:/workspace" -w "/workspace" -e SH_INSTANCE_ID="$SH_INSTANCE_ID" -e SH_CLIENT_ID="$SH_CLIENT_ID" -e SH_CLIENT_SECRET="$SH_CLIENT_SECRET" ghcr.io/eodash/eodash_catalog:0.4.6 eodash_catalog
-      - 
-        if: steps.get_pr_commit_message.outputs.should_skip != 'true'
-        name: Deploy preview
-        uses: rossjrw/pr-preview-action@ffa7509e91a3ec8dfc2e5536c4d5c1acdf7a6de9 # v1
-        with:
-          source-dir: ./build
+          script: |
+            const prNumber = context.issue.number;
+            const owner = context.repo.owner;
+            const repo = context.repo.repo;
+            const previewUrl = `https://eodash.github.io/preview-instance/?stacEndpoint=https://catgen.hub-otc.eox.at/eoxhub-workspaces/${repo}/pull/${prNumber}/catalog.json`;
+            const body = `## PR Preview 🚀\n\n[Preview Link](${previewUrl})`;
+            
+            const { data: comments } = await github.rest.issues.listComments({
+              owner,
+              repo,
+              issue_number: prNumber,
+            });
+            
+            let botComment = null;
+            
+            for (const comment of comments) {
+              if (comment.user.type === 'Bot') {
+                if (comment.body.includes('## PR Preview 🚀')) {
+                  botComment = comment;
+                } else if (comment.body.toLowerCase().includes('preview')) {
+                  console.log(`Deleting old preview comment: ${comment.id}`);
+                  await github.rest.issues.deleteComment({
+                    owner,
+                    repo,
+                    comment_id: comment.id,
+                  });
+                }
+              }
+            }
+            
+            if (botComment) {
+              await github.rest.issues.updateComment({
+                owner,
+                repo,
+                comment_id: botComment.id,
+                body
+              });
+            } else {
+              await github.rest.issues.createComment({
+                owner,
+                repo,
+                issue_number: prNumber,
+                body
+              });
+            }

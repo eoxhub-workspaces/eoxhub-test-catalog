@@ -1,15 +1,8 @@
-# This is a basic workflow takes care of building and deploying
-# catalog when pushing to main branch
-
-# Simple workflow for deploying static content to GitHub Pages
-name: Deploy static content to Pages
+name: Build and Deploy Main Catalog
 
 on:
-  # Triggers the workflow on push or pull request events but only for the "main" branch
   push:
     branches: [ "main" ]
-
-  # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
 jobs:
@@ -18,13 +11,13 @@ jobs:
     permissions:
       contents: write
       pages: write
-      pull-requests: write
       packages: read
     concurrency:
       group: ${{ github.workflow }}-${{ github.ref }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
       - name: Build
         env:
           SH_INSTANCE_ID: ${{ secrets.SH_INSTANCE_ID }}
@@ -32,10 +25,12 @@ jobs:
           SH_CLIENT_SECRET: ${{ secrets.SH_CLIENT_SECRET }}
         run: |
           docker run -v "$PWD:/workspace" -w "/workspace" -e SH_INSTANCE_ID="$SH_INSTANCE_ID" -e SH_CLIENT_ID="$SH_CLIENT_ID" -e SH_CLIENT_SECRET="$SH_CLIENT_SECRET" ghcr.io/eodash/eodash_catalog:0.4.6 eodash_catalog
+
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           folder: ./build
           branch: gh-pages
-          clean-exclude: pr-preview
+          # By not specifying clean-exclude, the action will automatically 
+          # clean out old directories, including the old pr-preview folder.
           force: false
