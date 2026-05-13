@@ -14,10 +14,8 @@
       "rel": "child",
       "href": "./newdata1/collection.json",
       "type": "application/json",
-      "title": "newdata1",
-      "code": "newdata1",
-      "id": "newdata1",
-      "subcode": "newdata1"
+      "title": "newdata1 - add 2",
+      "id": "newdata1"
     },
     {
       "rel": "self",
