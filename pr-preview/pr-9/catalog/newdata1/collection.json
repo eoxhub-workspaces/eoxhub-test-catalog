@@ -92,9 +92,8 @@
       "title": "EOxHub test1 workspace Catalog"
     }
   ],
-  "subcode": "newdata1",
   "eodash:merge_assets": false,
-  "title": "newdata1",
+  "title": "newdata1 ad2",
   "extent": {
     "spatial": {
       "bbox": [
@@ -109,7 +108,7 @@
     "temporal": {
       "interval": [
         [
-          "2026-05-13T09:10:11.670855Z",
+          "2026-05-13T09:10:43.269809Z",
           null
         ]
       ]
