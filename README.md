@@ -8,11 +8,11 @@ Deployment branches just with the changed collections in Pull Requests are gener
 
 The generated STAC Catalogs are deployed through github pages.
 
-A preview of the catalogs can be seen using the [Stac Browser](https://radiantearth.github.io/stac-browser/#/)
+A preview of the catalogs can be seen using the [Stac Browser](https://browser.moregeo.it/external/)
 
 Here are preloaded preview links for the catalog available through gh-pages:
 
-[eoxhub-test-catalog Instance](https://radiantearth.github.io/stac-browser/#/external/eoxhub-workspaces.github.io/eoxhub-test-catalog/catalog/catalog.json)
+[eoxhub-test-catalog Instance](https://browser.moregeo.it/external/eoxhub-workspaces.github.io/eoxhub-test-catalog/catalog/catalog.json)
 
 Development
 In order to run the catalog generation locally, install the [eodash_catalog](https://github.com/eodash/eodash_catalog) tool and run the generation locally via
