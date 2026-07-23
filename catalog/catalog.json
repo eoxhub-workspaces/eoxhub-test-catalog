@@ -202,9 +202,9 @@
         "agriculture"
       ],
       "satellite": [
-        "Sentinel-2",
         "Sentinel-3",
-        "MODIS"
+        "MODIS",
+        "Sentinel-2"
       ],
       "sensor": [
         "MSI"
@@ -258,45 +258,45 @@
       "subcode": "endpoint_integration",
       "themes": [
         "population",
-        "energy",
+        "atmosphere",
         "agriculture",
-        "atmosphere"
+        "energy"
       ],
       "satellite": [
         "GCOM-W1",
-        "MetOp-A",
-        "DMSP-F11",
-        "DMSP-F14",
-        "Aqua",
-        "TRMM",
-        "NOAA-N17",
-        "JPSS-1",
         "GPM Core Observatory",
+        "NOAA-N17",
         "Megha-Tropiques",
-        "NOAA-N18",
-        "DMSP-F15",
-        "MetOp-B",
-        "NOAA-N15",
-        "DWSS-1",
+        "NOAA-N16",
+        "NPP",
+        "DMSP-F11",
+        "JPSS-1",
         "DMSP-F13",
         "NOAA-N19",
-        "NPP",
+        "MetOp-B",
+        "Aqua",
+        "DMSP-F15",
+        "DMSP-F14",
         "OCO-2",
-        "NOAA-N16",
-        "ADEOS-II"
+        "TRMM",
+        "DWSS-1",
+        "MetOp-A",
+        "NOAA-N15",
+        "ADEOS-II",
+        "NOAA-N18"
       ],
       "sensor": [
-        "AMSR-E",
-        "ATMS",
         "OCO-2",
-        "GMI",
-        "AMSU-A/MHS",
-        "AMSR2",
-        "TBD",
-        "MADRAS",
-        "AMSU-A/AMSU-B",
-        "AMSR",
         "SSM/I",
+        "GMI",
+        "AMSR-E",
+        "AMSU-A/AMSU-B",
+        "AMSU-A/MHS",
+        "AMSR",
+        "TBD",
+        "AMSR2",
+        "ATMS",
+        "MADRAS",
         "TMI"
       ],
       "thumbnail": [
