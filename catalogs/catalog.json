@@ -18,6 +18,11 @@
     "PRCG_precipitation",
     "client_side_rendering",
     "N2_CO2_mean",
-    "endpoint_integration"
+    "endpoint_integration",
+    "stormtracker",
+    "ndvideepesdl",
+    "ait_predictive_maintenance",
+    "N3a2_chl_concentration_tri_esa",
+    "city_temperature_indicator"
   ]
 }

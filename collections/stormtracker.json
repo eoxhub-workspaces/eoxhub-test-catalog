@@ -1,0 +1,59 @@
+{
+  "Name": "stormtracker",
+  "Title": "EarthCARE Lightning Storm Tracker",
+  "Description": "This dashboard helps users identify and explore lightning storms recorded during EarthCARE overpasses using geostationary lightning observations from the GOES Geostationary Lightning Mapper (GLM) and the Meteosat Third Generation Lightning Imager (LI). By filtering the lightning storm catalogue, users can visualize lightning activity in the context of coincident EarthCARE observations.\n\n**Interaction:**\nSelect a lightning storm on the map to dynamically load the following data:\n\n* **Detailed Lightning Points (Map):** Individual lightning groups comprising the storm\n    * *Color:* Indicates the specific lightning flash (`flash_id`)\n    * *Opacity:* Represents the physical brightness/energy (`radiance`)\n\n* **EarthCARE Track (Map):** Points along the satellite's orbital trajectory\n    * *Color (Viridis scale):* Indicates the count of lightning groups detected at that specific track crossing\n\n* **Profile Plot (Process Panel):** Located in the bottom right, this plot links lightning observations with coincident EarthCARE measurements for an individual storm, including:\n    * A line plot showing lightning group counts along the EarthCARE track\n    * Lightning groups overlaid on EarthCARE brightness temperature imagery to relate electrical activity to storm structure\n    * EarthCARE’s multi-instrument view of the storm, combining passive imagery and active atmospheric profiling measurements\n",
+  "Themes": [
+    "Lightning"
+  ],
+  "References": [
+    {
+      "Name": "Open Science Catalog",
+      "Url": "https://opensciencedata.esa.int/external/s3.waw4-1.cloudferro.com/EarthCODE/Catalogs/storm-data/earthcare-frame-lightning/collection"
+    },
+    {
+      "Name": "Heino Tooming award 2025",
+      "Url": "https://eo4society.esa.int/2025/12/03/heino-tooming-award-2025-goes-to-blanka-piskala/"
+    },
+    {
+      "Name": "ESA MAAP",
+      "Url": "https://catalog.maap.eo.esa.int/doc/examples/ESAMAAP_ecdataaccess.html"
+    }
+  ],
+  "Image": "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/assets/storm_preview.jpg",
+  "Resources": [
+     {
+        "Name": "GeoJSON source",
+        "ParquetSource": "https://parquet-extractor.earthcode.eox.at/stac/geoparquet?parquet_url=https%3A%2F%2Fs3.waw4-1.cloudferro.com%2FEarthCODE%2FOSCAssets%2Fstorm-data%2FEC_lightning_clusters.parquet",
+        "Bbox": [
+            -90,
+            -180,
+            90,
+            180
+        ]
+    }
+  ],
+  "Process": {
+    "Name": "lightning data",
+    "JsonForm": "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/assets/stormtracker_form.json",
+    "VegaDefinition": "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/assets/chart.json",
+    "EndPoints": [
+      {
+        "Identifier": "earthcare_image",
+        "Url": "data:application/json,[{\"earthcare_image\":\"https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/assets/stormtracker_plots/{{feature.values_.earthcare_id}}_{{feature.values_.source}}_{{feature.values_.cluster_id}}.png\"}]",
+        "Type": "application/json"
+      },
+      {
+        "Identifier": "reference_points",
+        "Url": "https://parquet-extractor.earthcode.eox.at/data/filtered_parquet?datetime_str={{feature.values_.peak_datetime}}&parent_cluster_id=-1&cluster_id={{feature.values_.cluster_id}}&earthcare_id={{feature.values_.earthcare_id}}&parquet_base_url=https%3A%2F%2Fs3.waw4-1.cloudferro.com%2FEarthCODE%2FOSCAssets%2Fstorm-data%2FEC_lightning_{{feature.values_.source}}&columns_to_extract=geometry,flash_id,radiance&output_format=geojson",
+        "Type": "application/geo+json",
+        "Flatstyle": "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/assets/stormtracker_subfeatures.json"
+      },
+      {
+        "Identifier": "track_points",
+        "Url": "https://parquet-extractor.earthcode.eox.at/data/filtered_parquet?datetime_str=2024-10-26T10%3A00%3A00Z&parent_cluster_id=-1&cluster_id={{feature.values_.cluster_id}}&earthcare_id={{feature.values_.earthcare_id}}&parquet_base_url=https%3A%2F%2Fempty&columns_to_extract=lightning_count_2p5,geometry&exact_parquet_url=https%3A%2F%2Fs3.waw4-1.cloudferro.com%2FEarthCODE%2FOSCAssets%2Fstorm-data%2FEC_track_lightning_{{feature.values_.source}}.parquet&output_format=geojson",
+        "Type": "application/geo+json",
+        "Flatstyle": "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/assets/along_track_style.json"
+      }
+    ]
+  }
+}
