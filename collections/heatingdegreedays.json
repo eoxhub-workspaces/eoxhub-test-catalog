@@ -7,19 +7,100 @@
       "Name": "GeoSphere",
       "Url": "https://www.geosphere.at/en"
     }
-    ],
-   "Resources": [
+  ],
+  "Resources": [
     {
       "Name": "COG source",
-      "Style": "",
+      "Style": "https://raw.githubusercontent.com/GTIF-Austria/public-catalog/refs/heads/main/styles/heating_degree_days_style.json",
       "Bbox": [
         16.04,
         47.94,
         16.7,
         48.48
       ],
-      "TimeEntries": [],
-      "ParquetSource": "https://public.hub.geosphere.at/datahub/resources/stadtwetter_wien_demo_oeffentlich-v1-1h-100m/filelisting/heating_degree_days_timeseries.parquet"
+      "TimeEntries": [
+        {
+          "Time": "2019-06-24T07:00:00.000Z",
+          "Assets": [
+            {
+              "Identifier": "2019-06-24T070000Z",
+              "File": "https://public.hub.geosphere.at/datahub/resources/stadtwetter_wien_demo_oeffentlich-v1-1h-100m/filelisting/20190624_0700_lt07.tif"
+            }
+          ]
+        },
+        {
+          "Time": "2019-06-25T07:00:00.000Z",
+          "Assets": [
+            {
+              "Identifier": "2019-06-25T070000Z",
+              "File": "https://public.hub.geosphere.at/datahub/resources/stadtwetter_wien_demo_oeffentlich-v1-1h-100m/filelisting/20190625_0700_lt07.tif"
+            }
+          ]
+        },
+        {
+          "Time": "2019-06-26T07:00:00.000Z",
+          "Assets": [
+            {
+              "Identifier": "2019-06-26T070000Z",
+              "File": "https://public.hub.geosphere.at/datahub/resources/stadtwetter_wien_demo_oeffentlich-v1-1h-100m/filelisting/20190626_0700_lt07.tif"
+            }
+          ]
+        },
+        {
+          "Time": "2019-06-27T07:00:00.000Z",
+          "Assets": [
+            {
+              "Identifier": "2019-06-27T070000Z",
+              "File": "https://public.hub.geosphere.at/datahub/resources/stadtwetter_wien_demo_oeffentlich-v1-1h-100m/filelisting/20190627_0700_lt07.tif"
+            }
+          ]
+        },
+        {
+          "Time": "2019-06-28T07:00:00.000Z",
+          "Assets": [
+            {
+              "Identifier": "2019-06-28T070000Z",
+              "File": "https://public.hub.geosphere.at/datahub/resources/stadtwetter_wien_demo_oeffentlich-v1-1h-100m/filelisting/20190628_0700_lt07.tif"
+            }
+          ]
+        },
+        {
+          "Time": "2019-06-29T07:00:00.000Z",
+          "Assets": [
+            {
+              "Identifier": "2019-06-29T070000Z",
+              "File": "https://public.hub.geosphere.at/datahub/resources/stadtwetter_wien_demo_oeffentlich-v1-1h-100m/filelisting/20190629_0700_lt07.tif"
+            }
+          ]
+        },
+        {
+          "Time": "2019-06-30T07:00:00.000Z",
+          "Assets": [
+            {
+              "Identifier": "2019-06-30T070000Z",
+              "File": "https://public.hub.geosphere.at/datahub/resources/stadtwetter_wien_demo_oeffentlich-v1-1h-100m/filelisting/20190630_0700_lt07.tif"
+            }
+          ]
+        },
+        {
+          "Time": "2019-07-01T07:00:00.000Z",
+          "Assets": [
+            {
+              "Identifier": "2019-07-01T070000Z",
+              "File": "https://public.hub.geosphere.at/datahub/resources/stadtwetter_wien_demo_oeffentlich-v1-1h-100m/filelisting/20190701_0700_lt07.tif"
+            }
+          ]
+        },
+        {
+          "Time": "2019-07-02T07:00:00.000Z",
+          "Assets": [
+            {
+              "Identifier": "2019-07-02T070000Z",
+              "File": "https://public.hub.geosphere.at/datahub/resources/stadtwetter_wien_demo_oeffentlich-v1-1h-100m/filelisting/20190702_0700_lt07.tif"
+            }
+          ]
+        }
+      ]
     }
   ],
   "Tags": [
