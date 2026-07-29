@@ -1,0 +1,88 @@
+{
+  "type": "Collection",
+  "id": "stormtracker",
+  "stac_version": "1.1.0",
+  "description": "This dashboard helps users identify and explore lightning storms recorded during EarthCARE overpasses using geostationary lightning observations from the GOES Geostationary Lightning Mapper (GLM) and the Meteosat Third Generation Lightning Imager (LI). By filtering the lightning storm catalogue, users can visualize lightning activity in the context of coincident EarthCARE observations.\n\n**Interaction:**\nSelect a lightning storm on the map to dynamically load the following data:\n\n* **Detailed Lightning Points (Map):** Individual lightning groups comprising the storm\n    * *Color:* Indicates the specific lightning flash (`flash_id`)\n    * *Opacity:* Represents the physical brightness/energy (`radiance`)\n\n* **EarthCARE Track (Map):** Points along the satellite's orbital trajectory\n    * *Color (Viridis scale):* Indicates the count of lightning groups detected at that specific track crossing\n\n* **Profile Plot (Process Panel):** Located in the bottom right, this plot links lightning observations with coincident EarthCARE measurements for an individual storm, including:\n    * A line plot showing lightning group counts along the EarthCARE track\n    * Lightning groups overlaid on EarthCARE brightness temperature imagery to relate electrical activity to storm structure\n    * EarthCARE’s multi-instrument view of the storm, combining passive imagery and active atmospheric profiling measurements\n",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../catalog.json",
+      "type": "application/json",
+      "title": "EOxHub test1 workspace Catalog"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "EarthCARE Lightning Storm Tracker"
+    }
+  ],
+  "thumbnail": "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/assets/storm_preview.jpg",
+  "themes": [
+    "Lightning"
+  ],
+  "endpointtype": "GeoJSON source",
+  "title": "EarthCARE Lightning Storm Tracker",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -90.0,
+          180.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2024-08-01T00:00:00Z",
+          "2025-07-31T23:59:59.999999Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "assets": {
+    "geoparquet": {
+      "href": "https://parquet-extractor.earthcode.eox.at/stac/geoparquet?parquet_url=https%3A%2F%2Fs3.waw4-1.cloudferro.com%2FEarthCODE%2FOSCAssets%2Fstorm-data%2FEC_lightning_clusters.parquet",
+      "type": "application/vnd.apache.parquet",
+      "title": "GeoParquet Items",
+      "roles": [
+        "collection-mirror"
+      ]
+    },
+    "thumbnail": {
+      "href": "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/assets/storm_preview.jpg",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    },
+    "reference_1": {
+      "href": "https://opensciencedata.esa.int/external/s3.waw4-1.cloudferro.com/EarthCODE/Catalogs/storm-data/earthcare-frame-lightning/collection",
+      "type": "text/html",
+      "title": "Open Science Catalog",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "reference_2": {
+      "href": "https://eo4society.esa.int/2025/12/03/heino-tooming-award-2025-goes-to-blanka-piskala/",
+      "type": "text/html",
+      "title": "Heino Tooming award 2025",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "reference_3": {
+      "href": "https://catalog.maap.eo.esa.int/doc/examples/ESAMAAP_ecdataaccess.html",
+      "type": "text/html",
+      "title": "ESA MAAP",
+      "roles": [
+        "metadata"
+      ]
+    }
+  }
+}

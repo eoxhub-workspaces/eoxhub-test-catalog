@@ -1,8 +1,8 @@
 {
   "type": "Collection",
-  "id": "endpoint_integration",
+  "id": "ndvi_deepESDL",
   "stac_version": "1.1.0",
-  "description": "",
+  "description": "### Normalized Difference Vegetation Index (NDVI) (Weekly average)\nNDVI is a key indicator used in remote sensing to measure vegetation health. It works by comparing how plants reflect light in two specific spectral bands: near-infrared (NIR) and red light. The NDVI formula uses the difference between near-infrared (NIR) and red reflectance, divided by their sum:\n\n*NDVI = (NIR - Red) / (NIR + Red)*\n\n### Interpreting NDVI\nNDVI values range from -1 to 1. **Healthy**, dense vegetation reflects more NIR and absorbs more red light, resulting in **higher NDVI values**, while bare soil, water, or **stressed/unhealthy** vegetation yield **lower NDVI values**.\n\n### Additional Information\n* NDVI was calculated using MODIS/Terra + Aqua BRDF/Albedo Nadir Reflectance products, specifically using the red and NIR bands, and aggregated into 8-day means at a 0.25° spatial resolution.\n* The data shown is served from the [Earth System Data Lab xcube server](https://viewer.earthsystemdatalab.net/).",
   "links": [
     {
       "rel": "root",
@@ -12,144 +12,34 @@
     },
     {
       "rel": "child",
-      "href": "./N2_CO2_mean/collection.json",
+      "href": "./ndvi_deepESDL/collection.json",
       "type": "application/json",
-      "title": "Carbon Dioxide from OMI (daily)",
-      "endpointtype": "VEDA_cog",
-      "subtitle": "Mean daily Carbon Dioxide [ppm]",
-      "code": "N2_CO2_mean",
-      "id": "N2_CO2_mean",
+      "title": "Normalized Difference Vegetation Index (NDVI) (Weekly Average) ",
+      "endpointtype": "xcube_zarr",
+      "code": "ndvi_deepESDL",
+      "id": "ndvi_deepESDL",
       "themes": [
-        "atmosphere"
+        "biomass"
       ],
       "providers": [
         "NASA"
       ],
       "thumbnail": [
-        "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/refs/heads/main/assets/N2_CO2_mean/N2_CO2_mean.jpg"
+        "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/ESDC_NDVI/ESDC_NDVI.png"
       ],
+      "yAxis": "1",
       "tags": [
-        "Air quality",
-        "CO2",
-        "Open data",
-        "GHG",
-        "Greenhouse gases"
+        "vegetation",
+        "NDVI",
+        "monitoring",
+        "MODIS"
       ],
-      "agency": [
-        "NASA"
-      ],
-      "subcode": "N2_CO2_mean",
+      "subcode": "ndvi_deepESDL",
       "sensor": [
-        "OCO-2"
+        "MODIS"
       ],
       "satellite": [
-        "OCO-2"
-      ]
-    },
-    {
-      "rel": "child",
-      "href": "./precipitation/collection.json",
-      "type": "application/json",
-      "title": "Precipitation from GSMaP",
-      "endpointtype": "WMS_Time",
-      "subtitle": "Monthly precipitation product",
-      "code": "PRCG",
-      "id": "precipitation",
-      "themes": [
-        "agriculture"
-      ],
-      "providers": [
-        "JAXA"
-      ],
-      "thumbnail": [
-        "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/refs/heads/main/assets/PRCG_precipitation/PRCG_precipitation.jpg"
-      ],
-      "tags": [
-        "Precipitation",
-        "Rainfall",
-        "Multi-sensors"
-      ],
-      "agency": [
-        "JAXA",
-        "NOAA",
-        "EUMETSAT",
-        "CNES",
-        "ISRO",
-        "DoD"
-      ],
-      "subcode": "PRCG",
-      "sensor": [
-        "TMI",
-        "AMSR-E",
-        "AMSR",
-        "SSM/I",
-        "SSM/I",
-        "SSM/I",
-        "SSM/I",
-        "MADRAS",
-        "AMSR2",
-        "GMI",
-        "TBD",
-        "AMSU-A/AMSU-B",
-        "AMSU-A/AMSU-B",
-        "AMSU-A/AMSU-B",
-        "AMSU-A/MHS",
-        "AMSU-A/MHS",
-        "AMSU-A/MHS",
-        "AMSU-A/MHS",
-        "ATMS",
-        "ATMS"
-      ],
-      "satellite": [
-        "TRMM",
-        "Aqua",
-        "ADEOS-II",
-        "DMSP-F11",
-        "DMSP-F13",
-        "DMSP-F14",
-        "DMSP-F15",
-        "Megha-Tropiques",
-        "GCOM-W1",
-        "GPM Core Observatory",
-        "DWSS-1",
-        "NOAA-N15",
-        "NOAA-N16",
-        "NOAA-N17",
-        "NOAA-N18",
-        "NOAA-N19",
-        "MetOp-A",
-        "MetOp-B",
-        "NPP",
-        "JPSS-1"
-      ]
-    },
-    {
-      "rel": "child",
-      "href": "./countries_vectortiles/collection.json",
-      "type": "application/json",
-      "title": "Countries Vector Tiles",
-      "endpointtype": "VectorTile source",
-      "id": "countries_vectortiles",
-      "themes": [
-        "population"
-      ],
-      "tags": [
-        "countries",
-        "vector tiles"
-      ]
-    },
-    {
-      "rel": "child",
-      "href": "./openinframap/collection.json",
-      "type": "application/json",
-      "title": "Open Infrastructure Map",
-      "endpointtype": "MapboxStyle source",
-      "id": "openinframap",
-      "themes": [
-        "energy"
-      ],
-      "tags": [
-        "energy"
+        "Aqua"
       ]
     },
     {
@@ -234,25 +124,50 @@
       "title": "EOxHub test1 workspace Catalog"
     }
   ],
-  "thumbnail": "https://raw.githubusercontent.com/eodash/eodash-docs/refs/heads/main/public/assets/endpoint_integration.gif",
-  "subcode": "endpoint_integration",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/alternate-assets/v1.2.0/schema.json"
+  ],
+  "eodash:narratives": {
+    "scienceHub_timeSeries_vegetation": {
+      "href": "https://race.esa.int/story/?id=scienceHub_timeSeries_vegetation",
+      "type": "text/markdown",
+      "title": "Evaluating Time Series Interpolation Techniques for Vegetation Monitoring Using Remote Sensing Data",
+      "alternate": {
+        "raw": {
+          "href": "https://raw.githubusercontent.com/ESA-eodashboards/RACE-narratives/main/scienceHub_timeSeries_vegetation.md",
+          "description": "Raw markdown content of the story",
+          "alternate:name": "raw story markdown"
+        }
+      },
+      "alternate:name": "rendered story page",
+      "roles": [
+        "metadata",
+        "story"
+      ]
+    }
+  },
+  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/ESDC_NDVI/ESDC_NDVI.png",
+  "themes": [
+    "biomass"
+  ],
+  "tags": [
+    "vegetation",
+    "NDVI",
+    "monitoring",
+    "MODIS"
+  ],
+  "subcode": "ndvi_deepESDL",
+  "sensor": [
+    "MODIS"
+  ],
+  "satellite": [
+    "Aqua"
+  ],
   "eodash:merge_assets": false,
-  "title": "Multiple Endpoints Example",
+  "title": "Normalized Difference Vegetation Index (NDVI) (Weekly Average) ",
   "extent": {
     "spatial": {
       "bbox": [
-        [
-          -180.3125,
-          -90.25,
-          180.0,
-          90.25
-        ],
-        [
-          -180.3125,
-          -90.25,
-          179.6875,
-          90.25
-        ],
         [
           -180.0,
           -90.0,
@@ -261,84 +176,73 @@
         ],
         [
           -180.0,
-          -85.0,
+          -90.0,
           180.0,
-          85.0
-        ],
-        [
-          -180.0,
-          -85.0,
-          180.0,
-          85.0
+          90.0
         ]
       ]
     },
     "temporal": {
       "interval": [
         [
-          "2015-01-01T00:00:00Z",
-          "2025-06-30T23:59:59Z"
+          "1979-01-05T00:00:00Z",
+          "2021-12-31T00:00:00Z"
         ]
       ]
     }
   },
   "license": "other",
+  "providers": [
+    {
+      "name": "NASA",
+      "url": "https://terra.nasa.gov/data/modis-data"
+    }
+  ],
   "summaries": {
     "subcode": [
-      "PRCG",
-      "N2_CO2_mean"
+      "ndvi_deepESDL"
     ],
     "themes": [
-      "population",
-      "energy",
-      "agriculture",
-      "atmosphere"
+      "biomass"
     ],
     "satellite": [
-      "NPP",
-      "NOAA-N16",
-      "NOAA-N19",
-      "NOAA-N15",
-      "Aqua",
-      "GCOM-W1",
-      "DMSP-F11",
-      "MetOp-A",
-      "MetOp-B",
-      "DWSS-1",
-      "GPM Core Observatory",
-      "NOAA-N18",
-      "JPSS-1",
-      "ADEOS-II",
-      "DMSP-F13",
-      "DMSP-F14",
-      "OCO-2",
-      "Megha-Tropiques",
-      "NOAA-N17",
-      "DMSP-F15",
-      "TRMM"
+      "Aqua"
     ],
     "sensor": [
-      "MADRAS",
-      "OCO-2",
-      "AMSR-E",
-      "SSM/I",
-      "ATMS",
-      "GMI",
-      "AMSR",
-      "AMSU-A/AMSU-B",
-      "TMI",
-      "TBD",
-      "AMSR2",
-      "AMSU-A/MHS"
+      "MODIS"
     ],
     "thumbnail": [
-      "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/refs/heads/main/assets/PRCG_precipitation/PRCG_precipitation.jpg",
-      "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/refs/heads/main/assets/N2_CO2_mean/N2_CO2_mean.jpg"
+      "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/ESDC_NDVI/ESDC_NDVI.png"
     ]
   },
   "assets": {
+    "legend": {
+      "href": "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/refs/heads/main/assets/https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/ESDC_NDVI/cm_legend.png",
+      "type": "image/png",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "scienceHub_timeSeries_vegetation": {
+      "href": "https://race.esa.int/story/?id=scienceHub_timeSeries_vegetation",
+      "type": "text/markdown",
+      "title": "Evaluating Time Series Interpolation Techniques for Vegetation Monitoring Using Remote Sensing Data",
+      "description": "Rendered page of the story",
+      "alternate": {
+        "raw": {
+          "href": "https://raw.githubusercontent.com/ESA-eodashboards/RACE-narratives/main/scienceHub_timeSeries_vegetation.md",
+          "description": "Raw markdown content of the story",
+          "alternate:name": "raw story markdown"
+        }
+      },
+      "alternate:name": "rendered story page",
+      "roles": [
+        "metadata",
+        "story"
+      ]
+    },
     "thumbnail": {
-      "href": "https://raw.githubusercontent.com/eodash/eodash-docs/refs/heads/main/public/assets/endpoint_integration.gif",
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/ESDC_NDVI/ESDC_NDVI.png",
       "type": "image/png",
       "roles": [
         "thumbnail"

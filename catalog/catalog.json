@@ -202,9 +202,9 @@
         "agriculture"
       ],
       "satellite": [
-        "Sentinel-3",
+        "Sentinel-2",
         "MODIS",
-        "Sentinel-2"
+        "Sentinel-3"
       ],
       "sensor": [
         "MSI"
@@ -258,50 +258,163 @@
       "subcode": "endpoint_integration",
       "themes": [
         "population",
-        "atmosphere",
+        "energy",
         "agriculture",
-        "energy"
+        "atmosphere"
       ],
       "satellite": [
-        "GCOM-W1",
-        "GPM Core Observatory",
-        "NOAA-N17",
-        "Megha-Tropiques",
-        "NOAA-N16",
         "NPP",
-        "DMSP-F11",
-        "JPSS-1",
-        "DMSP-F13",
+        "NOAA-N16",
         "NOAA-N19",
-        "MetOp-B",
+        "NOAA-N15",
         "Aqua",
-        "DMSP-F15",
+        "GCOM-W1",
+        "DMSP-F11",
+        "MetOp-A",
+        "MetOp-B",
+        "DWSS-1",
+        "GPM Core Observatory",
+        "NOAA-N18",
+        "JPSS-1",
+        "ADEOS-II",
+        "DMSP-F13",
         "DMSP-F14",
         "OCO-2",
-        "TRMM",
-        "DWSS-1",
-        "MetOp-A",
-        "NOAA-N15",
-        "ADEOS-II",
-        "NOAA-N18"
+        "Megha-Tropiques",
+        "NOAA-N17",
+        "DMSP-F15",
+        "TRMM"
       ],
       "sensor": [
+        "MADRAS",
         "OCO-2",
-        "SSM/I",
-        "GMI",
         "AMSR-E",
-        "AMSU-A/AMSU-B",
-        "AMSU-A/MHS",
+        "SSM/I",
+        "ATMS",
+        "GMI",
         "AMSR",
+        "AMSU-A/AMSU-B",
+        "TMI",
         "TBD",
         "AMSR2",
-        "ATMS",
-        "MADRAS",
-        "TMI"
+        "AMSU-A/MHS"
       ],
       "thumbnail": [
         "https://raw.githubusercontent.com/eodash/eodash-docs/refs/heads/main/public/assets/endpoint_integration.gif"
       ]
+    },
+    {
+      "rel": "child",
+      "href": "./stormtracker/collection.json",
+      "type": "application/json",
+      "title": "EarthCARE Lightning Storm Tracker",
+      "id": "stormtracker",
+      "themes": [
+        "Lightning"
+      ],
+      "thumbnail": [
+        "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/assets/storm_preview.jpg"
+      ]
+    },
+    {
+      "rel": "child",
+      "href": "./ndvi_deepESDL/collection.json",
+      "type": "application/json",
+      "title": "Normalized Difference Vegetation Index (NDVI) (Weekly Average) ",
+      "code": "ndvi_deepESDL",
+      "id": "ndvi_deepESDL",
+      "themes": [
+        "biomass"
+      ],
+      "providers": [
+        "NASA"
+      ],
+      "subcode": "ndvi_deepESDL",
+      "satellite": [
+        "Aqua"
+      ],
+      "sensor": [
+        "MODIS"
+      ],
+      "thumbnail": [
+        "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/ESDC_NDVI/ESDC_NDVI.png"
+      ],
+      "tags": [
+        "vegetation",
+        "NDVI",
+        "monitoring",
+        "MODIS"
+      ]
+    },
+    {
+      "rel": "child",
+      "href": "./predictive_maintenance/collection.json",
+      "type": "application/json",
+      "title": "Transport Infrastructure Predictive Maintenance",
+      "id": "predictive_maintenance",
+      "providers": [
+        "AIT Center for Transport Technologies"
+      ],
+      "thumbnail": [
+        "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/WR-10-Transport-Infrastructure-Predictive-Maintenance/WR10_thumbnail.jpg"
+      ],
+      "collection_group": "Mobility Transition"
+    },
+    {
+      "rel": "child",
+      "href": "./N3a2_chl_concentration_tri_esa/collection.json",
+      "type": "application/json",
+      "title": "Chlorophyll-a concentration from Sentinel-3",
+      "subtitle": "Chlorophyll-a concentration maps",
+      "code": "N3a2_chl_esa",
+      "id": "N3a2_chl_concentration_tri_esa",
+      "themes": [
+        "water"
+      ],
+      "providers": [
+        "Copernicus Marine Service",
+        "ESA"
+      ],
+      "subcode": "N3a2_chl_esa",
+      "satellite": [
+        "Sentinel-3"
+      ],
+      "sensor": [
+        "OLCI"
+      ],
+      "thumbnail": [
+        "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N3a2_chl_concentration_tri/thumbnail.jpg"
+      ],
+      "yAxis": "%",
+      "tags": [
+        "Water quality",
+        "Copernicus Services",
+        "CMEMS",
+        "Marine monitoring",
+        "Chlorophyll",
+        "Marine",
+        "CAMS"
+      ],
+      "agency": [
+        "ESA"
+      ]
+    },
+    {
+      "rel": "child",
+      "href": "./city_temperature_indicator/collection.json",
+      "type": "application/json",
+      "title": "Temperature Forecast, Cooling/Heating Degree Days for Cities in Austria",
+      "id": "city_temperature_indicator",
+      "themes": [
+        "Sustainable Cities"
+      ],
+      "providers": [
+        "GeoSphere"
+      ],
+      "thumbnail": [
+        "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/city_temperature_preview2.png"
+      ],
+      "collection_group": "Sustainable Cities"
     },
     {
       "rel": "self",

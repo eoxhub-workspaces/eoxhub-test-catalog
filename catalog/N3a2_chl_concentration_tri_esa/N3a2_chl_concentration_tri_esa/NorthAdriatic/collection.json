@@ -1,96 +1,52 @@
 {
   "type": "Collection",
-  "id": "client_side_rendering",
+  "id": "NorthAdriatic",
   "stac_version": "1.1.0",
-  "description": "",
+  "description": "North Adriatic",
   "links": [
     {
       "rel": "root",
-      "href": "../catalog.json",
+      "href": "../../../catalog.json",
       "type": "application/json",
       "title": "EOxHub test1 workspace Catalog"
     },
     {
-      "rel": "child",
-      "href": "./IDEAS2_wildlife/collection.json",
-      "type": "application/json",
-      "title": "Wildlife Biodiversity Indicator",
-      "endpointtype": "COG source",
-      "subtitle": "Identify areas of high biodiversity",
-      "shortdescription": "This indicator shows patterns of wildlife biodiversity by combining observations of plants and animals with information on habitat health and human pressure. Using crowdsourced species data from the Global Biodiversity Information Facility (GBIF), together with endangered-species information and satellite-based habitat indicators, it helps people see where biodiversity is rich, where it is under threat, and why conservation matters. By exploring the map and filters, citizens can better understand how land use, vegetation health, and infrastructure affect wildlife.",
-      "code": "IND2_1",
-      "id": "IDEAS2_wildlife",
-      "themes": [
-        "agriculture"
+      "rel": "license",
+      "href": "http://www.opensource.org/licenses/MIT",
+      "type": "text/html"
+    },
+    {
+      "rel": "example",
+      "href": "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/refs/heads/main/assets/https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N3a2_chl_concentration/script.js",
+      "type": "application/javascript",
+      "title": "evalscript",
+      "example:language": "JavaScript",
+      "dataId": "byoc-7db8e19e-bf12-4203-bdd1-673455647354"
+    },
+    {
+      "rel": "wms",
+      "href": "https://services.sentinel-hub.com/ogc/wms/0635c213-17a1-48ee-aef7-9d1731695a54",
+      "type": "image/png",
+      "title": "Chlorophyll-a concentration from Sentinel-3",
+      "wms:layers": [
+        "AWS_N3_CUSTOM_TRILATERAL"
       ],
-      "providers": [
-        "Murmuration"
-      ],
-      "thumbnail": [
-        "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/refs/heads/main/assets/IDEAS2_wildlife/IDEAS2_wildlife.png"
-      ],
-      "tags": [
-        "GBIF",
-        "Open data"
-      ],
-      "agency": [
-        "ESA"
-      ],
-      "subcode": "IND2_1",
-      "satellite": [
-        "MODIS",
-        "Sentinel-3"
-      ],
-      "insituSources": [
-        "GBIF"
-      ],
-      "otherSources": [
-        "Open Data Soft"
+      "role": [
+        "data"
       ]
     },
     {
-      "rel": "child",
-      "href": "./water_discharge/collection.json",
+      "rel": "service",
+      "href": "https://services.sentinel-hub.com/api/v1/statistics",
       "type": "application/json",
-      "title": "Water turbidity",
-      "endpointtype": "COG source",
-      "shortdescription": "Water discharge — the volume of water flowing through a channel, such as a river or stream, per unit of time — is a fundamental metric for managing the global water cycle, ensuring public safety, supporting water resource management - including for drinking water and agriculture - and various economic sectors, and maintaining ecosystem health.",
-      "code": "CNR_TUR_1",
-      "id": "water_discharge",
-      "themes": [
-        "water"
-      ],
-      "providers": [
-        "CNR ISMAR",
-        "ESA",
-        "Copernicus Data Space Ecosystem",
-        "ONDA"
-      ],
-      "thumbnail": [
-        "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/refs/heads/main/assets/CNR_TUR_1_water_discharge/CNR_TUR_1_water_discharge_photo.jpg"
-      ],
-      "tags": [
-        "Water quality",
-        "Marine",
-        "Copernicus Services",
-        "Sentinel-2",
-        "MSI",
-        "Water turbidity",
-        "Adriactic Sea",
-        "Open data",
-        "Marine monitoring",
-        "Total Suspended Sediments"
-      ],
-      "agency": [
-        "ESA"
-      ],
-      "subcode": "CNR_TUR_1",
-      "sensor": [
-        "MSI"
-      ],
-      "satellite": [
-        "Sentinel-2"
-      ]
+      "id": "sentinelhub-statistics",
+      "method": "POST",
+      "endpoint": "sentinelhub"
+    },
+    {
+      "rel": "license",
+      "href": "http://www.opensource.org/licenses/MIT",
+      "type": "text/html"
     },
     {
       "rel": "xyz",
@@ -169,73 +125,105 @@
     },
     {
       "rel": "parent",
-      "href": "../catalog.json",
+      "href": "../collection.json",
       "type": "application/json",
-      "title": "EOxHub test1 workspace Catalog"
+      "title": "Chlorophyll-a concentration from Sentinel-3"
     }
   ],
-  "thumbnail": "https://raw.githubusercontent.com/eodash/eodash-docs/refs/heads/main/public/assets/dynamic_rendering.gif",
-  "subcode": "client_side_rendering",
+  "subtitle": "Chlorophyll-a concentration maps",
+  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N3a2_chl_concentration_tri/thumbnail.jpg",
+  "yAxis": "%",
+  "themes": [
+    "water"
+  ],
+  "tags": [
+    "Water quality",
+    "Copernicus Services",
+    "CMEMS",
+    "Marine monitoring",
+    "Chlorophyll",
+    "Marine",
+    "CAMS"
+  ],
+  "agency": [
+    "ESA"
+  ],
+  "subcode": "N3a2_chl_esa",
+  "sensor": [
+    "OLCI"
+  ],
+  "satellite": [
+    "Sentinel-3"
+  ],
+  "eox:colorlegend": {
+    "domain": [
+      -100,
+      100
+    ],
+    "range": [
+      "#053264",
+      "#7fb9d7",
+      "#ffffff",
+      "#e68764",
+      "#731432"
+    ],
+    "scaleType": "continuous",
+    "tickFormat": ".0f",
+    "title": "Chl-a anomaly [%]"
+  },
+  "eodash:jsonform": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/refs/heads/main/defaults/sh_form.json",
+  "eodash:vegadefinition": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N3a2_chl_concentration_tri_esa/chart.json",
   "eodash:merge_assets": false,
-  "title": "Client Side Rendering Example",
+  "title": "North Adriatic",
   "extent": {
     "spatial": {
       "bbox": [
         [
-          -24.0,
-          33.0,
-          42.0,
-          71.0
-        ],
-        [
-          -24.0,
-          33.0,
-          42.0,
-          71.0
-        ],
-        [
-          11.54,
-          44.73,
-          12.744,
-          45.113
+          11.99828290939331,
+          44.49984836578369,
+          13.82183313369751,
+          45.8014030456543
         ]
       ]
     },
     "temporal": {
       "interval": [
         [
-          "2019-02-05T10:08:28Z",
-          "2023-01-01T00:00:00Z"
+          "2019-01-05T00:00:00Z",
+          "2025-01-04T00:00:00Z"
         ]
       ]
     }
   },
-  "license": "other",
-  "summaries": {
-    "subcode": [
-      "IND2_1",
-      "CNR_TUR_1"
-    ],
-    "themes": [
-      "water",
-      "agriculture"
-    ],
-    "satellite": [
-      "Sentinel-2",
-      "MODIS",
-      "Sentinel-3"
-    ],
-    "sensor": [
-      "MSI"
-    ],
-    "thumbnail": [
-      "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/refs/heads/main/assets/CNR_TUR_1_water_discharge/CNR_TUR_1_water_discharge_photo.jpg",
-      "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/refs/heads/main/assets/IDEAS2_wildlife/IDEAS2_wildlife.png"
-    ]
-  },
+  "license": "MIT",
+  "providers": [
+    {
+      "name": "Copernicus Marine Service",
+      "url": "https://marine.copernicus.eu/access-data"
+    },
+    {
+      "name": "ESA",
+      "url": "https://sentinels.copernicus.eu/web/sentinel/home"
+    }
+  ],
   "assets": {
+    "geoparquet": {
+      "href": "./items.parquet",
+      "type": "application/vnd.apache.parquet",
+      "title": "GeoParquet Items",
+      "roles": [
+        "collection-mirror"
+      ]
+    },
+    "legend": {
+      "href": "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/refs/heads/main/assets/https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N3a2_chl_concentration_tri/legend.png",
+      "type": "image/png",
+      "roles": [
+        "metadata"
+      ]
+    },
     "thumbnail": {
-      "href": "https://raw.githubusercontent.com/eodash/eodash-docs/refs/heads/main/public/assets/dynamic_rendering.gif",
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N3a2_chl_concentration_tri/thumbnail.jpg",
       "type": "image/png",
       "roles": [
         "thumbnail"
