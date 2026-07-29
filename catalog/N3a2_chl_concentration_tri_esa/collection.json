@@ -187,6 +187,7 @@
     "tickFormat": ".0f",
     "title": "Chl-a anomaly [%]"
   },
+  "eodash:jsonform": "https://santilland.github.io/process_example/definitions/geodbform.json",
   "eodash:merge_assets": false,
   "title": "Chlorophyll-a concentration from Sentinel-3",
   "extent": {

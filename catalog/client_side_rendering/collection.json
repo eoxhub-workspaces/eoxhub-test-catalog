@@ -213,17 +213,17 @@
   "license": "other",
   "summaries": {
     "subcode": [
-      "IND2_1",
-      "CNR_TUR_1"
+      "CNR_TUR_1",
+      "IND2_1"
     ],
     "themes": [
-      "water",
-      "agriculture"
+      "agriculture",
+      "water"
     ],
     "satellite": [
       "Sentinel-2",
-      "MODIS",
-      "Sentinel-3"
+      "Sentinel-3",
+      "MODIS"
     ],
     "sensor": [
       "MSI"

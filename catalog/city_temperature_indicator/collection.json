@@ -37,9 +37,6 @@
       "providers": [
         "GeoSphere"
       ],
-      "roles": [
-        "disable"
-      ],
       "tags": [
         "city_temperature"
       ]
@@ -53,9 +50,6 @@
       "id": "heating_degree_days",
       "providers": [
         "GeoSphere"
-      ],
-      "roles": [
-        "disable"
       ],
       "tags": [
         "city_temperature"
@@ -190,8 +184,8 @@
     "temporal": {
       "interval": [
         [
-          "2019-06-24T00:00:00Z",
-          "2019-07-02T23:00:00Z"
+          "2019-06-24T07:00:00Z",
+          "2019-07-02T12:00:00Z"
         ]
       ]
     }

@@ -285,55 +285,55 @@
   "license": "other",
   "summaries": {
     "subcode": [
-      "PRCG",
-      "N2_CO2_mean"
+      "N2_CO2_mean",
+      "PRCG"
     ],
     "themes": [
-      "population",
-      "energy",
       "agriculture",
-      "atmosphere"
+      "atmosphere",
+      "energy",
+      "population"
     ],
     "satellite": [
-      "NPP",
-      "NOAA-N16",
-      "NOAA-N19",
-      "NOAA-N15",
-      "Aqua",
-      "GCOM-W1",
-      "DMSP-F11",
-      "MetOp-A",
-      "MetOp-B",
-      "DWSS-1",
-      "GPM Core Observatory",
-      "NOAA-N18",
-      "JPSS-1",
-      "ADEOS-II",
-      "DMSP-F13",
       "DMSP-F14",
+      "DWSS-1",
+      "JPSS-1",
+      "NOAA-N17",
+      "DMSP-F13",
+      "NPP",
+      "DMSP-F15",
+      "Aqua",
       "OCO-2",
       "Megha-Tropiques",
-      "NOAA-N17",
-      "DMSP-F15",
-      "TRMM"
+      "NOAA-N19",
+      "GPM Core Observatory",
+      "NOAA-N16",
+      "TRMM",
+      "GCOM-W1",
+      "NOAA-N18",
+      "MetOp-A",
+      "ADEOS-II",
+      "NOAA-N15",
+      "MetOp-B",
+      "DMSP-F11"
     ],
     "sensor": [
-      "MADRAS",
-      "OCO-2",
-      "AMSR-E",
-      "SSM/I",
-      "ATMS",
-      "GMI",
-      "AMSR",
-      "AMSU-A/AMSU-B",
-      "TMI",
       "TBD",
+      "OCO-2",
+      "GMI",
+      "AMSU-A/MHS",
+      "ATMS",
+      "AMSR",
+      "SSM/I",
+      "AMSU-A/AMSU-B",
+      "AMSR-E",
       "AMSR2",
-      "AMSU-A/MHS"
+      "TMI",
+      "MADRAS"
     ],
     "thumbnail": [
-      "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/refs/heads/main/assets/PRCG_precipitation/PRCG_precipitation.jpg",
-      "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/refs/heads/main/assets/N2_CO2_mean/N2_CO2_mean.jpg"
+      "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/refs/heads/main/assets/N2_CO2_mean/N2_CO2_mean.jpg",
+      "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/refs/heads/main/assets/PRCG_precipitation/PRCG_precipitation.jpg"
     ]
   },
   "assets": {
