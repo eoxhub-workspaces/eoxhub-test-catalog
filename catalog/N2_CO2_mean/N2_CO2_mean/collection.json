@@ -15,7 +15,7 @@
       "href": "https://openveda.cloud/api/raster/cog/tiles/WebMercatorQuad/{z}/{x}/{y}?resampling_method=nearest&bidx=1&colormap_name=rdylbu_r&rescale=0.000408,0.000419",
       "type": "image/png",
       "title": "Carbon Dioxide from OMI (daily)",
-      "key": "a59cc852-f52b-4b6e-ab33-0b2711f79519"
+      "key": "b76fb555-eb5e-45e1-93b2-ee8f9e252fbe"
     },
     {
       "rel": "parent",
