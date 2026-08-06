@@ -5,8 +5,13 @@
   "Subtitle": "Identify areas of high biodiversity",
   "Description": "IDEAS2_wildlife/IDEAS2_wildlife.md",
   "ShortDescription": "This indicator shows patterns of wildlife biodiversity by combining observations of plants and animals with information on habitat health and human pressure. Using crowdsourced species data from the Global Biodiversity Information Facility (GBIF), together with endangered-species information and satellite-based habitat indicators, it helps people see where biodiversity is rich, where it is under threat, and why conservation matters. By exploring the map and filters, citizens can better understand how land use, vegetation health, and infrastructure affect wildlife.",
-  "Themes": ["agriculture"],
-  "Tags": ["GBIF", "Open data"],
+  "Themes": [
+    "agriculture"
+  ],
+  "Tags": [
+    "GBIF",
+    "Open data"
+  ],
   "Stories": [
     {
       "Name": "Story on Urban Indicators: Biodiversity, Heat Islands and more",
@@ -15,12 +20,21 @@
   ],
   "DataSource": {
     "Spaceborne": {
-      "Satellite": ["MODIS", "Sentinel-3"]
+      "Satellite": [
+        "MODIS",
+        "Sentinel-3"
+      ]
     },
-    "InSitu": ["GBIF"],
-    "Other": ["Open Data Soft"]
+    "InSitu": [
+      "GBIF"
+    ],
+    "Other": [
+      "Open Data Soft"
+    ]
   },
-  "Agency": ["ESA"],
+  "Agency": [
+    "ESA"
+  ],
   "Provider": [
     {
       "Name": "Murmuration",
@@ -31,7 +45,12 @@
     {
       "Name": "COG source",
       "Style": "IDEAS2_wildlife/flatstyle.json",
-      "Bbox": [-24, 33, 42, 71],
+      "Bbox": [
+        -24,
+        33,
+        42,
+        71
+      ],
       "TimeEntries": [
         {
           "Time": "20230101",
@@ -48,18 +67,26 @@
   "Legend": "IDEAS2_wildlife/cm_legend.png",
   "Image": "IDEAS2_wildlife/IDEAS2_wildlife.png",
   "Colorlegend": {
-    "domain": ["low", "medium", "high"],
-    "range": ["#fde725", "#2f918c", "#440154"],
+    "domain": [
+      "low",
+      "medium",
+      "high"
+    ],
+    "range": [
+      "#fde725",
+      "#2f918c",
+      "#440154"
+    ],
     "scaleType": "categorical",
     "title": "[index]"
   },
   "BaseLayers": [
     {
-      "id": "cloudless-2024",
-      "name": "EOxCloudless 2024",
-      "url": "https://s2maps-tiles.eu/wmts/1.0.0/s2cloudless-2024_3857/default/g/{z}/{y}/{x}.jpeg",
+      "id": "cloudless-2025",
+      "name": "EOxCloudless 2025",
+      "url": "https://s2maps-tiles.eu/wmts/1.0.0/s2cloudless-2025_3857/default/g/{z}/{y}/{x}.jpeg",
       "media_type": "image/jpeg",
-      "Attribution": "{ EOxCloudless 2024: <a xmlns:dct=\"http://purl.org/dc/terms/\" href=\"https://s2maps.eu\" target=\"_blank\" property=\"dct:title\">Sentinel-2 cloudless - s2maps.eu</a> by <a xmlns:cc=\"http://creativecommons.org/ns#\" href=\"https://eox.at\" target=\"_blank\" property=\"cc:attributionName\" rel=\"cc:attributionURL\">EOX IT Services GmbH</a> (Contains modified Copernicus Sentinel data 2024) }",
+      "Attribution": "{ EOxCloudless 2025: <a xmlns:dct=\"http://purl.org/dc/terms/\" href=\"https://s2maps.eu\" target=\"_blank\" property=\"dct:title\">Sentinel-2 cloudless - s2maps.eu</a> by <a xmlns:cc=\"http://creativecommons.org/ns#\" href=\"https://eox.at\" target=\"_blank\" property=\"cc:attributionName\" rel=\"cc:attributionURL\">EOX IT Services GmbH</a> (Contains modified Copernicus Sentinel data 2025) }",
       "protocol": "xyz",
       "visible": false
     },
