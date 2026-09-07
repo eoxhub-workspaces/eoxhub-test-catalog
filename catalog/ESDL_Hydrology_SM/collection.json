@@ -28,7 +28,6 @@
       "thumbnail": [
         "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/refs/heads/main/assets/ESDL_Hydrology_SM/image.png"
       ],
-      "yAxis": "% Relative Saturation",
       "tags": [
         "Open data",
         "surface soil moisture",
@@ -133,26 +132,6 @@
       "doi": "https://doi.org/10.1016/j.rse.2023.113651"
     }
   ],
-  "thumbnail": "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/refs/heads/main/assets/ESDL_Hydrology_SM/image.png",
-  "themes": [
-    "agriculture",
-    "water"
-  ],
-  "tags": [
-    "Open data",
-    "surface soil moisture",
-    "radiative transfer"
-  ],
-  "agency": [
-    "EURAC"
-  ],
-  "subcode": "ESDL_Hydrology_SM",
-  "sensor": [
-    "C-SAR"
-  ],
-  "satellite": [
-    "Sentinel-1"
-  ],
   "eox:colorlegend": {
     "domain": [
       0,
@@ -178,6 +157,26 @@
     "tickFormat": ".0f",
     "title": "[% relative saturation]"
   },
+  "thumbnail": "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/refs/heads/main/assets/ESDL_Hydrology_SM/image.png",
+  "themes": [
+    "agriculture",
+    "water"
+  ],
+  "tags": [
+    "Open data",
+    "surface soil moisture",
+    "radiative transfer"
+  ],
+  "agency": [
+    "EURAC"
+  ],
+  "subcode": "ESDL_Hydrology_SM",
+  "sensor": [
+    "C-SAR"
+  ],
+  "satellite": [
+    "Sentinel-1"
+  ],
   "eodash:merge_assets": false,
   "title": "Surface Soil Moisture",
   "extent": {
@@ -221,8 +220,8 @@
       "ESDL_Hydrology_SM"
     ],
     "themes": [
-      "water",
-      "agriculture"
+      "agriculture",
+      "water"
     ],
     "satellite": [
       "Sentinel-1"

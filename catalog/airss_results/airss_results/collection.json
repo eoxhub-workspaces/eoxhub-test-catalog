@@ -25,15 +25,9 @@
       "title": "AIRSS Go or No-Go"
     }
   ],
-  "thumbnail": "https://raw.githubusercontent.com/gtif-cerulean/assets/refs/heads/main/collections/Polartep_SeaIceCharts_demo/thumbnail.png",
-  "themes": [
-    "Shipping"
+  "stac_extensions": [
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
-  "agency": [
-    "Canadian Ice Service"
-  ],
-  "subcode": "airss_go_or_no_go",
-  "collection_group": "Capabilities",
   "eox:colorlegend": {
     "title": "Is the vessel_type allowed to proceed?",
     "range": [
@@ -59,6 +53,15 @@
     "scaleType": "categorical",
     "markType": "circle"
   },
+  "thumbnail": "https://raw.githubusercontent.com/gtif-cerulean/assets/refs/heads/main/collections/Polartep_SeaIceCharts_demo/thumbnail.png",
+  "themes": [
+    "Shipping"
+  ],
+  "agency": [
+    "Canadian Ice Service"
+  ],
+  "subcode": "airss_go_or_no_go",
+  "collection_group": "Capabilities",
   "endpointtype": "FlatGeobuf source",
   "title": "AIRSS Go or No-Go",
   "extent": {
@@ -87,6 +90,7 @@
       "href": "./items.parquet",
       "type": "application/vnd.apache.parquet",
       "title": "GeoParquet Items",
+      "file:size": 14036,
       "roles": [
         "collection-mirror"
       ]

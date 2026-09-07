@@ -25,6 +25,9 @@
       "title": "Temperature Forecast, Cooling/Heating Degree Days for Cities in Austria"
     }
   ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
+  ],
   "tags": [
     "city_temperature"
   ],
@@ -62,6 +65,7 @@
       "href": "./items.parquet",
       "type": "application/vnd.apache.parquet",
       "title": "GeoParquet Items",
+      "file:size": 30202,
       "roles": [
         "collection-mirror"
       ]

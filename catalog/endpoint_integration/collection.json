@@ -48,83 +48,6 @@
     },
     {
       "rel": "child",
-      "href": "./precipitation/collection.json",
-      "type": "application/json",
-      "title": "Precipitation from GSMaP",
-      "endpointtype": "WMS_Time",
-      "subtitle": "Monthly precipitation product",
-      "code": "PRCG",
-      "id": "precipitation",
-      "themes": [
-        "agriculture"
-      ],
-      "providers": [
-        "JAXA"
-      ],
-      "thumbnail": [
-        "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/refs/heads/main/assets/PRCG_precipitation/PRCG_precipitation.jpg"
-      ],
-      "tags": [
-        "Precipitation",
-        "Rainfall",
-        "Multi-sensors"
-      ],
-      "agency": [
-        "JAXA",
-        "NOAA",
-        "EUMETSAT",
-        "CNES",
-        "ISRO",
-        "DoD"
-      ],
-      "subcode": "PRCG",
-      "sensor": [
-        "TMI",
-        "AMSR-E",
-        "AMSR",
-        "SSM/I",
-        "SSM/I",
-        "SSM/I",
-        "SSM/I",
-        "MADRAS",
-        "AMSR2",
-        "GMI",
-        "TBD",
-        "AMSU-A/AMSU-B",
-        "AMSU-A/AMSU-B",
-        "AMSU-A/AMSU-B",
-        "AMSU-A/MHS",
-        "AMSU-A/MHS",
-        "AMSU-A/MHS",
-        "AMSU-A/MHS",
-        "ATMS",
-        "ATMS"
-      ],
-      "satellite": [
-        "TRMM",
-        "Aqua",
-        "ADEOS-II",
-        "DMSP-F11",
-        "DMSP-F13",
-        "DMSP-F14",
-        "DMSP-F15",
-        "Megha-Tropiques",
-        "GCOM-W1",
-        "GPM Core Observatory",
-        "DWSS-1",
-        "NOAA-N15",
-        "NOAA-N16",
-        "NOAA-N17",
-        "NOAA-N18",
-        "NOAA-N19",
-        "MetOp-A",
-        "MetOp-B",
-        "NPP",
-        "JPSS-1"
-      ]
-    },
-    {
-      "rel": "child",
       "href": "./countries_vectortiles/collection.json",
       "type": "application/json",
       "title": "Countries Vector Tiles",
@@ -255,12 +178,6 @@
         ],
         [
           -180.0,
-          -90.0,
-          180.0,
-          90.0
-        ],
-        [
-          -180.0,
           -85.0,
           180.0,
           85.0
@@ -277,7 +194,7 @@
       "interval": [
         [
           "2015-01-01T00:00:00Z",
-          "2026-06-01T00:00:00Z"
+          "2024-01-01T00:00:00Z"
         ]
       ]
     }
@@ -285,55 +202,21 @@
   "license": "other",
   "summaries": {
     "subcode": [
-      "N2_CO2_mean",
-      "PRCG"
+      "N2_CO2_mean"
     ],
     "themes": [
       "atmosphere",
       "energy",
-      "population",
-      "agriculture"
+      "population"
     ],
     "satellite": [
-      "NOAA-N15",
-      "DMSP-F11",
-      "NOAA-N17",
-      "NOAA-N19",
-      "ADEOS-II",
-      "GCOM-W1",
-      "TRMM",
-      "NOAA-N18",
-      "DMSP-F14",
-      "DMSP-F13",
-      "Megha-Tropiques",
-      "NPP",
-      "MetOp-A",
-      "DMSP-F15",
-      "MetOp-B",
-      "DWSS-1",
-      "NOAA-N16",
-      "GPM Core Observatory",
-      "Aqua",
-      "OCO-2",
-      "JPSS-1"
+      "OCO-2"
     ],
     "sensor": [
-      "AMSR",
-      "AMSU-A/AMSU-B",
-      "TMI",
-      "AMSR2",
-      "GMI",
-      "AMSU-A/MHS",
-      "ATMS",
-      "OCO-2",
-      "AMSR-E",
-      "TBD",
-      "SSM/I",
-      "MADRAS"
+      "OCO-2"
     ],
     "thumbnail": [
-      "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/refs/heads/main/assets/N2_CO2_mean/N2_CO2_mean.jpg",
-      "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/refs/heads/main/assets/PRCG_precipitation/PRCG_precipitation.jpg"
+      "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/refs/heads/main/assets/N2_CO2_mean/N2_CO2_mean.jpg"
     ]
   },
   "assets": {

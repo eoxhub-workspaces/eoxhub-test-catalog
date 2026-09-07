@@ -17,6 +17,9 @@
       "title": "EarthCARE Lightning Storm Tracker"
     }
   ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
+  ],
   "thumbnail": "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/assets/storm_preview.jpg",
   "themes": [
     "Lightning"
@@ -49,6 +52,7 @@
       "href": "https://parquet-extractor.earthcode.eox.at/stac/geoparquet?parquet_url=https%3A%2F%2Fs3.waw4-1.cloudferro.com%2FEarthCODE%2FOSCAssets%2Fstorm-data%2FEC_lightning_clusters.parquet",
       "type": "application/vnd.apache.parquet",
       "title": "GeoParquet Items",
+      "file:size": 20018,
       "roles": [
         "collection-mirror"
       ]

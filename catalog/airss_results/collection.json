@@ -112,15 +112,6 @@
       "title": "EOxHub test1 workspace Catalog"
     }
   ],
-  "thumbnail": "https://raw.githubusercontent.com/gtif-cerulean/assets/refs/heads/main/collections/Polartep_SeaIceCharts_demo/thumbnail.png",
-  "themes": [
-    "Shipping"
-  ],
-  "agency": [
-    "Canadian Ice Service"
-  ],
-  "subcode": "airss_go_or_no_go",
-  "collection_group": "Capabilities",
   "eox:colorlegend": {
     "title": "Is the vessel_type allowed to proceed?",
     "range": [
@@ -146,6 +137,15 @@
     "scaleType": "categorical",
     "markType": "circle"
   },
+  "thumbnail": "https://raw.githubusercontent.com/gtif-cerulean/assets/refs/heads/main/collections/Polartep_SeaIceCharts_demo/thumbnail.png",
+  "themes": [
+    "Shipping"
+  ],
+  "agency": [
+    "Canadian Ice Service"
+  ],
+  "subcode": "airss_go_or_no_go",
+  "collection_group": "Capabilities",
   "eodash:merge_assets": false,
   "title": "AIRSS Go or No-Go",
   "extent": {

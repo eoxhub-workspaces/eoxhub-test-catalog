@@ -128,26 +128,6 @@
     }
   ],
   "subtitle": "Mean NO2 column density based on OMI data [10^15 mol/cm²]",
-  "thumbnail": "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/refs/heads/main/assets/N1_NO2_monthly/thumbnail.png",
-  "themes": [
-    "atmosphere"
-  ],
-  "tags": [
-    "Air quality",
-    "NO2",
-    "Open data",
-    "OMI"
-  ],
-  "agency": [
-    "NASA"
-  ],
-  "subcode": "N1_NO2_monthly",
-  "sensor": [
-    "OMI"
-  ],
-  "satellite": [
-    "Aura"
-  ],
   "eox:colorlegend": {
     "domain": [
       0,
@@ -173,6 +153,26 @@
     "tickFormat": ".0f",
     "title": "NO2 [µmol/m²]"
   },
+  "thumbnail": "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/refs/heads/main/assets/N1_NO2_monthly/thumbnail.png",
+  "themes": [
+    "atmosphere"
+  ],
+  "tags": [
+    "Air quality",
+    "NO2",
+    "Open data",
+    "OMI"
+  ],
+  "agency": [
+    "NASA"
+  ],
+  "subcode": "N1_NO2_monthly",
+  "sensor": [
+    "OMI"
+  ],
+  "satellite": [
+    "Aura"
+  ],
   "eodash:merge_assets": false,
   "title": "Nitrogen Dioxide (Monthly)",
   "extent": {

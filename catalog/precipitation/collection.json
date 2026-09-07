@@ -11,83 +11,6 @@
       "title": "EOxHub test1 workspace Catalog"
     },
     {
-      "rel": "child",
-      "href": "./precipitation/collection.json",
-      "type": "application/json",
-      "title": "Precipitation from GSMaP",
-      "endpointtype": "WMS_Time",
-      "subtitle": "Monthly precipitation product",
-      "code": "PRCG",
-      "id": "precipitation",
-      "themes": [
-        "agriculture"
-      ],
-      "providers": [
-        "JAXA"
-      ],
-      "thumbnail": [
-        "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/refs/heads/main/assets/PRCG_precipitation/PRCG_precipitation.jpg"
-      ],
-      "tags": [
-        "Precipitation",
-        "Rainfall",
-        "Multi-sensors"
-      ],
-      "agency": [
-        "JAXA",
-        "NOAA",
-        "EUMETSAT",
-        "CNES",
-        "ISRO",
-        "DoD"
-      ],
-      "subcode": "PRCG",
-      "sensor": [
-        "TMI",
-        "AMSR-E",
-        "AMSR",
-        "SSM/I",
-        "SSM/I",
-        "SSM/I",
-        "SSM/I",
-        "MADRAS",
-        "AMSR2",
-        "GMI",
-        "TBD",
-        "AMSU-A/AMSU-B",
-        "AMSU-A/AMSU-B",
-        "AMSU-A/AMSU-B",
-        "AMSU-A/MHS",
-        "AMSU-A/MHS",
-        "AMSU-A/MHS",
-        "AMSU-A/MHS",
-        "ATMS",
-        "ATMS"
-      ],
-      "satellite": [
-        "TRMM",
-        "Aqua",
-        "ADEOS-II",
-        "DMSP-F11",
-        "DMSP-F13",
-        "DMSP-F14",
-        "DMSP-F15",
-        "Megha-Tropiques",
-        "GCOM-W1",
-        "GPM Core Observatory",
-        "DWSS-1",
-        "NOAA-N15",
-        "NOAA-N16",
-        "NOAA-N17",
-        "NOAA-N18",
-        "NOAA-N19",
-        "MetOp-A",
-        "MetOp-B",
-        "NPP",
-        "JPSS-1"
-      ]
-    },
-    {
       "rel": "xyz",
       "href": "https://s2maps-tiles.eu/wmts/1.0.0/s2cloudless-2025_3857/default/g/{z}/{y}/{x}.jpeg",
       "type": "image/jpeg",
@@ -170,6 +93,24 @@
     }
   ],
   "subtitle": "Monthly precipitation product",
+  "eox:colorlegend": {
+    "domain": [
+      0,
+      300
+    ],
+    "range": [
+      "#ffffff",
+      "#4040da",
+      "#1ccb9a",
+      "#bdff0c",
+      "#ffe01c",
+      "#ff5100",
+      "#b10600"
+    ],
+    "scaleType": "continuous",
+    "tickFormat": ".0f",
+    "title": "Precipitation"
+  },
   "thumbnail": "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/refs/heads/main/assets/PRCG_precipitation/PRCG_precipitation.jpg",
   "themes": [
     "agriculture"
@@ -232,35 +173,11 @@
     "NPP",
     "JPSS-1"
   ],
-  "eox:colorlegend": {
-    "domain": [
-      0,
-      300
-    ],
-    "range": [
-      "#ffffff",
-      "#4040da",
-      "#1ccb9a",
-      "#bdff0c",
-      "#ffe01c",
-      "#ff5100",
-      "#b10600"
-    ],
-    "scaleType": "continuous",
-    "tickFormat": ".0f",
-    "title": "Precipitation"
-  },
   "eodash:merge_assets": false,
   "title": "Precipitation from GSMaP",
   "extent": {
     "spatial": {
       "bbox": [
-        [
-          -180.0,
-          -90.0,
-          180.0,
-          90.0
-        ],
         [
           -180.0,
           -90.0,
@@ -272,8 +189,8 @@
     "temporal": {
       "interval": [
         [
-          "2022-01-01T00:00:00Z",
-          "2026-06-01T00:00:00Z"
+          "2026-09-07T11:38:14.919861Z",
+          null
         ]
       ]
     }
@@ -288,52 +205,6 @@
       "url": "https://global.jaxa.jp/"
     }
   ],
-  "summaries": {
-    "subcode": [
-      "PRCG"
-    ],
-    "themes": [
-      "agriculture"
-    ],
-    "satellite": [
-      "NOAA-N15",
-      "DMSP-F11",
-      "NOAA-N17",
-      "NOAA-N19",
-      "ADEOS-II",
-      "GCOM-W1",
-      "TRMM",
-      "NOAA-N18",
-      "DMSP-F14",
-      "DMSP-F13",
-      "Megha-Tropiques",
-      "NPP",
-      "MetOp-A",
-      "DMSP-F15",
-      "MetOp-B",
-      "DWSS-1",
-      "NOAA-N16",
-      "GPM Core Observatory",
-      "Aqua",
-      "JPSS-1"
-    ],
-    "sensor": [
-      "AMSR",
-      "AMSU-A/AMSU-B",
-      "TMI",
-      "AMSR2",
-      "GMI",
-      "AMSU-A/MHS",
-      "ATMS",
-      "AMSR-E",
-      "TBD",
-      "SSM/I",
-      "MADRAS"
-    ],
-    "thumbnail": [
-      "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/refs/heads/main/assets/PRCG_precipitation/PRCG_precipitation.jpg"
-    ]
-  },
   "assets": {
     "legend": {
       "href": "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/refs/heads/main/assets/PRCG_precipitation/PRCG_legend.png",

@@ -142,27 +142,6 @@
     }
   ],
   "subtitle": "Mean daily Carbon Dioxide [ppm]",
-  "thumbnail": "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/refs/heads/main/assets/N2_CO2_mean/N2_CO2_mean.jpg",
-  "themes": [
-    "atmosphere"
-  ],
-  "tags": [
-    "Air quality",
-    "CO2",
-    "Open data",
-    "GHG",
-    "Greenhouse gases"
-  ],
-  "agency": [
-    "NASA"
-  ],
-  "subcode": "N2_CO2_mean",
-  "sensor": [
-    "OCO-2"
-  ],
-  "satellite": [
-    "OCO-2"
-  ],
   "eox:colorlegend": {
     "domain": [
       408,
@@ -188,6 +167,27 @@
     "tickFormat": ".0f",
     "title": "CO2 mean concentration [ppm]"
   },
+  "thumbnail": "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/refs/heads/main/assets/N2_CO2_mean/N2_CO2_mean.jpg",
+  "themes": [
+    "atmosphere"
+  ],
+  "tags": [
+    "Air quality",
+    "CO2",
+    "Open data",
+    "GHG",
+    "Greenhouse gases"
+  ],
+  "agency": [
+    "NASA"
+  ],
+  "subcode": "N2_CO2_mean",
+  "sensor": [
+    "OCO-2"
+  ],
+  "satellite": [
+    "OCO-2"
+  ],
   "eodash:jsonform": "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/refs/heads/main/assets/N2_CO2_mean/form.json",
   "eodash:vegadefinition": "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/refs/heads/main/assets/N2_CO2_mean/vega.json",
   "eodash:merge_assets": false,

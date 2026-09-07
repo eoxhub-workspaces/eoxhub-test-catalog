@@ -127,29 +127,23 @@
       "providers": [
         "JAXA"
       ],
-      "subcode": "PRCG",
-      "satellite": [
-        "TRMM",
-        "Aqua",
-        "ADEOS-II",
-        "DMSP-F11",
-        "DMSP-F13",
-        "DMSP-F14",
-        "DMSP-F15",
-        "Megha-Tropiques",
-        "GCOM-W1",
-        "GPM Core Observatory",
-        "DWSS-1",
-        "NOAA-N15",
-        "NOAA-N16",
-        "NOAA-N17",
-        "NOAA-N18",
-        "NOAA-N19",
-        "MetOp-A",
-        "MetOp-B",
-        "NPP",
-        "JPSS-1"
+      "thumbnail": [
+        "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/refs/heads/main/assets/PRCG_precipitation/PRCG_precipitation.jpg"
       ],
+      "tags": [
+        "Precipitation",
+        "Rainfall",
+        "Multi-sensors"
+      ],
+      "agency": [
+        "JAXA",
+        "NOAA",
+        "EUMETSAT",
+        "CNES",
+        "ISRO",
+        "DoD"
+      ],
+      "subcode": "PRCG",
       "sensor": [
         "TMI",
         "AMSR-E",
@@ -172,21 +166,27 @@
         "ATMS",
         "ATMS"
       ],
-      "thumbnail": [
-        "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/refs/heads/main/assets/PRCG_precipitation/PRCG_precipitation.jpg"
-      ],
-      "tags": [
-        "Precipitation",
-        "Rainfall",
-        "Multi-sensors"
-      ],
-      "agency": [
-        "JAXA",
-        "NOAA",
-        "EUMETSAT",
-        "CNES",
-        "ISRO",
-        "DoD"
+      "satellite": [
+        "TRMM",
+        "Aqua",
+        "ADEOS-II",
+        "DMSP-F11",
+        "DMSP-F13",
+        "DMSP-F14",
+        "DMSP-F15",
+        "Megha-Tropiques",
+        "GCOM-W1",
+        "GPM Core Observatory",
+        "DWSS-1",
+        "NOAA-N15",
+        "NOAA-N16",
+        "NOAA-N17",
+        "NOAA-N18",
+        "NOAA-N19",
+        "MetOp-A",
+        "MetOp-B",
+        "NPP",
+        "JPSS-1"
       ]
     },
     {
@@ -198,13 +198,13 @@
       "id": "client_side_rendering",
       "subcode": "client_side_rendering",
       "themes": [
-        "water",
-        "agriculture"
+        "agriculture",
+        "water"
       ],
       "satellite": [
-        "Sentinel-2",
         "Sentinel-3",
-        "MODIS"
+        "MODIS",
+        "Sentinel-2"
       ],
       "sensor": [
         "MSI"
@@ -259,45 +259,13 @@
       "themes": [
         "atmosphere",
         "energy",
-        "population",
-        "agriculture"
+        "population"
       ],
       "satellite": [
-        "NOAA-N15",
-        "DMSP-F11",
-        "NOAA-N17",
-        "NOAA-N19",
-        "ADEOS-II",
-        "GCOM-W1",
-        "TRMM",
-        "NOAA-N18",
-        "DMSP-F14",
-        "DMSP-F13",
-        "Megha-Tropiques",
-        "NPP",
-        "MetOp-A",
-        "DMSP-F15",
-        "MetOp-B",
-        "DWSS-1",
-        "NOAA-N16",
-        "GPM Core Observatory",
-        "Aqua",
-        "OCO-2",
-        "JPSS-1"
+        "OCO-2"
       ],
       "sensor": [
-        "AMSR",
-        "AMSU-A/AMSU-B",
-        "TMI",
-        "AMSR2",
-        "GMI",
-        "AMSU-A/MHS",
-        "ATMS",
-        "OCO-2",
-        "AMSR-E",
-        "TBD",
-        "SSM/I",
-        "MADRAS"
+        "OCO-2"
       ],
       "thumbnail": [
         "https://raw.githubusercontent.com/eodash/eodash-docs/refs/heads/main/public/assets/endpoint_integration.gif"
@@ -385,7 +353,6 @@
       "thumbnail": [
         "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N3a2_chl_concentration_tri/thumbnail.jpg"
       ],
-      "yAxis": "%",
       "tags": [
         "Water quality",
         "Copernicus Services",

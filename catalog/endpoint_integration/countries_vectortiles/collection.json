@@ -17,6 +17,9 @@
       "title": "Multiple Endpoints Example"
     }
   ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
+  ],
   "themes": [
     "population"
   ],
@@ -52,6 +55,7 @@
       "href": "./items.parquet",
       "type": "application/vnd.apache.parquet",
       "title": "GeoParquet Items",
+      "file:size": 13574,
       "roles": [
         "collection-mirror"
       ]

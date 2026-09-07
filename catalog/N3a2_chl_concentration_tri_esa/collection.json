@@ -29,7 +29,6 @@
       "thumbnail": [
         "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N3a2_chl_concentration_tri/thumbnail.jpg"
       ],
-      "yAxis": "%",
       "tags": [
         "Water quality",
         "Copernicus Services",
@@ -146,8 +145,23 @@
     }
   ],
   "subtitle": "Chlorophyll-a concentration maps",
+  "eox:colorlegend": {
+    "domain": [
+      -100,
+      100
+    ],
+    "range": [
+      "#053264",
+      "#7fb9d7",
+      "#ffffff",
+      "#e68764",
+      "#731432"
+    ],
+    "scaleType": "continuous",
+    "tickFormat": ".0f",
+    "title": "Chl-a anomaly [%]"
+  },
   "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N3a2_chl_concentration_tri/thumbnail.jpg",
-  "yAxis": "%",
   "themes": [
     "water"
   ],
@@ -171,22 +185,6 @@
   "satellite": [
     "Sentinel-3"
   ],
-  "eox:colorlegend": {
-    "domain": [
-      -100,
-      100
-    ],
-    "range": [
-      "#053264",
-      "#7fb9d7",
-      "#ffffff",
-      "#e68764",
-      "#731432"
-    ],
-    "scaleType": "continuous",
-    "tickFormat": ".0f",
-    "title": "Chl-a anomaly [%]"
-  },
   "eodash:jsonform": "https://santilland.github.io/process_example/definitions/geodbform.json",
   "eodash:merge_assets": false,
   "title": "Chlorophyll-a concentration from Sentinel-3",

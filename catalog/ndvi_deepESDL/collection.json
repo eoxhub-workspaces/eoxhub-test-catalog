@@ -27,7 +27,6 @@
       "thumbnail": [
         "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/ESDC_NDVI/ESDC_NDVI.png"
       ],
-      "yAxis": "1",
       "tags": [
         "vegetation",
         "NDVI",

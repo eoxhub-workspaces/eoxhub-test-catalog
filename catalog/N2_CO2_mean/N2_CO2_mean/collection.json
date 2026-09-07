@@ -12,10 +12,9 @@
     },
     {
       "rel": "xyz",
-      "href": "https://openveda.cloud/api/raster/cog/tiles/WebMercatorQuad/{z}/{x}/{y}?resampling_method=nearest&bidx=1&colormap_name=rdylbu_r&rescale=0.000408,0.000419",
+      "href": "https://openveda.cloud/api/raster/cog/tiles/WebMercatorQuad/{z}/{x}/{y}?&bidx=1&colormap_name=rdylbu_r&rescale=0.000408,0.000419&resampling_method=nearest",
       "type": "image/png",
-      "title": "Carbon Dioxide from OMI (daily)",
-      "key": "b76fb555-eb5e-45e1-93b2-ee8f9e252fbe"
+      "title": "Carbon Dioxide from OMI (daily)"
     },
     {
       "rel": "parent",
@@ -24,6 +23,9 @@
       "title": "Carbon Dioxide from OMI (daily)"
     }
   ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
+  ],
   "sci:publications": [
     {
       "citation": "Le Quéré, C., Jackson, R.B., Jones, M.W. et al. Temporary reduction in daily global CO2 emissions during the COVID-19 forced confinement. Nat. Clim. Chang. 10, 647–653 (2020).\n",
@@ -31,27 +33,6 @@
     }
   ],
   "subtitle": "Mean daily Carbon Dioxide [ppm]",
-  "thumbnail": "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/refs/heads/main/assets/N2_CO2_mean/N2_CO2_mean.jpg",
-  "themes": [
-    "atmosphere"
-  ],
-  "tags": [
-    "Air quality",
-    "CO2",
-    "Open data",
-    "GHG",
-    "Greenhouse gases"
-  ],
-  "agency": [
-    "NASA"
-  ],
-  "subcode": "N2_CO2_mean",
-  "sensor": [
-    "OCO-2"
-  ],
-  "satellite": [
-    "OCO-2"
-  ],
   "eox:colorlegend": {
     "domain": [
       408,
@@ -76,6 +57,252 @@
     "scaleType": "continuous",
     "tickFormat": ".0f",
     "title": "CO2 mean concentration [ppm]"
+  },
+  "thumbnail": "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/refs/heads/main/assets/N2_CO2_mean/N2_CO2_mean.jpg",
+  "themes": [
+    "atmosphere"
+  ],
+  "tags": [
+    "Air quality",
+    "CO2",
+    "Open data",
+    "GHG",
+    "Greenhouse gases"
+  ],
+  "agency": [
+    "NASA"
+  ],
+  "subcode": "N2_CO2_mean",
+  "sensor": [
+    "OCO-2"
+  ],
+  "satellite": [
+    "OCO-2"
+  ],
+  "eodash:rasterform": {
+    "jsonform": {
+      "type": "object",
+      "properties": {
+        "vminmax": {
+          "type": "object",
+          "title": "Value Range",
+          "properties": {
+            "vmin": {
+              "type": "number",
+              "default": 0.000408,
+              "format": "range",
+              "minimum": 0,
+              "step": 0.00001
+            },
+            "vmax": {
+              "type": "number",
+              "default": 0.000419,
+              "format": "range",
+              "maximum": 0.0006284999999999999,
+              "step": 0.00001
+            }
+          },
+          "format": "minmax"
+        },
+        "rescale": {
+          "type": "string",
+          "template": "{{vminmax.vmin}},{{vminmax.vmax}}",
+          "watch": {
+            "vminmax": "vminmax"
+          },
+          "options": {
+            "hidden": true
+          }
+        },
+        "colormap_name": {
+          "type": "string",
+          "title": "Colormap",
+          "default": "rdylbu_r",
+          "enum": [
+            "accent",
+            "accent_r",
+            "afmhot",
+            "afmhot_r",
+            "autumn",
+            "autumn_r",
+            "binary",
+            "binary_r",
+            "blues",
+            "blues_r",
+            "bone",
+            "bone_r",
+            "brbg",
+            "brbg_r",
+            "brg",
+            "brg_r",
+            "bugn",
+            "bugn_r",
+            "bupu",
+            "bupu_r",
+            "bwr",
+            "bwr_r",
+            "cfastie",
+            "cividis",
+            "cividis_r",
+            "cmrmap",
+            "cmrmap_r",
+            "cool",
+            "cool_r",
+            "coolwarm",
+            "coolwarm_r",
+            "copper",
+            "copper_r",
+            "cubehelix",
+            "cubehelix_r",
+            "dark2",
+            "dark2_r",
+            "flag",
+            "flag_r",
+            "gist_earth",
+            "gist_earth_r",
+            "gist_gray",
+            "gist_gray_r",
+            "gist_heat",
+            "gist_heat_r",
+            "gist_ncar",
+            "gist_ncar_r",
+            "gist_rainbow",
+            "gist_rainbow_r",
+            "gist_stern",
+            "gist_stern_r",
+            "gist_yarg",
+            "gist_yarg_r",
+            "gnbu",
+            "gnbu_r",
+            "gnuplot",
+            "gnuplot2",
+            "gnuplot2_r",
+            "gnuplot_r",
+            "gray",
+            "gray_r",
+            "greens",
+            "greens_r",
+            "greys",
+            "greys_r",
+            "hot",
+            "hot_r",
+            "hsv",
+            "hsv_r",
+            "inferno",
+            "inferno_r",
+            "jet",
+            "jet_r",
+            "magma",
+            "magma_r",
+            "nipy_spectral",
+            "nipy_spectral_r",
+            "ocean",
+            "ocean_r",
+            "oranges",
+            "oranges_r",
+            "orrd",
+            "orrd_r",
+            "paired",
+            "paired_r",
+            "pastel1",
+            "pastel1_r",
+            "pastel2",
+            "pastel2_r",
+            "pink",
+            "pink_r",
+            "piyg",
+            "piyg_r",
+            "plasma",
+            "plasma_r",
+            "prgn",
+            "prgn_r",
+            "prism",
+            "prism_r",
+            "pubu",
+            "pubu_r",
+            "pubugn",
+            "pubugn_r",
+            "puor",
+            "puor_r",
+            "purd",
+            "purd_r",
+            "purples",
+            "purples_r",
+            "rainbow",
+            "rainbow_r",
+            "rdbu",
+            "rdbu_r",
+            "rdgy",
+            "rdgy_r",
+            "rdpu",
+            "rdpu_r",
+            "rdylbu",
+            "rdylbu_r",
+            "rdylgn",
+            "rdylgn_r",
+            "reds",
+            "reds_r",
+            "rplumbo",
+            "schwarzwald",
+            "seismic",
+            "seismic_r",
+            "set1",
+            "set1_r",
+            "set2",
+            "set2_r",
+            "set3",
+            "set3_r",
+            "spectral",
+            "spectral_r",
+            "spring",
+            "spring_r",
+            "summer",
+            "summer_r",
+            "tab10",
+            "tab10_r",
+            "tab20",
+            "tab20_r",
+            "tab20b",
+            "tab20b_r",
+            "tab20c",
+            "tab20c_r",
+            "terrain",
+            "terrain_r",
+            "twilight",
+            "twilight_r",
+            "twilight_shifted",
+            "twilight_shifted_r",
+            "viridis",
+            "viridis_r",
+            "winter",
+            "winter_r",
+            "wistia",
+            "wistia_r",
+            "ylgn",
+            "ylgn_r",
+            "ylgnbu",
+            "ylgnbu_r",
+            "ylorbr",
+            "ylorbr_r",
+            "ylorrd",
+            "ylorrd_r"
+          ]
+        }
+      },
+      "required": [
+        "vminmax"
+      ]
+    },
+    "legend": {
+      "title": "Value Range",
+      "scaleType": "continuous",
+      "tickFormat": ".5f",
+      "domainProperties": [
+        "vmin",
+        "vmax"
+      ],
+      "rangeProperty": "colormap_name"
+    }
   },
   "endpointtype": "VEDA_cog",
   "title": "Carbon Dioxide from OMI (daily)",
@@ -114,6 +341,7 @@
       "href": "./items.parquet",
       "type": "application/vnd.apache.parquet",
       "title": "GeoParquet Items",
+      "file:size": 218891,
       "roles": [
         "collection-mirror"
       ]
