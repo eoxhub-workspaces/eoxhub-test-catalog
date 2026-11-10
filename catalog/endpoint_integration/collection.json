@@ -206,8 +206,8 @@
     ],
     "themes": [
       "atmosphere",
-      "energy",
-      "population"
+      "population",
+      "energy"
     ],
     "satellite": [
       "OCO-2"

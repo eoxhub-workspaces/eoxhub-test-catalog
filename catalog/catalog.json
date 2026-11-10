@@ -198,13 +198,13 @@
       "id": "client_side_rendering",
       "subcode": "client_side_rendering",
       "themes": [
-        "agriculture",
-        "water"
+        "water",
+        "agriculture"
       ],
       "satellite": [
-        "Sentinel-3",
+        "Sentinel-2",
         "MODIS",
-        "Sentinel-2"
+        "Sentinel-3"
       ],
       "sensor": [
         "MSI"
@@ -258,8 +258,8 @@
       "subcode": "endpoint_integration",
       "themes": [
         "atmosphere",
-        "energy",
-        "population"
+        "population",
+        "energy"
       ],
       "satellite": [
         "OCO-2"
@@ -382,6 +382,13 @@
         "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/city_temperature_preview2.png"
       ],
       "collection_group": "Sustainable Cities"
+    },
+    {
+      "rel": "child",
+      "href": "./bench_styled_geotiff/collection.json",
+      "type": "application/json",
+      "title": "Bench styled GeoTIFF",
+      "id": "bench_styled_geotiff"
     },
     {
       "rel": "self",

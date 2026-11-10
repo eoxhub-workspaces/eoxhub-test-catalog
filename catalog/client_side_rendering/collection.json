@@ -213,24 +213,24 @@
   "license": "other",
   "summaries": {
     "subcode": [
-      "IND2_1",
-      "CNR_TUR_1"
+      "CNR_TUR_1",
+      "IND2_1"
     ],
     "themes": [
-      "agriculture",
-      "water"
+      "water",
+      "agriculture"
     ],
     "satellite": [
-      "Sentinel-3",
+      "Sentinel-2",
       "MODIS",
-      "Sentinel-2"
+      "Sentinel-3"
     ],
     "sensor": [
       "MSI"
     ],
     "thumbnail": [
-      "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/refs/heads/main/assets/CNR_TUR_1_water_discharge/CNR_TUR_1_water_discharge_photo.jpg",
-      "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/refs/heads/main/assets/IDEAS2_wildlife/IDEAS2_wildlife.png"
+      "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/refs/heads/main/assets/IDEAS2_wildlife/IDEAS2_wildlife.png",
+      "https://raw.githubusercontent.com/eoxhub-workspaces/eoxhub-test-catalog/refs/heads/main/assets/CNR_TUR_1_water_discharge/CNR_TUR_1_water_discharge_photo.jpg"
     ]
   },
   "assets": {
